@@ -1,0 +1,3513 @@
+{
+  "error": 0,
+  "message": "List of centers for the applied filter",
+  "count": 16,
+  "api_element": "158",
+  "result": [
+    {
+      "centers": [
+        {
+          "basicData": {
+            "id": "65852519d9fe4d0001beff37",
+            "name": "Zolo Estonia C",
+            "gender": "couple",
+            "zoloCode": "ZOESTC",
+            "addressLine1": "RGA Techpark backside, 54/1",
+            "addressLine2": "Mainroad, Carmelaram, Hadosiddapura, Chikkakannalli, Bengaluru, Karnataka 560035",
+            "locality": "Sarjapura",
+            "localityKey": "sarjapura",
+            "cityKey": "bangalore",
+            "city": "Bangalore",
+            "approved": 1,
+            "propertyState": "ONBOARDED",
+            "description": "Discover the ultimate comfort and convenience at Zolo Estonia C, a premier PG in Sarjapur. Strategically located near key office workspaces and major access roads, this PG is perfect for working professionals seeking hassle-free living.\n\nPrime Location:\n- RGA Techpark: Just 0.4 km away, making your daily commute effortless.\n- New Wipro SEZ: Only 2.2 km away, ensuring you're never far from your workplace.\n- Wipro Corporate Office: A mere 3.5 km away, ideal for Wipro employees.\n- Decathlon: At 1.3 km away, enjoy easy access to all your sporting needs.\n\nWhy Choose Zolo Estonia C?\n- Fully Furnished Rooms: Experience the luxury of fully furnished rooms equipped with modern amenities.\n- High-Speed Wi-Fi: Stay connected with our high-speed internet, perfect for work-from-home days.\n- Housekeeping Services: Enjoy regular cleaning and maintenance, ensuring a tidy living space.\n- Delicious Meals: Savor nutritious and delicious meals, prepared fresh every day.\n- 24/7 Security: Feel secure with round-the-clock security and CCTV surveillance.\n\nAt Zolo Estonia C, we understand the needs of today's urban professionals. Our PG offers a blend of comfort, convenience, and community, making it the ideal place to call home in Sarjapur. Join a vibrant community of like-minded individuals and experience the best of PG living.\n\nBook your stay at Zolo Estonia C today and elevate your living experience in Sarjapur!",
+            "localName": "Zolo Estonia C",
+            "propertyCategory": "STANDARD",
+            "averageRating": 0,
+            "amenities": [
+              {
+                "name": "parking",
+                "isAvailable": true,
+                "imageName": "parking",
+                "displayName": "Parking"
+              },
+              {
+                "name": "tv",
+                "isAvailable": true,
+                "imageName": "tv",
+                "displayName": "TV"
+              },
+              {
+                "name": "lunch",
+                "isAvailable": false,
+                "imageName": "lunch",
+                "displayName": "Lunch Box"
+              },
+              {
+                "name": "ac",
+                "isAvailable": false,
+                "imageName": "ac",
+                "displayName": "AC"
+              },
+              {
+                "name": "wifi",
+                "isAvailable": true,
+                "imageName": "wifi",
+                "displayName": "Wifi"
+              },
+              {
+                "name": "fridge",
+                "isAvailable": true,
+                "imageName": "fridge",
+                "displayName": "Refrigerator"
+              },
+              {
+                "name": "power_backup",
+                "isAvailable": true,
+                "imageName": "power_backup",
+                "displayName": "Power Backup"
+              },
+              {
+                "name": "indoor_games",
+                "isAvailable": false,
+                "imageName": "indoor_games",
+                "displayName": "Indoor Games"
+              },
+              {
+                "name": "almirah",
+                "isAvailable": true,
+                "imageName": "almirah",
+                "displayName": "Almirah"
+              },
+              {
+                "name": "bedsheet",
+                "isAvailable": true,
+                "imageName": "bedsheet",
+                "displayName": "Bed Sheet"
+              },
+              {
+                "name": "club_house",
+                "isAvailable": false,
+                "imageName": "club_house",
+                "displayName": "Club House"
+              },
+              {
+                "name": "cctv",
+                "isAvailable": true,
+                "imageName": "cctv",
+                "displayName": "CCTV"
+              },
+              {
+                "name": "housekeeping",
+                "isAvailable": true,
+                "imageName": "housekeeping",
+                "displayName": "House Keeping"
+              },
+              {
+                "name": "security",
+                "isAvailable": true,
+                "imageName": "security",
+                "displayName": "Security"
+              },
+              {
+                "name": "gaming_console",
+                "isAvailable": false,
+                "imageName": "gaming_console",
+                "displayName": "Gaming Console"
+              },
+              {
+                "name": "pillow",
+                "isAvailable": true,
+                "imageName": "pillow",
+                "displayName": "Pillow"
+              },
+              {
+                "name": "lift",
+                "isAvailable": true,
+                "imageName": "lift",
+                "displayName": "Lift"
+              },
+              {
+                "name": "drinking_water",
+                "isAvailable": true,
+                "imageName": "drinking_water",
+                "displayName": "Drinking Water"
+              },
+              {
+                "name": "gym",
+                "isAvailable": false,
+                "imageName": "gym",
+                "displayName": "Gym"
+              },
+              {
+                "name": "reception",
+                "isAvailable": true,
+                "imageName": "reception",
+                "displayName": "Reception"
+              },
+              {
+                "name": "swimming_pool",
+                "isAvailable": false,
+                "imageName": "swimming_pool",
+                "displayName": "Swimming Pool"
+              },
+              {
+                "name": "bathroom",
+                "isAvailable": true,
+                "imageName": "bathroom",
+                "displayName": "Bathroom"
+              },
+              {
+                "name": "washing_machine",
+                "isAvailable": true,
+                "imageName": "washing_machine",
+                "displayName": "Free Laundry"
+              }
+            ],
+            "location": [77.6875571, 12.8875643],
+            "amenitiesBaseUrl": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/amenities/",
+            "seo": {
+              "tags": {
+                "longDescription": "",
+                "meta": "Discover top-tier living at Zolo Estonia C, the best PG near Sarjapur, offering a seamless blend of comfort and convenience.",
+                "title": "Zolo Estonia C: Best PG in Sarjapur | Zolo Co-living"
+              }
+            },
+            "isNew": false,
+            "minRent": 5310,
+            "maxRent": 12180,
+            "distance": null,
+            "isRental": false,
+            "rentalDiscount": {
+              "max_rental_discount": 30,
+              "rental_discount_type": "PERCENTAGE"
+            },
+            "gstPercentage": 0,
+            "gstAmount": 0,
+            "totalAmountIncGst": 5310,
+            "preTaxMinRent": 5310,
+            "isShortStayProperty": true
+          },
+          "images": [
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center/cover_photo/65852519d9fe4d0001beff37/22.jpg",
+              "alt": "",
+              "title": "",
+              "order": 1,
+              "category": "Cover_Photo"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/660ceeaf1172820001a8cb24/26.jpg",
+              "alt": "two sharing pg in sarjapur",
+              "title": "null",
+              "order": 1,
+              "category": "room"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/660ceec20c413900017c391b/23.jpg",
+              "alt": "two sharing pg in sarjapur",
+              "title": "null",
+              "order": 1,
+              "category": "room"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/660ceee79ebf0500018d5b59/20.jpg",
+              "alt": "two sharing pg in sarjapur",
+              "title": "null",
+              "order": 1,
+              "category": "room"
+            }
+          ],
+          "isFavorite": false,
+          "scheduleVisit": null,
+          "propertyTags": []
+        },
+        {
+          "basicData": {
+            "id": "58b57b5b6193f502faa37d43",
+            "name": "Zolo Mitra",
+            "gender": "couple",
+            "zoloCode": "ZMT",
+            "addressLine1": "20, 20th B Cross Rd, Ejipura",
+            "addressLine2": "Bengaluru, Karnataka 560047",
+            "locality": "Koramangala",
+            "localityKey": "koramangala",
+            "cityKey": "bangalore",
+            "city": "Bangalore",
+            "approved": 1,
+            "propertyState": "ONBOARDED",
+            "description": "Are you in search of a PG near you? Look no further than Zolo Mitra, strategically positioned near key office spaces and access roads in Koramangala. Our prime location ensures convenience for both students and working professionals alike.\n\nSituated a mere 1.3 km from the Koramangala Indoor Stadium, Zolo Mitra offers easy access to recreational activities and events. For those working in the NGV Commercial Complex or the National Dairy Development, our PG is just 1.4 km and 1.5 km away respectively, making your daily commute hassle-free.\n\nAdditionally, Sony World Signal, a major landmark in Koramangala, is only 1 km away from our PG, providing easy access to transportation and nearby amenities.\n\nExperience the convenience and comfort of living at Zolo Mitra, your ideal PG near Koramangala. Whether you're seeking a PG near you or a PG in Koramangala, Zolo Mitra offers the perfect blend of accessibility and comfort for your living needs.",
+            "localName": "Zolo Mitra",
+            "propertyCategory": "STANDARD",
+            "averageRating": 0,
+            "amenities": [
+              {
+                "name": "parking",
+                "isAvailable": true,
+                "imageName": "parking",
+                "displayName": "Parking"
+              },
+              {
+                "name": "tv",
+                "isAvailable": true,
+                "imageName": "tv",
+                "displayName": "TV"
+              },
+              {
+                "name": "lunch",
+                "isAvailable": false,
+                "imageName": "lunch",
+                "displayName": "Lunch Box"
+              },
+              {
+                "name": "ac",
+                "isAvailable": false,
+                "imageName": "ac",
+                "displayName": "AC"
+              },
+              {
+                "name": "wifi",
+                "isAvailable": true,
+                "imageName": "wifi",
+                "displayName": "Wifi"
+              },
+              {
+                "name": "fridge",
+                "isAvailable": true,
+                "imageName": "fridge",
+                "displayName": "Refrigerator"
+              },
+              {
+                "name": "power_backup",
+                "isAvailable": false,
+                "imageName": "power_backup",
+                "displayName": "Power Backup"
+              },
+              {
+                "name": "indoor_games",
+                "isAvailable": true,
+                "imageName": "indoor_games",
+                "displayName": "Indoor_Games"
+              },
+              {
+                "name": "almirah",
+                "isAvailable": true,
+                "imageName": "almirah",
+                "displayName": "Almirah"
+              },
+              {
+                "name": "bedsheet",
+                "isAvailable": true,
+                "imageName": "bedsheet",
+                "displayName": "Bed Sheet"
+              },
+              {
+                "name": "club_house",
+                "isAvailable": false,
+                "imageName": "club_house",
+                "displayName": "Club_House"
+              },
+              {
+                "name": "cctv",
+                "isAvailable": true,
+                "imageName": "cctv",
+                "displayName": "CCTV"
+              },
+              {
+                "name": "housekeeping",
+                "isAvailable": true,
+                "imageName": "housekeeping",
+                "displayName": "House Keeping"
+              },
+              {
+                "name": "security",
+                "isAvailable": true,
+                "imageName": "security",
+                "displayName": "Security"
+              },
+              {
+                "name": "pillow",
+                "isAvailable": true,
+                "imageName": "pillow",
+                "displayName": "Pillow"
+              },
+              {
+                "name": "lift",
+                "isAvailable": true,
+                "imageName": "lift",
+                "displayName": "Lift"
+              },
+              {
+                "name": "drinking_water",
+                "isAvailable": true,
+                "imageName": "drinking_water",
+                "displayName": "Drinking Water"
+              },
+              {
+                "name": "gym",
+                "isAvailable": false,
+                "imageName": "gym",
+                "displayName": "Gym"
+              },
+              {
+                "name": "reception",
+                "isAvailable": true,
+                "imageName": "reception",
+                "displayName": "Reception"
+              },
+              {
+                "name": "swimming_pool",
+                "isAvailable": false,
+                "imageName": "swimming_pool",
+                "displayName": "Swimming_Pool"
+              },
+              {
+                "name": "bathroom",
+                "isAvailable": true,
+                "imageName": "bathroom",
+                "displayName": "Bathroom"
+              },
+              {
+                "name": "washing_machine",
+                "isAvailable": true,
+                "imageName": "washing_machine",
+                "displayName": "Free Laundry"
+              }
+            ],
+            "location": [77.6277077, 12.9434769],
+            "amenitiesBaseUrl": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/amenities/",
+            "seo": {
+              "tags": {
+                "longDescription": "",
+                "meta": "Discover the best PG near Koramangala at Zolo Mitra, your premier coliving space. Enjoy the perfect blend of convenience and comfort with our strategically located PG.",
+                "h1": "",
+                "h2": "",
+                "shortDescription": "",
+                "title": "Zolo Mitra - Best PG in Koramangala | Coliving PG"
+              }
+            },
+            "isNew": false,
+            "minRent": 6695,
+            "maxRent": 16065,
+            "distance": null,
+            "isRental": false,
+            "rentalDiscount": {
+              "max_rental_discount": 10,
+              "rental_discount_type": "PERCENTAGE"
+            },
+            "gstPercentage": 0,
+            "gstAmount": 0,
+            "totalAmountIncGst": 6695,
+            "preTaxMinRent": 6695,
+            "isShortStayProperty": true
+          },
+          "images": [
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center/cover_photo/58b57b5b6193f502faa37d43/1___2024_07_06T165150.502.jpg",
+              "alt": "Zolo Mitra - PG in Kormangala",
+              "title": "Zolo Mitra - PG in Kormangala",
+              "order": 1,
+              "category": "Cover_Photo"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/6593e5a8e643d000013bd63b/07.jpg",
+              "alt": "dining area in pg near koramangala",
+              "title": "null",
+              "order": 1,
+              "category": "amenities"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/661548ba75e07d00010c64fd/jpeg_optimizer_11__4_.jpg",
+              "alt": "three sharing pg room in koramangala",
+              "title": "null",
+              "order": 1,
+              "category": "room"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/661548e277fc9a00018fb506/jpeg_optimizer_10__5_.jpg",
+              "alt": "three sharing pg room in koramangala",
+              "title": "null",
+              "order": 1,
+              "category": "room"
+            }
+          ],
+          "isFavorite": false,
+          "scheduleVisit": null,
+          "propertyTags": []
+        },
+        {
+          "basicData": {
+            "id": "64f059171647150001451e75",
+            "name": "Zolo Walston",
+            "gender": "couple",
+            "zoloCode": "ZOWLSTN",
+            "addressLine1": "Arul Arcade, Babusapalya Main Rd, Chikka Nanjunda Reddy Layout,",
+            "addressLine2": "Bank Avenue Colony, Horamavu, Bengaluru, Karnataka 560043",
+            "locality": "Manyata",
+            "localityKey": "manyata",
+            "cityKey": "bangalore",
+            "city": "Bangalore",
+            "approved": 1,
+            "propertyState": "ONBOARDED",
+            "description": "Zolo Walston - Your Premier PG near Manyata Tech Park\n\nDiscover the perfect blend of comfort and convenience at Zolo Walston, a premium PG near Manyata Tech Park. Strategically located to cater to professionals and students alike, Zolo Walston offers a seamless living experience with easy access to key office spaces and major access roads.\n\nPrime Location:\nManyata Tech Park: Just 5 km away, making your daily commute a breeze.\nKalyan Nagar: Only 2 km away, offering a plethora of dining and entertainment options.\nHRBR Layout: Also 2 km away, known for its vibrant community and modern amenities.\nITC Infotech: Located 5 km away, perfect for professionals working in the tech industry.\n\nWhy Choose Zolo Walston?\nAt Zolo Walston, we prioritize your comfort and convenience. Our fully-furnished rooms are designed to provide a homely atmosphere, equipped with modern amenities such as high-speed Wi-Fi, 24/7 security, and housekeeping services. Whether you're a student or a working professional, you'll find our facilities tailored to meet your needs.\n\nKey Features:\nProximity to Key Locations: Enjoy the advantage of staying near major tech parks and bustling commercial areas.\nModern Amenities: Experience top-notch facilities including a well-equipped gym, recreational areas, and a dedicated common room for socializing.\nCommunity Living: Be part of a vibrant community of like-minded individuals, making your stay enjoyable and enriching.\n\nAccessibility and Connectivity:\nLocated near major roads and public transport options, Zolo Walston ensures that you're always connected to the city's pulse. Whether you're heading to work, meeting friends, or exploring the city, our PG offers unmatched convenience.\n\nMake Zolo Walston your home and experience the best PG living near Manyata Tech Park. Book your stay today and enjoy a lifestyle that combines comfort, convenience, and community. For more details and to schedule a visit, contact us now!",
+            "localName": "Zolo Walston",
+            "propertyCategory": "STANDARD",
+            "averageRating": 0,
+            "amenities": [
+              {
+                "name": "parking",
+                "isAvailable": true,
+                "imageName": "parking",
+                "displayName": "Parking"
+              },
+              {
+                "name": "tv",
+                "isAvailable": true,
+                "imageName": "tv",
+                "displayName": "TV"
+              },
+              {
+                "name": "lunch",
+                "isAvailable": false,
+                "imageName": "lunch",
+                "displayName": "Lunch Box"
+              },
+              {
+                "name": "ac",
+                "isAvailable": false,
+                "imageName": "ac",
+                "displayName": "AC"
+              },
+              {
+                "name": "wifi",
+                "isAvailable": true,
+                "imageName": "wifi",
+                "displayName": "Wifi"
+              },
+              {
+                "name": "fridge",
+                "isAvailable": true,
+                "imageName": "fridge",
+                "displayName": "Refrigerator"
+              },
+              {
+                "name": "power_backup",
+                "isAvailable": true,
+                "imageName": "power_backup",
+                "displayName": "Power Backup"
+              },
+              {
+                "name": "indoor_games",
+                "isAvailable": false,
+                "imageName": "indoor_games",
+                "displayName": "Indoor Games"
+              },
+              {
+                "name": "almirah",
+                "isAvailable": true,
+                "imageName": "almirah",
+                "displayName": "Almirah"
+              },
+              {
+                "name": "bedsheet",
+                "isAvailable": true,
+                "imageName": "bedsheet",
+                "displayName": "Bed Sheet"
+              },
+              {
+                "name": "club_house",
+                "isAvailable": false,
+                "imageName": "club_house",
+                "displayName": "Club House"
+              },
+              {
+                "name": "cctv",
+                "isAvailable": true,
+                "imageName": "cctv",
+                "displayName": "CCTV"
+              },
+              {
+                "name": "housekeeping",
+                "isAvailable": true,
+                "imageName": "housekeeping",
+                "displayName": "House Keeping"
+              },
+              {
+                "name": "security",
+                "isAvailable": true,
+                "imageName": "security",
+                "displayName": "Security"
+              },
+              {
+                "name": "gaming_console",
+                "isAvailable": false,
+                "imageName": "gaming_console",
+                "displayName": "Gaming Console"
+              },
+              {
+                "name": "pillow",
+                "isAvailable": true,
+                "imageName": "pillow",
+                "displayName": "Pillow"
+              },
+              {
+                "name": "lift",
+                "isAvailable": true,
+                "imageName": "lift",
+                "displayName": "Lift"
+              },
+              {
+                "name": "drinking_water",
+                "isAvailable": true,
+                "imageName": "drinking_water",
+                "displayName": "Drinking Water"
+              },
+              {
+                "name": "gym",
+                "isAvailable": true,
+                "imageName": "gym",
+                "displayName": "Gym"
+              },
+              {
+                "name": "reception",
+                "isAvailable": true,
+                "imageName": "reception",
+                "displayName": "Reception"
+              },
+              {
+                "name": "lunch_box",
+                "isAvailable": false,
+                "imageName": "lunch_box",
+                "displayName": "lunch_box"
+              },
+              {
+                "name": "swimming_pool",
+                "isAvailable": false,
+                "imageName": "swimming_pool",
+                "displayName": "Swimming Pool"
+              },
+              {
+                "name": "bathroom",
+                "isAvailable": true,
+                "imageName": "bathroom",
+                "displayName": "Bathroom"
+              },
+              {
+                "name": "washing_machine",
+                "isAvailable": true,
+                "imageName": "washing_machine",
+                "displayName": "Free Laundry"
+              }
+            ],
+            "location": [77.6509774, 13.0229325],
+            "amenitiesBaseUrl": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/amenities/",
+            "seo": {
+              "tags": {
+                "longDescription": "",
+                "meta": "Fully Furnished Couple Sharing Room in Manyata, Bangalore with ✓No Brokerage, ✓1 Month Deposit and ✓Rent ₹14000 at Zolo Walston, ZOWLSTN.",
+                "title": "Unisex PG/Hostels in Manyata , Bangalore at Zolo Walston | ZOWLSTN"
+              }
+            },
+            "isNew": false,
+            "minRent": 8785,
+            "maxRent": 21600,
+            "distance": null,
+            "isRental": false,
+            "rentalDiscount": {
+              "max_rental_discount": 10,
+              "rental_discount_type": "PERCENTAGE"
+            },
+            "gstPercentage": 0,
+            "gstAmount": 0,
+            "totalAmountIncGst": 8785,
+            "preTaxMinRent": 8785,
+            "isShortStayProperty": false
+          },
+          "images": [
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center/cover_photo/64f059171647150001451e75/15__1_.jpg",
+              "alt": "",
+              "title": "",
+              "order": 1,
+              "category": "Cover_Photo"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/6584430faa6f8800014aaa62/03.jpg",
+              "alt": "best pg near manyata tech park",
+              "title": "null",
+              "order": 1,
+              "category": "entrance"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/65bb1ad1df1321000104cbec/17.jpg",
+              "alt": "zolo walston",
+              "title": "null",
+              "order": 1,
+              "category": "entrance"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/65bb1ae7b59e66000128e67c/18.jpg",
+              "alt": "best pg near manyata tech park",
+              "title": "null",
+              "order": 1,
+              "category": "entrance"
+            }
+          ],
+          "isFavorite": false,
+          "scheduleVisit": null,
+          "propertyTags": []
+        },
+        {
+          "basicData": {
+            "id": "67fdfb57b579690001b2b9e2",
+            "name": "Zolo Spica",
+            "gender": "women",
+            "zoloCode": "ZSPCA",
+            "addressLine1": "VHHX+C72 Bengaluru,",
+            "addressLine2": "Karnataka",
+            "locality": "Bannerghatta",
+            "localityKey": "bannerghatta",
+            "cityKey": "bangalore",
+            "city": "Bangalore",
+            "approved": 1,
+            "propertyState": "ONBOARDED",
+            "description": "Looking for a quality hostel in Bannerghatta, Bangalore?\nZolo offers premium accommodations just 20 meters from Christ University, Bannerghatta Campus. Enjoy clean rooms, unlimited WiFi, housekeeping, and more—all included in the rent. With single, double, and triple sharing options, this space is ideal for students seeking comfort and community. Experience hassle-free living with modern interiors, a common dining area, and a welcoming environment.",
+            "localName": "Zolo Spica",
+            "propertyCategory": "STUDENT_HOUSING_COLIVING",
+            "averageRating": 0,
+            "amenities": [
+              {
+                "name": "parking",
+                "isAvailable": false,
+                "imageName": "parking",
+                "displayName": "Parking"
+              },
+              {
+                "name": "tv",
+                "isAvailable": false,
+                "imageName": "tv",
+                "displayName": "TV"
+              },
+              {
+                "name": "lunch",
+                "isAvailable": false,
+                "imageName": "lunch",
+                "displayName": "Lunch Box"
+              },
+              {
+                "name": "ac",
+                "isAvailable": false,
+                "imageName": "ac",
+                "displayName": "AC"
+              },
+              {
+                "name": "wifi",
+                "isAvailable": true,
+                "imageName": "wifi",
+                "displayName": "Wifi"
+              },
+              {
+                "name": "fridge",
+                "isAvailable": true,
+                "imageName": "fridge",
+                "displayName": "Refrigerator"
+              },
+              {
+                "name": "power_backup",
+                "isAvailable": true,
+                "imageName": "power_backup",
+                "displayName": "Power Backup"
+              },
+              {
+                "name": "indoor_games",
+                "isAvailable": true,
+                "imageName": "indoor_games",
+                "displayName": "Indoor Games"
+              },
+              {
+                "name": "almirah",
+                "isAvailable": true,
+                "imageName": "almirah",
+                "displayName": "Almirah"
+              },
+              {
+                "name": "bedsheet",
+                "isAvailable": true,
+                "imageName": "bedsheet",
+                "displayName": "Bed Sheet"
+              },
+              {
+                "name": "club_house",
+                "isAvailable": false,
+                "imageName": "club_house",
+                "displayName": "Club House"
+              },
+              {
+                "name": "cctv",
+                "isAvailable": true,
+                "imageName": "cctv",
+                "displayName": "CCTV"
+              },
+              {
+                "name": "housekeeping",
+                "isAvailable": true,
+                "imageName": "housekeeping",
+                "displayName": "House Keeping"
+              },
+              {
+                "name": "security",
+                "isAvailable": true,
+                "imageName": "security",
+                "displayName": "Security"
+              },
+              {
+                "name": "gaming_console",
+                "isAvailable": false,
+                "imageName": "gaming_console",
+                "displayName": "Gaming Console"
+              },
+              {
+                "name": "pillow",
+                "isAvailable": true,
+                "imageName": "pillow",
+                "displayName": "Pillow"
+              },
+              {
+                "name": "lift",
+                "isAvailable": true,
+                "imageName": "lift",
+                "displayName": "Lift"
+              },
+              {
+                "name": "drinking_water",
+                "isAvailable": true,
+                "imageName": "drinking_water",
+                "displayName": "Drinking Water"
+              },
+              {
+                "name": "gym",
+                "isAvailable": true,
+                "imageName": "gym",
+                "displayName": "Gym"
+              },
+              {
+                "name": "reception",
+                "isAvailable": true,
+                "imageName": "reception",
+                "displayName": "Reception"
+              },
+              {
+                "name": "swimming_pool",
+                "isAvailable": false,
+                "imageName": "swimming_pool",
+                "displayName": "Swimming Pool"
+              },
+              {
+                "name": "bathroom",
+                "isAvailable": true,
+                "imageName": "bathroom",
+                "displayName": "Bathroom"
+              },
+              {
+                "name": "washing_machine",
+                "isAvailable": true,
+                "imageName": "washing_machine",
+                "displayName": "Wash"
+              }
+            ],
+            "location": [77.614074, 12.933369],
+            "amenitiesBaseUrl": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/amenities/",
+            "seo": {
+              "tags": {
+                "longDescription": "",
+                "meta": "Fully Furnished Female Sharing Room in Bannerghatta, Bangalore with ✓No Brokerage, ✓1 Month Deposit and ✓Rent ₹15,499 at Zolo spica, ZSPCA.",
+                "title": "Women PG/Hostels in Bannerghatta, Bangalore at Zolo spica|ZSPCA"
+              }
+            },
+            "isNew": false,
+            "minRent": 15499,
+            "maxRent": 18499,
+            "distance": null,
+            "isRental": false,
+            "rentalDiscount": {
+              "max_rental_discount": 0,
+              "rental_discount_type": "PERCENTAGE"
+            },
+            "gstPercentage": 0,
+            "gstAmount": 0,
+            "totalAmountIncGst": 15499,
+            "preTaxMinRent": 15499,
+            "isShortStayProperty": false
+          },
+          "images": [
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center/cover_photo/67fdfb57b579690001b2b9e2/8.jpg",
+              "alt": "",
+              "title": "",
+              "order": 1,
+              "category": "Cover_Photo"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/68e60e1e1cd2ca000137180f/3.jpg",
+              "alt": "null",
+              "title": null,
+              "order": 1,
+              "category": "entrance"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/68e60e441cd2ca0001371810/2.jpg",
+              "alt": "null",
+              "title": null,
+              "order": 1,
+              "category": "amenities"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/68e60e4dea48d00001f62ee6/1.jpg",
+              "alt": "null",
+              "title": null,
+              "order": 1,
+              "category": "amenities"
+            }
+          ],
+          "isFavorite": false,
+          "scheduleVisit": null,
+          "propertyTags": []
+        },
+        {
+          "basicData": {
+            "id": "64c7c1e40fe9100001f8e41f",
+            "name": "Zolo Faraday",
+            "gender": "couple",
+            "zoloCode": "ZOFARD",
+            "addressLine1": "79, Celebrity Paradise Main St, Celebrity Paradise Layout, Doddathoguru",
+            "addressLine2": "Electronics City Phase 1, Electronic City, Bengaluru, Karnataka 560100",
+            "locality": "Electronic CIty Phase 1",
+            "localityKey": "electronic_city_phase_1",
+            "cityKey": "bangalore",
+            "city": "Bangalore",
+            "approved": 1,
+            "propertyState": "ONBOARDED",
+            "description": "Looking for a comfortable and convenient PG near Electronic City Phase 1? Look no further! Welcome to Zolo Faraday, strategically positioned nearby key office spaces and access roads, ensuring a hassle-free commute for working professionals.\n\nSituated just 0.7 km away from Velankani Tech Park and a mere 0.65 km from 46 Ounce, Zolo Faraday offers unparalleled proximity to your workplace, saving you valuable time and energy on daily commutes.\n\nFor those employed at Infosys, our location is ideal, with just a 1.3 km distance, making it a perfect choice for those seeking a PG near Infosys Electronic City campus.\n\nBut convenience isn't our only forte. Zolo Faraday boasts a range of amenities and comforts to make your stay truly enjoyable. From well-furnished rooms to round-the-clock security, we prioritize your comfort and safety above all else.\n\nAnd if you're worried about everyday essentials or just want to indulge in some retail therapy, D Mart is just a short 3.6 km drive away, ensuring that all your needs are easily met.\n\nSo whether you're searching for a PG near Electronic City Phase 1, or specifically a PG in Electronic City Phase 1, Zolo Faraday is your ultimate destination for comfort, convenience, and connectivity. Book your stay with us today and experience the perfect blend of work and relaxation!",
+            "localName": "Zolo Faraday",
+            "propertyCategory": "STANDARD",
+            "averageRating": 0,
+            "amenities": [
+              {
+                "name": "parking",
+                "isAvailable": true,
+                "imageName": "parking",
+                "displayName": "Parking"
+              },
+              {
+                "name": "tv",
+                "isAvailable": true,
+                "imageName": "tv",
+                "displayName": "TV"
+              },
+              {
+                "name": "lunch",
+                "isAvailable": false,
+                "imageName": "lunch",
+                "displayName": "Lunch Box"
+              },
+              {
+                "name": "ac",
+                "isAvailable": false,
+                "imageName": "ac",
+                "displayName": "AC"
+              },
+              {
+                "name": "wifi",
+                "isAvailable": true,
+                "imageName": "wifi",
+                "displayName": "Wifi"
+              },
+              {
+                "name": "fridge",
+                "isAvailable": false,
+                "imageName": "fridge",
+                "displayName": "Refrigerator"
+              },
+              {
+                "name": "power_backup",
+                "isAvailable": true,
+                "imageName": "power_backup",
+                "displayName": "Power Backup"
+              },
+              {
+                "name": "indoor_games",
+                "isAvailable": false,
+                "imageName": "indoor_games",
+                "displayName": "Indoor Games"
+              },
+              {
+                "name": "almirah",
+                "isAvailable": true,
+                "imageName": "almirah",
+                "displayName": "Almirah"
+              },
+              {
+                "name": "bedsheet",
+                "isAvailable": true,
+                "imageName": "bedsheet",
+                "displayName": "Bed Sheet"
+              },
+              {
+                "name": "club_house",
+                "isAvailable": false,
+                "imageName": "club_house",
+                "displayName": "Club House"
+              },
+              {
+                "name": "cctv",
+                "isAvailable": true,
+                "imageName": "cctv",
+                "displayName": "CCTV"
+              },
+              {
+                "name": "housekeeping",
+                "isAvailable": true,
+                "imageName": "housekeeping",
+                "displayName": "House Keeping"
+              },
+              {
+                "name": "security",
+                "isAvailable": true,
+                "imageName": "security",
+                "displayName": "Security"
+              },
+              {
+                "name": "gaming_console",
+                "isAvailable": false,
+                "imageName": "gaming_console",
+                "displayName": "Gaming Console"
+              },
+              {
+                "name": "pillow",
+                "isAvailable": true,
+                "imageName": "pillow",
+                "displayName": "Pillow"
+              },
+              {
+                "name": "lift",
+                "isAvailable": true,
+                "imageName": "lift",
+                "displayName": "Lift"
+              },
+              {
+                "name": "drinking_water",
+                "isAvailable": true,
+                "imageName": "drinking_water",
+                "displayName": "Drinking Water"
+              },
+              {
+                "name": "gym",
+                "isAvailable": false,
+                "imageName": "gym",
+                "displayName": "Gym"
+              },
+              {
+                "name": "reception",
+                "isAvailable": false,
+                "imageName": "reception",
+                "displayName": "Reception"
+              },
+              {
+                "name": "swimming_pool",
+                "isAvailable": false,
+                "imageName": "swimming_pool",
+                "displayName": "Swimming Pool"
+              },
+              {
+                "name": "bathroom",
+                "isAvailable": true,
+                "imageName": "bathroom",
+                "displayName": "Bathroom"
+              },
+              {
+                "name": "washing_machine",
+                "isAvailable": true,
+                "imageName": "washing_machine",
+                "displayName": "Free Laundry"
+              }
+            ],
+            "location": [77.6525202, 12.8479195],
+            "amenitiesBaseUrl": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/amenities/",
+            "seo": {
+              "tags": {
+                "longDescription": "",
+                "meta": "Explore the finest coliving accommodations near Electronic City Phase 1 at Zolo Faraday, our top-notch living space. Delight in the ideal combination of ease and luxury in our conveniently situated PG.",
+                "title": "Zolo Faraday - Best PG Near Electronic City Phase 1 | Coliving PG"
+              }
+            },
+            "isNew": false,
+            "minRent": 6988,
+            "maxRent": 16405,
+            "distance": null,
+            "isRental": false,
+            "rentalDiscount": {
+              "max_rental_discount": 15,
+              "rental_discount_type": "PERCENTAGE"
+            },
+            "gstPercentage": 0,
+            "gstAmount": 0,
+            "totalAmountIncGst": 6988,
+            "preTaxMinRent": 6988,
+            "isShortStayProperty": false
+          },
+          "images": [
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center/cover_photo/64c7c1e40fe9100001f8e41f/7___2024_07_09T175023.678.jpg",
+              "alt": "",
+              "title": "",
+              "order": 1,
+              "category": "Cover_Photo"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/6582cc778acd0e00015f2abe/5.jpg",
+              "alt": "pg in electronic city phase 1 with terrace",
+              "title": "null",
+              "order": 1,
+              "category": "amenities"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/66168da98077d700016a0f60/11__6_.jpg",
+              "alt": "best pg in electronic city phase 1",
+              "title": "null",
+              "order": 1,
+              "category": "entrance"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/66168db985014b0001d843e8/1__10_.jpg",
+              "alt": "best pg in electronic city phase 1",
+              "title": "null",
+              "order": 1,
+              "category": "entrance"
+            }
+          ],
+          "isFavorite": false,
+          "scheduleVisit": null,
+          "propertyTags": []
+        },
+        {
+          "basicData": {
+            "id": "65e59175a29e080001114aa1",
+            "name": "Zolo Ostro",
+            "gender": "couple",
+            "zoloCode": "ZOSTRO",
+            "addressLine1": "Site No. 3, 1st Cross Road, Lorry Stand,, Godown Street",
+            "addressLine2": "Yeshwanthpur, Bangalore, Karnataka 560022",
+            "locality": "Yeswanthpur",
+            "localityKey": "yeswanthpur",
+            "cityKey": "bangalore",
+            "city": "Bangalore",
+            "approved": 1,
+            "propertyState": "ONBOARDED",
+            "description": "Looking for a premium PG in Yeshwanthpur? Welcome to Zolo Ostro, your perfect home away from home. Strategically located near key office workspaces and major access roads, Zolo Ostro ensures convenience and comfort for working professionals and students alike.\n\nSituated just 1.6 km away from Yeshwanthpur Junction Railway, your daily commute is a breeze. Enjoy seamless shopping and entertainment with the Vaishnavi Sapphire Centre only 1 km away and the renowned Orion Mall just 1.6 km from your doorstep. For dining and hospitality, Hotel Leroy Grand is conveniently located just 0.7 km away.\n\nAt Zolo Ostro, we provide fully-furnished rooms with modern amenities, high-speed Wi-Fi, and 24/7 security. Our community-centric approach fosters a vibrant and supportive environment, making your stay truly enjoyable.\n\nChoose Zolo Ostro for an exceptional PG experience in Yeshwanthpur. Book your stay today and embrace the perfect blend of comfort, convenience, and community.",
+            "localName": "Zolo Ostro",
+            "propertyCategory": "STANDARD",
+            "averageRating": 0,
+            "amenities": [
+              {
+                "name": "parking",
+                "isAvailable": true,
+                "imageName": "parking",
+                "displayName": "Parking"
+              },
+              {
+                "name": "tv",
+                "isAvailable": true,
+                "imageName": "tv",
+                "displayName": "TV"
+              },
+              {
+                "name": "lunch",
+                "isAvailable": false,
+                "imageName": "lunch",
+                "displayName": "Lunch Box"
+              },
+              {
+                "name": "ac",
+                "isAvailable": false,
+                "imageName": "ac",
+                "displayName": "AC"
+              },
+              {
+                "name": "wifi",
+                "isAvailable": true,
+                "imageName": "wifi",
+                "displayName": "Wifi"
+              },
+              {
+                "name": "fridge",
+                "isAvailable": true,
+                "imageName": "fridge",
+                "displayName": "Refrigerator"
+              },
+              {
+                "name": "power_backup",
+                "isAvailable": true,
+                "imageName": "power_backup",
+                "displayName": "Power Backup"
+              },
+              {
+                "name": "indoor_games",
+                "isAvailable": false,
+                "imageName": "indoor_games",
+                "displayName": "Indoor Games"
+              },
+              {
+                "name": "almirah",
+                "isAvailable": true,
+                "imageName": "almirah",
+                "displayName": "Almirah"
+              },
+              {
+                "name": "bedsheet",
+                "isAvailable": true,
+                "imageName": "bedsheet",
+                "displayName": "Bed Sheet"
+              },
+              {
+                "name": "club_house",
+                "isAvailable": false,
+                "imageName": "club_house",
+                "displayName": "Club House"
+              },
+              {
+                "name": "cctv",
+                "isAvailable": true,
+                "imageName": "cctv",
+                "displayName": "CCTV"
+              },
+              {
+                "name": "housekeeping",
+                "isAvailable": true,
+                "imageName": "housekeeping",
+                "displayName": "House Keeping"
+              },
+              {
+                "name": "security",
+                "isAvailable": true,
+                "imageName": "security",
+                "displayName": "Security"
+              },
+              {
+                "name": "gaming_console",
+                "isAvailable": false,
+                "imageName": "gaming_console",
+                "displayName": "Gaming Console"
+              },
+              {
+                "name": "pillow",
+                "isAvailable": true,
+                "imageName": "pillow",
+                "displayName": "Pillow"
+              },
+              {
+                "name": "lift",
+                "isAvailable": true,
+                "imageName": "lift",
+                "displayName": "Lift"
+              },
+              {
+                "name": "drinking_water",
+                "isAvailable": true,
+                "imageName": "drinking_water",
+                "displayName": "Drinking Water"
+              },
+              {
+                "name": "gym",
+                "isAvailable": false,
+                "imageName": "gym",
+                "displayName": "Gym"
+              },
+              {
+                "name": "reception",
+                "isAvailable": true,
+                "imageName": "reception",
+                "displayName": "Reception"
+              },
+              {
+                "name": "swimming_pool",
+                "isAvailable": false,
+                "imageName": "swimming_pool",
+                "displayName": "Swimming Pool"
+              },
+              {
+                "name": "bathroom",
+                "isAvailable": true,
+                "imageName": "bathroom",
+                "displayName": "Bathroom"
+              },
+              {
+                "name": "washing_machine",
+                "isAvailable": true,
+                "imageName": "washing_machine",
+                "displayName": "Wash"
+              }
+            ],
+            "location": [77.5509916, 13.0215091],
+            "amenitiesBaseUrl": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/amenities/",
+            "seo": {
+              "tags": {
+                "longDescription": "",
+                "meta": "Discover ultimate convenience and comfort at Zolo Ostro, your premier PG near Yeshwanthpur.",
+                "title": "Zolo Ostro: Best PG in Yeshwanthpur | Zolo Co-living"
+              }
+            },
+            "isNew": false,
+            "minRent": 8282,
+            "maxRent": 16080,
+            "distance": null,
+            "isRental": false,
+            "rentalDiscount": {
+              "max_rental_discount": 20,
+              "rental_discount_type": "PERCENTAGE"
+            },
+            "gstPercentage": 0,
+            "gstAmount": 0,
+            "totalAmountIncGst": 8282,
+            "preTaxMinRent": 8282,
+            "isShortStayProperty": false
+          },
+          "images": [
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center/cover_photo/65e59175a29e080001114aa1/05__1_.jpg",
+              "alt": "",
+              "title": "",
+              "order": 1,
+              "category": "Cover_Photo"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/662a225c195fea0001884c4d/09__1_.jpg",
+              "alt": "three sharing pg in yeshwanthpur",
+              "title": "null",
+              "order": 1,
+              "category": "room"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/662a240c195fea0001884cb6/06__4_.jpg",
+              "alt": "two sharing pg in yeshwanthpur",
+              "title": "null",
+              "order": 1,
+              "category": "room"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/66c47ac87a11df00010cd694/10__3_.jpg",
+              "alt": "null",
+              "title": null,
+              "order": 1,
+              "category": "room"
+            }
+          ],
+          "isFavorite": false,
+          "scheduleVisit": null,
+          "propertyTags": []
+        },
+        {
+          "basicData": {
+            "id": "5ba8e51966a2f62195f718f6",
+            "name": "Zolo Renaissance",
+            "gender": "couple",
+            "zoloCode": "ZORE",
+            "addressLine1": "Site No-99 formed in Sy.No.47, situated at Electronic City Housing Layout, Konappana Agrahara VIllage",
+            "addressLine2": "Begur Hobli, Bangalore South Taluk, 560100, Bangalore, Karnataka 560100",
+            "locality": "Electronic City Phase 2",
+            "localityKey": "electronic_city_phase_2",
+            "cityKey": "bangalore",
+            "city": "Bangalore",
+            "approved": 1,
+            "propertyState": "ONBOARDED",
+            "description": "Looking for a PG near Electronic City Phase 2 that's strategically placed for easy access to key office spaces and major access roads? Look no further than Zolo Renaissance.\n\nConveniently located just 750 meters away from Tech Mahindra and a mere 1.75 kilometers from Tata Consultancy Services, Zolo Renaissance offers unparalleled proximity to some of the biggest names in the corporate world.\n\nBut it's not just about work - with NV Health Care Clinic and Lab just 700 meters away, you have peace of mind knowing that medical assistance is close at hand. And for those pursuing further education, IFIM Business School is just a short 4 kilometers away.\n\nAt Zolo Renaissance, we understand the importance of both work and lifestyle balance. Our PG facilities are designed to provide a comfortable and convenient living experience, making it the perfect choice for those seeking a PG near Electronic City Phase 2.",
+            "localName": "Zolo Renaissance",
+            "propertyCategory": "STANDARD",
+            "averageRating": 5,
+            "amenities": [
+              {
+                "name": "parking",
+                "isAvailable": true,
+                "imageName": "parking",
+                "displayName": "Parking"
+              },
+              {
+                "name": "tv",
+                "isAvailable": true,
+                "imageName": "tv",
+                "displayName": "TV"
+              },
+              {
+                "name": "lunch",
+                "isAvailable": false,
+                "imageName": "lunch",
+                "displayName": "Lunch Box"
+              },
+              {
+                "name": "ac",
+                "isAvailable": false,
+                "imageName": "ac",
+                "displayName": "AC"
+              },
+              {
+                "name": "wifi",
+                "isAvailable": true,
+                "imageName": "wifi",
+                "displayName": "Wifi"
+              },
+              {
+                "name": "fridge",
+                "isAvailable": true,
+                "imageName": "fridge",
+                "displayName": "Refrigerator"
+              },
+              {
+                "name": "power_backup",
+                "isAvailable": true,
+                "imageName": "power_backup",
+                "displayName": "Power Backup"
+              },
+              {
+                "name": "indoor_games",
+                "isAvailable": false,
+                "imageName": "indoor_games",
+                "displayName": "Indoor Games"
+              },
+              {
+                "name": "almirah",
+                "isAvailable": true,
+                "imageName": "almirah",
+                "displayName": "Almirah"
+              },
+              {
+                "name": "bedsheet",
+                "isAvailable": true,
+                "imageName": "bedsheet",
+                "displayName": "Bed Sheet"
+              },
+              {
+                "name": "club_house",
+                "isAvailable": false,
+                "imageName": "club_house",
+                "displayName": "Club House"
+              },
+              {
+                "name": "cctv",
+                "isAvailable": true,
+                "imageName": "cctv",
+                "displayName": "CCTV"
+              },
+              {
+                "name": "housekeeping",
+                "isAvailable": true,
+                "imageName": "housekeeping",
+                "displayName": "House Keeping"
+              },
+              {
+                "name": "security",
+                "isAvailable": true,
+                "imageName": "security",
+                "displayName": "Security"
+              },
+              {
+                "name": "pillow",
+                "isAvailable": true,
+                "imageName": "pillow",
+                "displayName": "Pillow"
+              },
+              {
+                "name": "lift",
+                "isAvailable": true,
+                "imageName": "lift",
+                "displayName": "Lift"
+              },
+              {
+                "name": "drinking_water",
+                "isAvailable": true,
+                "imageName": "drinking_water",
+                "displayName": "Drinking Water"
+              },
+              {
+                "name": "gym",
+                "isAvailable": false,
+                "imageName": "gym",
+                "displayName": "Gym"
+              },
+              {
+                "name": "reception",
+                "isAvailable": true,
+                "imageName": "reception",
+                "displayName": "Reception"
+              },
+              {
+                "name": "swimming_pool",
+                "isAvailable": false,
+                "imageName": "swimming_pool",
+                "displayName": "Swimming Pool"
+              },
+              {
+                "name": "bathroom",
+                "isAvailable": true,
+                "imageName": "bathroom",
+                "displayName": "Bathroom"
+              },
+              {
+                "name": "washing_machine",
+                "isAvailable": true,
+                "imageName": "washing_machine",
+                "displayName": "Free Laundry"
+              }
+            ],
+            "location": [77.67407, 12.854619],
+            "amenitiesBaseUrl": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/amenities/",
+            "seo": {
+              "tags": {
+                "longDescription": "",
+                "meta": "Unveil top-tier housing near Electronic City Phase 2 at Zolo Renaissance, your premier coliving enclave. Enjoy the seamless integration of convenience and elegance in our strategically positioned PG.",
+                "h1": "",
+                "h2": "",
+                "shortDescription": "",
+                "title": "Zolo Renaissance: Best PG in Electronic City Phase 2 | Zolo Co-living"
+              }
+            },
+            "isNew": false,
+            "minRent": 3630,
+            "maxRent": 8325,
+            "distance": null,
+            "isRental": false,
+            "rentalDiscount": {
+              "max_rental_discount": 25,
+              "rental_discount_type": "PERCENTAGE"
+            },
+            "gstPercentage": 0,
+            "gstAmount": 0,
+            "totalAmountIncGst": 3630,
+            "preTaxMinRent": 3630,
+            "isShortStayProperty": true
+          },
+          "images": [
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center/cover_photo/5ba8e51966a2f62195f718f6/jpeg_optimizer_6___2024_07_09T164054.482.jpg",
+              "alt": "",
+              "title": "",
+              "order": 1,
+              "category": "Cover_Photo"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/65cc4971c24aac0001ff34fa/imresizer_1707886957379.jpg",
+              "alt": "best pg in electronic city phase 2",
+              "title": "null",
+              "order": 1,
+              "category": "entrance"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/65cc49a4c0070500011a2be6/imresizer_1707887004495.jpg",
+              "alt": "best pg in electronic city phase 2",
+              "title": "null",
+              "order": 1,
+              "category": "entrance"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/65cc49c1c24aac0001ff3502/9__2_.jpg",
+              "alt": "single sharing pg in electronic city phase 2",
+              "title": "",
+              "order": 1,
+              "category": "room"
+            }
+          ],
+          "isFavorite": false,
+          "scheduleVisit": null,
+          "propertyTags": []
+        },
+        {
+          "basicData": {
+            "id": "664f2cce64c51d0001f82938",
+            "name": "Zolo Tucana",
+            "gender": "women",
+            "zoloCode": "ZLTCNA",
+            "addressLine1": "5GFJ+9V5, Madhure Temple Road, Near Presidency University",
+            "addressLine2": "Rajanukunte, Dibbur, Bangalore, Karnataka 560089",
+            "locality": "Rajanukunte",
+            "localityKey": "rajanukunte",
+            "cityKey": "bangalore",
+            "city": "Bangalore",
+            "approved": 1,
+            "propertyState": "ONBOARDED",
+            "description": "Welcome to Zolo Tucana, the premier choice for students seeking a comfortable and convenient PG in Rajankunte. Our strategically located PG is designed to offer the perfect blend of comfort, security, and accessibility, making it an ideal home for students pursuing their academic goals in nearby prestigious institutions.\n\nPrime Location:\nZolo Tucana is ideally situated to provide easy access to several key educational institutions and office spaces. Just 0.6 km away is the esteemed Presidency University, allowing students to walk or bike to campus effortlessly. The SVIT is also within close proximity, being only 2.5 km away. For those studying at Strate School of Design | Jain International Campus, a short 11.9 km commute ensures you're never far from your classes. Additionally, the Nitte Meenakshi Institute of Technology is conveniently located just 12 km away, making Zolo Tucana an optimal choice for students from various academic backgrounds.\n\nComfort and Amenities:\nAt Zolo Tucana, we prioritize your comfort and convenience. Our PG offers fully furnished rooms equipped with modern amenities, high-speed Wi-Fi, and 24/7 security to ensure a safe and productive living environment. We also provide daily housekeeping, laundry facilities, and delicious, hygienic meals, so you can focus entirely on your studies without any worries.\n\nCommunity and Support:\nLiving at Zolo Tucana means being part of a vibrant student community. Engage in various social activities, study sessions, and events that foster a sense of belonging and camaraderie. Our dedicated support team is always available to assist with any concerns, ensuring a hassle-free stay.\n\nConnectivity:\nSituated near key office spaces and major access roads, Zolo Tucana offers excellent connectivity to various parts of the city. Whether you're commuting to college or exploring the local area, our PG's prime location ensures that you're well-connected to all essential amenities and services.\n\nChoose Zolo Tucana for a seamless and enriching living experience. Book your stay today and discover why our PG in Rajankunte is the preferred choice for students seeking quality accommodation near their educational institutions.\n\nFor more information or to schedule a visit, contact us today!",
+            "localName": "Zolo Tucana",
+            "propertyCategory": "STUDENT_HOUSING_COLIVING",
+            "averageRating": 0,
+            "amenities": [
+              {
+                "name": "parking",
+                "isAvailable": true,
+                "imageName": "parking",
+                "displayName": "Parking"
+              },
+              {
+                "name": "tv",
+                "isAvailable": true,
+                "imageName": "tv",
+                "displayName": "TV"
+              },
+              {
+                "name": "lunch",
+                "isAvailable": false,
+                "imageName": "lunch",
+                "displayName": "Lunch Box"
+              },
+              {
+                "name": "ac",
+                "isAvailable": false,
+                "imageName": "ac",
+                "displayName": "AC"
+              },
+              {
+                "name": "wifi",
+                "isAvailable": true,
+                "imageName": "wifi",
+                "displayName": "Wifi"
+              },
+              {
+                "name": "fridge",
+                "isAvailable": true,
+                "imageName": "fridge",
+                "displayName": "Refrigerator"
+              },
+              {
+                "name": "power_backup",
+                "isAvailable": true,
+                "imageName": "power_backup",
+                "displayName": "Power Backup"
+              },
+              {
+                "name": "indoor_games",
+                "isAvailable": true,
+                "imageName": "indoor_games",
+                "displayName": "Indoor Games"
+              },
+              {
+                "name": "almirah",
+                "isAvailable": true,
+                "imageName": "almirah",
+                "displayName": "Almirah"
+              },
+              {
+                "name": "bedsheet",
+                "isAvailable": true,
+                "imageName": "bedsheet",
+                "displayName": "Bed Sheet"
+              },
+              {
+                "name": "club_house",
+                "isAvailable": false,
+                "imageName": "club_house",
+                "displayName": "Club House"
+              },
+              {
+                "name": "cctv",
+                "isAvailable": true,
+                "imageName": "cctv",
+                "displayName": "CCTV"
+              },
+              {
+                "name": "housekeeping",
+                "isAvailable": true,
+                "imageName": "housekeeping",
+                "displayName": "House Keeping"
+              },
+              {
+                "name": "security",
+                "isAvailable": true,
+                "imageName": "security",
+                "displayName": "Security"
+              },
+              {
+                "name": "gaming_console",
+                "isAvailable": false,
+                "imageName": "gaming_console",
+                "displayName": "Gaming Console"
+              },
+              {
+                "name": "pillow",
+                "isAvailable": true,
+                "imageName": "pillow",
+                "displayName": "Pillow"
+              },
+              {
+                "name": "lift",
+                "isAvailable": true,
+                "imageName": "lift",
+                "displayName": "Lift"
+              },
+              {
+                "name": "drinking_water",
+                "isAvailable": true,
+                "imageName": "drinking_water",
+                "displayName": "Drinking Water"
+              },
+              {
+                "name": "gym",
+                "isAvailable": false,
+                "imageName": "gym",
+                "displayName": "Gym"
+              },
+              {
+                "name": "reception",
+                "isAvailable": true,
+                "imageName": "reception",
+                "displayName": "Reception"
+              },
+              {
+                "name": "swimming_pool",
+                "isAvailable": false,
+                "imageName": "swimming_pool",
+                "displayName": "Swimming Pool"
+              },
+              {
+                "name": "bathroom",
+                "isAvailable": true,
+                "imageName": "bathroom",
+                "displayName": "Bathroom"
+              },
+              {
+                "name": "washing_machine",
+                "isAvailable": true,
+                "imageName": "washing_machine",
+                "displayName": "Wash"
+              }
+            ],
+            "location": [77.5323056, 13.1734167],
+            "amenitiesBaseUrl": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/amenities/",
+            "seo": {
+              "tags": {
+                "longDescription": "",
+                "meta": "Experience superior student housing at Zolo Tucana, the best PG near Rajankunte, perfectly blending convenience and comfort.",
+                "title": "Zolo Tucana - Best Girls PG Near Presidency University, Rajankunte | Student PGs"
+              }
+            },
+            "isNew": false,
+            "minRent": 8699,
+            "maxRent": 10499,
+            "distance": null,
+            "isRental": false,
+            "rentalDiscount": {
+              "max_rental_discount": 0,
+              "rental_discount_type": "PERCENTAGE"
+            },
+            "gstPercentage": 0,
+            "gstAmount": 0,
+            "totalAmountIncGst": 8699,
+            "preTaxMinRent": 8699,
+            "isShortStayProperty": false
+          },
+          "images": [
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center/cover_photo/664f2cce64c51d0001f82938/44.jpg",
+              "alt": "",
+              "title": "",
+              "order": 1,
+              "category": "Cover_Photo"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/67138061a2f09c0001976262/36.jpg",
+              "alt": "null",
+              "title": null,
+              "order": 1,
+              "category": "entrance"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/671380896aa6c40001c4986e/jpeg_optimizer_31.jpg",
+              "alt": "null",
+              "title": null,
+              "order": 1,
+              "category": "entrance"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/671380a3a2f09c000197627e/15__1_.jpg",
+              "alt": "null",
+              "title": null,
+              "order": 1,
+              "category": "entrance"
+            }
+          ],
+          "isFavorite": false,
+          "scheduleVisit": null,
+          "propertyTags": []
+        },
+        {
+          "basicData": {
+            "id": "65813b137bf89c0001ef01f9",
+            "name": "Zolo Lakefront",
+            "gender": "couple",
+            "zoloCode": "ZOLFR",
+            "addressLine1": "1st Cross Rd, 19, Sarjapur Junction 2nd Cross Rd, Ibbaluru",
+            "addressLine2": "Bellandur, Bengaluru, Karnataka 560103",
+            "locality": "Bellandur",
+            "localityKey": "bellandur",
+            "cityKey": "bangalore",
+            "city": "Bangalore",
+            "approved": 1,
+            "propertyState": "ONBOARDED",
+            "description": "Looking for a comfortable and convenient PG near Bellandur? Look no further than Zolo Lakefront, strategically positioned to cater to your needs. Situated in the heart of Bellandur, our PG offers easy access to key office spaces and major access roads, ensuring a hassle-free commute for working professionals.\n\nWith prominent establishments like Microsoft Corporation (India), Reliance Jio Infocomm Pvt. Ltd., Manipal Hospital Sarjapur Road, and Axis Bank ATM just a stone's throw away, Zolo Lakefront provides unparalleled convenience for residents.\n\nWhether you're a student, a working professional, or someone in search of a comfortable living space, our PG near Bellandur promises a blend of convenience, comfort, and connectivity. Enjoy modern amenities, spacious rooms, and a vibrant community atmosphere at Zolo Lakefront, your ideal choice for a PG near me in Bellandur.",
+            "localName": "Zolo Lakefront",
+            "propertyCategory": "STANDARD",
+            "averageRating": 0,
+            "amenities": [
+              {
+                "name": "parking",
+                "isAvailable": true,
+                "imageName": "parking",
+                "displayName": "Parking"
+              },
+              {
+                "name": "tv",
+                "isAvailable": true,
+                "imageName": "tv",
+                "displayName": "TV"
+              },
+              {
+                "name": "lunch",
+                "isAvailable": false,
+                "imageName": "lunch",
+                "displayName": "Lunch Box"
+              },
+              {
+                "name": "ac",
+                "isAvailable": false,
+                "imageName": "ac",
+                "displayName": "AC"
+              },
+              {
+                "name": "wifi",
+                "isAvailable": true,
+                "imageName": "wifi",
+                "displayName": "Wifi"
+              },
+              {
+                "name": "fridge",
+                "isAvailable": true,
+                "imageName": "fridge",
+                "displayName": "Refrigerator"
+              },
+              {
+                "name": "power_backup",
+                "isAvailable": true,
+                "imageName": "power_backup",
+                "displayName": "Power Backup"
+              },
+              {
+                "name": "indoor_games",
+                "isAvailable": false,
+                "imageName": "indoor_games",
+                "displayName": "Indoor Games"
+              },
+              {
+                "name": "almirah",
+                "isAvailable": true,
+                "imageName": "almirah",
+                "displayName": "Almirah"
+              },
+              {
+                "name": "bedsheet",
+                "isAvailable": true,
+                "imageName": "bedsheet",
+                "displayName": "Bed Sheet"
+              },
+              {
+                "name": "club_house",
+                "isAvailable": false,
+                "imageName": "club_house",
+                "displayName": "Club House"
+              },
+              {
+                "name": "cctv",
+                "isAvailable": true,
+                "imageName": "cctv",
+                "displayName": "CCTV"
+              },
+              {
+                "name": "housekeeping",
+                "isAvailable": true,
+                "imageName": "housekeeping",
+                "displayName": "House Keeping"
+              },
+              {
+                "name": "security",
+                "isAvailable": true,
+                "imageName": "security",
+                "displayName": "Security"
+              },
+              {
+                "name": "gaming_console",
+                "isAvailable": false,
+                "imageName": "gaming_console",
+                "displayName": "Gaming Console"
+              },
+              {
+                "name": "pillow",
+                "isAvailable": true,
+                "imageName": "pillow",
+                "displayName": "Pillow"
+              },
+              {
+                "name": "lift",
+                "isAvailable": true,
+                "imageName": "lift",
+                "displayName": "Lift"
+              },
+              {
+                "name": "drinking_water",
+                "isAvailable": true,
+                "imageName": "drinking_water",
+                "displayName": "Drinking Water"
+              },
+              {
+                "name": "gym",
+                "isAvailable": false,
+                "imageName": "gym",
+                "displayName": "Gym"
+              },
+              {
+                "name": "reception",
+                "isAvailable": true,
+                "imageName": "reception",
+                "displayName": "Reception"
+              },
+              {
+                "name": "swimming_pool",
+                "isAvailable": false,
+                "imageName": "swimming_pool",
+                "displayName": "Swimming Pool"
+              },
+              {
+                "name": "bathroom",
+                "isAvailable": true,
+                "imageName": "bathroom",
+                "displayName": "Bathroom"
+              },
+              {
+                "name": "washing_machine",
+                "isAvailable": true,
+                "imageName": "washing_machine",
+                "displayName": "Free Laundry"
+              }
+            ],
+            "location": [77.6650903, 12.9221187],
+            "amenitiesBaseUrl": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/amenities/",
+            "seo": {
+              "tags": {
+                "longDescription": "",
+                "meta": "Discover the premier co-living experience near Bellandur at Zolo Lakefront, your ultimate destination for hassle-free living. Immerse yourself in the perfect blend of convenience and comfort provided by our strategically located accommodation.",
+                "title": "Unisex PG in Bellandur, Bangalore at Zolo Lakefront"
+              }
+            },
+            "isNew": false,
+            "minRent": 9211,
+            "maxRent": 20528,
+            "distance": null,
+            "isRental": false,
+            "rentalDiscount": {
+              "max_rental_discount": 15,
+              "rental_discount_type": "PERCENTAGE"
+            },
+            "gstPercentage": 0,
+            "gstAmount": 0,
+            "totalAmountIncGst": 9211,
+            "preTaxMinRent": 9211,
+            "isShortStayProperty": true
+          },
+          "images": [
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center/cover_photo/65813b137bf89c0001ef01f9/IMG_5697__1_.jpg",
+              "alt": "",
+              "title": "",
+              "order": 1,
+              "category": "Cover_Photo"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/65f56026c58e270001c9e67a/IMG_5790.jpg",
+              "alt": "best pg in bellandur",
+              "title": "null",
+              "order": 1,
+              "category": "entrance"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/65f56055f30fcb000150c96f/IMG_5697.jpg",
+              "alt": "two sharing pg in bellandur",
+              "title": "null",
+              "order": 1,
+              "category": "room"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/65f56065f30fcb000150c974/IMG_5737.jpg",
+              "alt": "single sharing pg in bellandur",
+              "title": "null",
+              "order": 1,
+              "category": "room"
+            }
+          ],
+          "isFavorite": false,
+          "scheduleVisit": null,
+          "propertyTags": []
+        },
+        {
+          "basicData": {
+            "id": "64f04e4d5a20230001c31408",
+            "name": "Zolo Skirling",
+            "gender": "couple",
+            "zoloCode": "ZOSKRL",
+            "addressLine1": "Arul Arcade, Babusapalya Main Rd, Chikka Nanjunda Reddy Layout",
+            "addressLine2": "Horamavu, Bengaluru, Karnataka 560043",
+            "locality": "Manyata",
+            "localityKey": "manyata",
+            "cityKey": "bangalore",
+            "city": "Bangalore",
+            "approved": 1,
+            "propertyState": "ONBOARDED",
+            "description": "Discover the perfect living experience at Zolo Skirling, the ideal PG near Manyata Tech Park. Strategically located to offer unmatched convenience, Zolo Skirling provides easy access to key office spaces and major roads. Whether you're a working professional or a student, our PG ensures a comfortable and hassle-free stay.\n\nPrime Location Highlights:\nKalyan Nagar: Just 2 km away, this bustling area offers numerous dining, shopping, and entertainment options.\nHRBR Layout: Also 2 km away, known for its serene residential environment and vibrant community.\nManyata Tech Park: Only 5 km away, making your daily commute to one of Bangalore's largest IT hubs a breeze.\nITC Infotech: Located 5 km away, ensuring a quick and convenient travel time for professionals.\n\nZolo Skirling offers well-furnished rooms with modern amenities, high-speed Wi-Fi, regular housekeeping, and 24/7 security, ensuring a safe and comfortable living environment. Experience the perfect blend of convenience and comfort at Zolo Skirling, your top choice for a PG near Manyata Tech Park.\n\nBook your stay today and elevate your living experience with Zolo Skirling!",
+            "localName": "Zolo Skirling",
+            "propertyCategory": "STANDARD",
+            "averageRating": 0,
+            "amenities": [
+              {
+                "name": "parking",
+                "isAvailable": true,
+                "imageName": "parking",
+                "displayName": "Parking"
+              },
+              {
+                "name": "tv",
+                "isAvailable": true,
+                "imageName": "tv",
+                "displayName": "TV"
+              },
+              {
+                "name": "lunch",
+                "isAvailable": false,
+                "imageName": "lunch",
+                "displayName": "Lunch Box"
+              },
+              {
+                "name": "ac",
+                "isAvailable": false,
+                "imageName": "ac",
+                "displayName": "AC"
+              },
+              {
+                "name": "wifi",
+                "isAvailable": true,
+                "imageName": "wifi",
+                "displayName": "Wifi"
+              },
+              {
+                "name": "fridge",
+                "isAvailable": true,
+                "imageName": "fridge",
+                "displayName": "Refrigerator"
+              },
+              {
+                "name": "power_backup",
+                "isAvailable": true,
+                "imageName": "power_backup",
+                "displayName": "Power Backup"
+              },
+              {
+                "name": "indoor_games",
+                "isAvailable": false,
+                "imageName": "indoor_games",
+                "displayName": "Indoor Games"
+              },
+              {
+                "name": "almirah",
+                "isAvailable": true,
+                "imageName": "almirah",
+                "displayName": "Almirah"
+              },
+              {
+                "name": "bedsheet",
+                "isAvailable": true,
+                "imageName": "bedsheet",
+                "displayName": "Bed Sheet"
+              },
+              {
+                "name": "club_house",
+                "isAvailable": false,
+                "imageName": "club_house",
+                "displayName": "Club House"
+              },
+              {
+                "name": "cctv",
+                "isAvailable": true,
+                "imageName": "cctv",
+                "displayName": "CCTV"
+              },
+              {
+                "name": "housekeeping",
+                "isAvailable": true,
+                "imageName": "housekeeping",
+                "displayName": "House Keeping"
+              },
+              {
+                "name": "security",
+                "isAvailable": true,
+                "imageName": "security",
+                "displayName": "Security"
+              },
+              {
+                "name": "gaming_console",
+                "isAvailable": false,
+                "imageName": "gaming_console",
+                "displayName": "Gaming Console"
+              },
+              {
+                "name": "pillow",
+                "isAvailable": true,
+                "imageName": "pillow",
+                "displayName": "Pillow"
+              },
+              {
+                "name": "lift",
+                "isAvailable": true,
+                "imageName": "lift",
+                "displayName": "Lift"
+              },
+              {
+                "name": "drinking_water",
+                "isAvailable": true,
+                "imageName": "drinking_water",
+                "displayName": "Drinking Water"
+              },
+              {
+                "name": "gym",
+                "isAvailable": true,
+                "imageName": "gym",
+                "displayName": "Gym"
+              },
+              {
+                "name": "reception",
+                "isAvailable": true,
+                "imageName": "reception",
+                "displayName": "Reception"
+              },
+              {
+                "name": "swimming_pool",
+                "isAvailable": false,
+                "imageName": "swimming_pool",
+                "displayName": "Swimming Pool"
+              },
+              {
+                "name": "bathroom",
+                "isAvailable": true,
+                "imageName": "bathroom",
+                "displayName": "Bathroom"
+              },
+              {
+                "name": "washing_machine",
+                "isAvailable": true,
+                "imageName": "washing_machine",
+                "displayName": "Free Laundry"
+              }
+            ],
+            "location": [77.6491743, 13.0229784],
+            "amenitiesBaseUrl": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/amenities/",
+            "seo": {
+              "tags": {
+                "longDescription": "",
+                "meta": "Discover ultimate convenience and comfort at Zolo Skirling, your premier PG near Manyata Tech Park.",
+                "title": "Zolo Skirling: Best PG near Manyata Tech Park | Zolo Co-living"
+              }
+            },
+            "isNew": false,
+            "minRent": 8785,
+            "maxRent": 21600,
+            "distance": null,
+            "isRental": false,
+            "rentalDiscount": {
+              "max_rental_discount": 10,
+              "rental_discount_type": "PERCENTAGE"
+            },
+            "gstPercentage": 0,
+            "gstAmount": 0,
+            "totalAmountIncGst": 8785,
+            "preTaxMinRent": 8785,
+            "isShortStayProperty": true
+          },
+          "images": [
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center/cover_photo/64f04e4d5a20230001c31408/15__34_.jpg",
+              "alt": "",
+              "title": "",
+              "order": 1,
+              "category": "Cover_Photo"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/65b9d830327ad30001983355/18.jpg",
+              "alt": "Best pg near manyata tech park",
+              "title": "null",
+              "order": 1,
+              "category": "entrance"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/65b9d84f327ad30001983357/14__5_.jpg",
+              "alt": "Best pg near manyata tech park",
+              "title": "null",
+              "order": 1,
+              "category": "entrance"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/65b9d865327ad3000198335a/10__3_.jpg",
+              "alt": "Best pg near manyata tech park",
+              "title": "null",
+              "order": 1,
+              "category": "entrance"
+            }
+          ],
+          "isFavorite": false,
+          "scheduleVisit": null,
+          "propertyTags": []
+        },
+        {
+          "basicData": {
+            "id": "661e8109cd86d30001904933",
+            "name": "Zolo Sadhana",
+            "gender": "couple",
+            "zoloCode": "ZOSDNA",
+            "addressLine1": "8, 5th Cross Rd, Murugeshpalya, HAL 3rd Stage, Nanja",
+            "addressLine2": "Reddy Colony, Jeevan Bima Nagar, Bengaluru, Karnataka 560017",
+            "locality": "Indiranagar",
+            "localityKey": "indiranagar",
+            "cityKey": "bangalore",
+            "city": "Bangalore",
+            "approved": 1,
+            "propertyState": "ONBOARDED",
+            "description": "Welcome to Zolo Sadhana, your premier choice for comfortable and convenient PG accommodation in the heart of Indiranagar. Strategically located near major office spaces and key access roads, Zolo Sadhana offers a blend of modern amenities and a vibrant community atmosphere.\n\nLocation Advantage:\nSituated within close proximity to prominent landmarks:\nAnjaneya Techno Park: Just 1.4 km away, ensuring a short commute for professionals.\nHAL Hospital: Only 1.5 km away, providing convenient access to healthcare services.\nNAL Cricket Ground: A mere 1.4 km away, perfect for sports enthusiasts looking to unwind.\nUR Rao Satellite Center: Just 0.4 km away, offering quick access for tech-savvy individuals.\n\nFacilities and Amenities:\nAt Zolo Sadhana, we prioritize your comfort and convenience with:\nFully furnished rooms designed for modern living.\nHigh-speed internet connectivity to keep you connected.\n24/7 power backup for uninterrupted workflow.\nRound-the-clock security to ensure your safety.\n\nCommunity Living:\nExperience a vibrant community of like-minded individuals, fostering a supportive environment for personal and professional growth. Enjoy regular social events and activities that promote interaction and camaraderie.\n\nWhy Choose Zolo Sadhana?\nOur commitment to quality, convenience, and community makes Zolo Sadhana the ideal choice for individuals seeking a premium PG experience in Indiranagar. Whether you're a professional or a student, discover a place you can call home.\n\nContact Us:\nVisit us today to experience the comfort and convenience of Zolo Sadhana. For inquiries and bookings, contact us at 8884518010 or visit our website www.zolostays.com.",
+            "localName": "Zolo Sadhana",
+            "propertyCategory": "STANDARD",
+            "averageRating": 0,
+            "amenities": [
+              {
+                "name": "parking",
+                "isAvailable": true,
+                "imageName": "parking",
+                "displayName": "Parking"
+              },
+              {
+                "name": "tv",
+                "isAvailable": true,
+                "imageName": "tv",
+                "displayName": "TV"
+              },
+              {
+                "name": "lunch",
+                "isAvailable": false,
+                "imageName": "lunch",
+                "displayName": "Lunch Box"
+              },
+              {
+                "name": "ac",
+                "isAvailable": false,
+                "imageName": "ac",
+                "displayName": "AC"
+              },
+              {
+                "name": "wifi",
+                "isAvailable": true,
+                "imageName": "wifi",
+                "displayName": "Wifi"
+              },
+              {
+                "name": "fridge",
+                "isAvailable": true,
+                "imageName": "fridge",
+                "displayName": "Refrigerator"
+              },
+              {
+                "name": "power_backup",
+                "isAvailable": true,
+                "imageName": "power_backup",
+                "displayName": "Power Backup"
+              },
+              {
+                "name": "indoor_games",
+                "isAvailable": false,
+                "imageName": "indoor_games",
+                "displayName": "Indoor Games"
+              },
+              {
+                "name": "almirah",
+                "isAvailable": true,
+                "imageName": "almirah",
+                "displayName": "Almirah"
+              },
+              {
+                "name": "bedsheet",
+                "isAvailable": true,
+                "imageName": "bedsheet",
+                "displayName": "Bed Sheet"
+              },
+              {
+                "name": "club_house",
+                "isAvailable": false,
+                "imageName": "club_house",
+                "displayName": "Club House"
+              },
+              {
+                "name": "cctv",
+                "isAvailable": true,
+                "imageName": "cctv",
+                "displayName": "CCTV"
+              },
+              {
+                "name": "housekeeping",
+                "isAvailable": true,
+                "imageName": "housekeeping",
+                "displayName": "House Keeping"
+              },
+              {
+                "name": "security",
+                "isAvailable": true,
+                "imageName": "security",
+                "displayName": "Security"
+              },
+              {
+                "name": "gaming_console",
+                "isAvailable": false,
+                "imageName": "gaming_console",
+                "displayName": "Gaming Console"
+              },
+              {
+                "name": "pillow",
+                "isAvailable": true,
+                "imageName": "pillow",
+                "displayName": "Pillow"
+              },
+              {
+                "name": "lift",
+                "isAvailable": true,
+                "imageName": "lift",
+                "displayName": "Lift"
+              },
+              {
+                "name": "drinking_water",
+                "isAvailable": true,
+                "imageName": "drinking_water",
+                "displayName": "Drinking Water"
+              },
+              {
+                "name": "gym",
+                "isAvailable": false,
+                "imageName": "gym",
+                "displayName": "Gym"
+              },
+              {
+                "name": "reception",
+                "isAvailable": true,
+                "imageName": "reception",
+                "displayName": "Reception"
+              },
+              {
+                "name": "swimming_pool",
+                "isAvailable": false,
+                "imageName": "swimming_pool",
+                "displayName": "Swimming Pool"
+              },
+              {
+                "name": "bathroom",
+                "isAvailable": true,
+                "imageName": "bathroom",
+                "displayName": "Bathroom"
+              },
+              {
+                "name": "washing_machine",
+                "isAvailable": true,
+                "imageName": "washing_machine",
+                "displayName": "Free Laundry"
+              }
+            ],
+            "location": [77.65212, 12.9616607],
+            "amenitiesBaseUrl": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/amenities/",
+            "seo": {
+              "tags": {
+                "longDescription": "",
+                "meta": "Explore Zolo Sadhana, your top choice for a PG near Indiranagar. Experience unmatched comfort and convenience in our perfectly located coliving space.",
+                "title": "Zolo Sadhana: Best PG in Indiranagar | Zolo Co-living"
+              }
+            },
+            "isNew": false,
+            "minRent": 9072,
+            "maxRent": 21000,
+            "distance": null,
+            "isRental": false,
+            "rentalDiscount": {
+              "max_rental_discount": 30,
+              "rental_discount_type": "PERCENTAGE"
+            },
+            "gstPercentage": 0,
+            "gstAmount": 0,
+            "totalAmountIncGst": 9072,
+            "preTaxMinRent": 9072,
+            "isShortStayProperty": true
+          },
+          "images": [
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center/cover_photo/661e8109cd86d30001904933/04.jpg",
+              "alt": "",
+              "title": "",
+              "order": 1,
+              "category": "Cover_Photo"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/66b9a5ce97830200012c53c0/01.jpg",
+              "alt": "null",
+              "title": null,
+              "order": 1,
+              "category": "amenities"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/66b9a5e17e1091000102c638/06.jpg",
+              "alt": "null",
+              "title": null,
+              "order": 1,
+              "category": "amenities"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/66b9a5f37e1091000102c63b/10__1_.jpg",
+              "alt": "null",
+              "title": null,
+              "order": 1,
+              "category": "room"
+            }
+          ],
+          "isFavorite": false,
+          "scheduleVisit": null,
+          "propertyTags": []
+        },
+        {
+          "basicData": {
+            "id": "67a75cfec395e40001f189cb",
+            "name": "Zolo Vedic",
+            "gender": "couple",
+            "zoloCode": "ZVDIC",
+            "addressLine1": "Kengal Hanumanthaiah Rd, Sudhama Nagar",
+            "addressLine2": "Bengaluru, Karnataka 560027",
+            "locality": "Shantinagar",
+            "localityKey": "shantinagar",
+            "cityKey": "bangalore",
+            "city": "Bangalore",
+            "approved": 1,
+            "propertyState": "ONBOARDED",
+            "description": "Hunting for good hostels in Shantinagar, Bangalore? Head to premium accommodations by Zolo. Apart from having access to fully furnished and fully managed spaces, residents can also avail a variety of services such as WiFi, DTH, power backup, housekeeping, etc. This property is exclusively built for both men and women. Close to IT companies and colleges, Zolo Vedic. Hurry, schedule a visit today!",
+            "localName": "Zolo Vedic",
+            "propertyCategory": "STANDARD",
+            "averageRating": 0,
+            "amenities": [
+              {
+                "name": "parking",
+                "isAvailable": false,
+                "imageName": "parking",
+                "displayName": "Parking"
+              },
+              {
+                "name": "tv",
+                "isAvailable": true,
+                "imageName": "tv",
+                "displayName": "TV"
+              },
+              {
+                "name": "lunch",
+                "isAvailable": false,
+                "imageName": "lunch",
+                "displayName": "Lunch Box"
+              },
+              {
+                "name": "ac",
+                "isAvailable": false,
+                "imageName": "ac",
+                "displayName": "AC"
+              },
+              {
+                "name": "wifi",
+                "isAvailable": true,
+                "imageName": "wifi",
+                "displayName": "Wifi"
+              },
+              {
+                "name": "fridge",
+                "isAvailable": true,
+                "imageName": "fridge",
+                "displayName": "Refrigerator"
+              },
+              {
+                "name": "power_backup",
+                "isAvailable": true,
+                "imageName": "power_backup",
+                "displayName": "Power Backup"
+              },
+              {
+                "name": "indoor_games",
+                "isAvailable": false,
+                "imageName": "indoor_games",
+                "displayName": "Indoor Games"
+              },
+              {
+                "name": "almirah",
+                "isAvailable": true,
+                "imageName": "almirah",
+                "displayName": "Almirah"
+              },
+              {
+                "name": "bedsheet",
+                "isAvailable": true,
+                "imageName": "bedsheet",
+                "displayName": "Bed Sheet"
+              },
+              {
+                "name": "club_house",
+                "isAvailable": false,
+                "imageName": "club_house",
+                "displayName": "Club House"
+              },
+              {
+                "name": "cctv",
+                "isAvailable": true,
+                "imageName": "cctv",
+                "displayName": "CCTV"
+              },
+              {
+                "name": "housekeeping",
+                "isAvailable": true,
+                "imageName": "housekeeping",
+                "displayName": "House Keeping"
+              },
+              {
+                "name": "security",
+                "isAvailable": true,
+                "imageName": "security",
+                "displayName": "Security"
+              },
+              {
+                "name": "gaming_console",
+                "isAvailable": false,
+                "imageName": "gaming_console",
+                "displayName": "Gaming Console"
+              },
+              {
+                "name": "pillow",
+                "isAvailable": true,
+                "imageName": "pillow",
+                "displayName": "Pillow"
+              },
+              {
+                "name": "lift",
+                "isAvailable": true,
+                "imageName": "lift",
+                "displayName": "Lift"
+              },
+              {
+                "name": "drinking_water",
+                "isAvailable": true,
+                "imageName": "drinking_water",
+                "displayName": "Drinking Water"
+              },
+              {
+                "name": "gym",
+                "isAvailable": false,
+                "imageName": "gym",
+                "displayName": "Gym"
+              },
+              {
+                "name": "reception",
+                "isAvailable": true,
+                "imageName": "reception",
+                "displayName": "Reception"
+              },
+              {
+                "name": "swimming_pool",
+                "isAvailable": false,
+                "imageName": "swimming_pool",
+                "displayName": "Swimming Pool"
+              },
+              {
+                "name": "bathroom",
+                "isAvailable": true,
+                "imageName": "bathroom",
+                "displayName": "Bathroom"
+              },
+              {
+                "name": "washing_machine",
+                "isAvailable": true,
+                "imageName": "washing_machine",
+                "displayName": "Free Laundry"
+              }
+            ],
+            "location": [77.591868, 12.9556203],
+            "amenitiesBaseUrl": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/amenities/",
+            "seo": {
+              "tags": {
+                "longDescription": "",
+                "meta": "Fully Furnished Couple Sharing Room in  Shantinagar, Bangalore with ✓No Brokerage, ✓1 Month Deposit and ✓Rent ₹12000 at Zolo Vedic, ZVDIC.",
+                "title": "Unisex PG/Hostels in Shantinagar, Bangalore at Zolo Vedic | ZVDIC"
+              }
+            },
+            "isNew": false,
+            "minRent": 9944,
+            "maxRent": 21960,
+            "distance": null,
+            "isRental": false,
+            "rentalDiscount": {
+              "max_rental_discount": 10,
+              "rental_discount_type": "PERCENTAGE"
+            },
+            "gstPercentage": 0,
+            "gstAmount": 0,
+            "totalAmountIncGst": 9944,
+            "preTaxMinRent": 9944,
+            "isShortStayProperty": true
+          },
+          "images": [
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center/cover_photo/67a75cfec395e40001f189cb/DSC02186_Enhanced_NR__1_.jpg",
+              "alt": "",
+              "title": "",
+              "order": 1,
+              "category": "Cover_Photo"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/6838130b35a2840001424479/DSC02235_Enhanced_NR__1_.jpg",
+              "alt": "null",
+              "title": null,
+              "order": 1,
+              "category": "entrance"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/6838132729e1540001c1e0f6/DSC02241_Enhanced_NR__1_.jpg",
+              "alt": "null",
+              "title": null,
+              "order": 1,
+              "category": "amenities"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/6838138bd8bee6000106bfef/DSC02076_Enhanced_NR__1_.jpg",
+              "alt": "null",
+              "title": null,
+              "order": 1,
+              "category": "amenities"
+            }
+          ],
+          "isFavorite": false,
+          "scheduleVisit": null,
+          "propertyTags": []
+        },
+        {
+          "basicData": {
+            "id": "66b5bf6df571530001aa10ae",
+            "name": "Zolo Aikin",
+            "gender": "couple",
+            "zoloCode": "ZOIKIN",
+            "addressLine1": "10/3, Ashwa Arcade, Dodda Banaswadi, Main Rd",
+            "addressLine2": "Vivekananda Nagar, Maruthi Sevanagar, Bengaluru, KA, IN, 560033",
+            "locality": "Indiranagar",
+            "localityKey": "indiranagar",
+            "cityKey": "bangalore",
+            "city": "Bangalore",
+            "approved": 1,
+            "propertyState": "ONBOARDED",
+            "description": "If you yearn for comfort at the end of a long day, switch from dingy PGs in Indira Nagar, Bangalore. This co-living space lets you live with like-minded people and makes your stay squabble-free which is hard to get in local chawl rooms/1rk flats/Single Room.  Not only this Zolo renders ample services ranging from fully furnished affordable accommodations to 24X7 security surveillance. This property is exclusively built for \u003Cgender\u003E. Loaded with basic amenities, this property allows its residents easy access to many IT companies. Happy hunting!",
+            "localName": "Zolo Aikin",
+            "propertyCategory": "STANDARD",
+            "averageRating": 0,
+            "amenities": [
+              {
+                "name": "parking",
+                "isAvailable": true,
+                "imageName": "parking",
+                "displayName": "Parking"
+              },
+              {
+                "name": "tv",
+                "isAvailable": false,
+                "imageName": "tv",
+                "displayName": "TV"
+              },
+              {
+                "name": "lunch",
+                "isAvailable": false,
+                "imageName": "lunch",
+                "displayName": "Lunch Box"
+              },
+              {
+                "name": "ac",
+                "isAvailable": false,
+                "imageName": "ac",
+                "displayName": "AC"
+              },
+              {
+                "name": "wifi",
+                "isAvailable": true,
+                "imageName": "wifi",
+                "displayName": "Wifi"
+              },
+              {
+                "name": "fridge",
+                "isAvailable": true,
+                "imageName": "fridge",
+                "displayName": "Refrigerator"
+              },
+              {
+                "name": "power_backup",
+                "isAvailable": true,
+                "imageName": "power_backup",
+                "displayName": "Power Backup"
+              },
+              {
+                "name": "indoor_games",
+                "isAvailable": false,
+                "imageName": "indoor_games",
+                "displayName": "Indoor Games"
+              },
+              {
+                "name": "almirah",
+                "isAvailable": true,
+                "imageName": "almirah",
+                "displayName": "Almirah"
+              },
+              {
+                "name": "bedsheet",
+                "isAvailable": true,
+                "imageName": "bedsheet",
+                "displayName": "Bed Sheet"
+              },
+              {
+                "name": "club_house",
+                "isAvailable": false,
+                "imageName": "club_house",
+                "displayName": "Club House"
+              },
+              {
+                "name": "cctv",
+                "isAvailable": true,
+                "imageName": "cctv",
+                "displayName": "CCTV"
+              },
+              {
+                "name": "housekeeping",
+                "isAvailable": true,
+                "imageName": "housekeeping",
+                "displayName": "House Keeping"
+              },
+              {
+                "name": "security",
+                "isAvailable": true,
+                "imageName": "security",
+                "displayName": "Security"
+              },
+              {
+                "name": "gaming_console",
+                "isAvailable": false,
+                "imageName": "gaming_console",
+                "displayName": "Gaming Console"
+              },
+              {
+                "name": "pillow",
+                "isAvailable": true,
+                "imageName": "pillow",
+                "displayName": "Pillow"
+              },
+              {
+                "name": "lift",
+                "isAvailable": true,
+                "imageName": "lift",
+                "displayName": "Lift"
+              },
+              {
+                "name": "drinking_water",
+                "isAvailable": true,
+                "imageName": "drinking_water",
+                "displayName": "Drinking Water"
+              },
+              {
+                "name": "gym",
+                "isAvailable": false,
+                "imageName": "gym",
+                "displayName": "Gym"
+              },
+              {
+                "name": "reception",
+                "isAvailable": true,
+                "imageName": "reception",
+                "displayName": "Reception"
+              },
+              {
+                "name": "swimming_pool",
+                "isAvailable": false,
+                "imageName": "swimming_pool",
+                "displayName": "Swimming Pool"
+              },
+              {
+                "name": "bathroom",
+                "isAvailable": true,
+                "imageName": "bathroom",
+                "displayName": "Bathroom"
+              },
+              {
+                "name": "washing_machine",
+                "isAvailable": true,
+                "imageName": "washing_machine",
+                "displayName": "Free Laundry"
+              }
+            ],
+            "location": [77.6320851, 13.0016478],
+            "amenitiesBaseUrl": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/amenities/",
+            "seo": {
+              "tags": {
+                "longDescription": "",
+                "meta": "Fully Furnished Couple Sharing Room in Indiranagar, Bangalore with ✓No Brokerage, ✓1 Month Deposit and ✓Rent ₹14500 at Zolo Aikin, ZOIKIN.",
+                "title": "Unisex PG/Hostels in Indiranagar, Bangalore at Zolo Aikin | ZOIKIN"
+              }
+            },
+            "isNew": false,
+            "minRent": 11351,
+            "maxRent": 25075,
+            "distance": null,
+            "isRental": false,
+            "rentalDiscount": {
+              "max_rental_discount": 15,
+              "rental_discount_type": "PERCENTAGE"
+            },
+            "gstPercentage": 0,
+            "gstAmount": 0,
+            "totalAmountIncGst": 11351,
+            "preTaxMinRent": 11351,
+            "isShortStayProperty": true
+          },
+          "images": [
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center/cover_photo/66b5bf6df571530001aa10ae/19.jpg",
+              "alt": "",
+              "title": "",
+              "order": 1,
+              "category": "Cover_Photo"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/6728692c3ca1a30001e39aad/01__9_.jpg",
+              "alt": "null",
+              "title": null,
+              "order": 1,
+              "category": "amenities"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/675d534d6c092800011ccf98/3__2_.jpg",
+              "alt": "null",
+              "title": null,
+              "order": 1,
+              "category": "room"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/675d538bafdc6d0001a68a16/8__1_.jpg",
+              "alt": "null",
+              "title": null,
+              "order": 1,
+              "category": "room"
+            }
+          ],
+          "isFavorite": false,
+          "scheduleVisit": null,
+          "propertyTags": []
+        },
+        {
+          "basicData": {
+            "id": "56d6c5e9e4b0a2fe1b0965d8",
+            "name": "Zolo Euphoria",
+            "gender": "men",
+            "zoloCode": "2006",
+            "addressLine1": "RMX4+P25, Abbaiah Reddy Street, Doddathoguru, near to Zolo Euphoria PG",
+            "addressLine2": "Electronics City Phase 1, Electronic City, Bengaluru, Karnataka 560100",
+            "locality": "Electronic City Phase 1",
+            "localityKey": "electronic_city_phase_1",
+            "cityKey": "bangalore",
+            "city": "Bangalore",
+            "approved": 1,
+            "propertyState": "ONBOARDED",
+            "description": "Looking for the perfect Men's PG near Electronic City Phase 1? Your search ends here with Zolo Euphoria! Nestled strategically amidst key office spaces and accessible roads, Zolo Euphoria offers unmatched convenience for professionals working in the bustling tech hub of Electronic City.\n\nSituated just 350 meters away from Velankani Tech Park, and within close proximity to major corporate giants like Hewlett Packard Enterprise, Infosys, and Wipro, Zolo Euphoria provides an ideal living solution for those seeking comfort and connectivity.\n\nWith its prime location and thoughtfully designed amenities, Zolo Euphoria ensures a seamless living experience for residents. Whether you're searching for a PG near me or specifically a PG near Electronic City Phase 1, Zolo Euphoria stands out as the premier choice. Experience the epitome of convenience and comfort in the heart of Electronic City Phase 1 with Zolo Euphoria.",
+            "localName": "Zolo Euphoria",
+            "propertyCategory": "STANDARD",
+            "averageRating": 5,
+            "amenities": [
+              {
+                "name": "parking",
+                "isAvailable": true,
+                "imageName": "parking",
+                "displayName": "Parking"
+              },
+              {
+                "name": "tv",
+                "isAvailable": true,
+                "imageName": "tv",
+                "displayName": "TV"
+              },
+              {
+                "name": "lunch",
+                "isAvailable": false,
+                "imageName": "lunch",
+                "displayName": "Lunch Box"
+              },
+              {
+                "name": "ac",
+                "isAvailable": false,
+                "imageName": "ac",
+                "displayName": "AC"
+              },
+              {
+                "name": "wifi",
+                "isAvailable": true,
+                "imageName": "wifi",
+                "displayName": "Wifi"
+              },
+              {
+                "name": "fridge",
+                "isAvailable": true,
+                "imageName": "fridge",
+                "displayName": "Refrigerator"
+              },
+              {
+                "name": "power_backup",
+                "isAvailable": true,
+                "imageName": "power_backup",
+                "displayName": "Power Backup"
+              },
+              {
+                "name": "indoor_games",
+                "isAvailable": false,
+                "imageName": "indoor_games",
+                "displayName": "Indoor_Games"
+              },
+              {
+                "name": "almirah",
+                "isAvailable": true,
+                "imageName": "almirah",
+                "displayName": "Almirah"
+              },
+              {
+                "name": "bedsheet",
+                "isAvailable": true,
+                "imageName": "bedsheet",
+                "displayName": "Bed Sheet"
+              },
+              {
+                "name": "club_house",
+                "isAvailable": false,
+                "imageName": "club_house",
+                "displayName": "Club_House"
+              },
+              {
+                "name": "cctv",
+                "isAvailable": true,
+                "imageName": "cctv",
+                "displayName": "CCTV"
+              },
+              {
+                "name": "housekeeping",
+                "isAvailable": true,
+                "imageName": "housekeeping",
+                "displayName": "House Keeping"
+              },
+              {
+                "name": "security",
+                "isAvailable": false,
+                "imageName": "security",
+                "displayName": "Security"
+              },
+              {
+                "name": "pillow",
+                "isAvailable": true,
+                "imageName": "pillow",
+                "displayName": "Pillow"
+              },
+              {
+                "name": "lift",
+                "isAvailable": true,
+                "imageName": "lift",
+                "displayName": "Lift"
+              },
+              {
+                "name": "drinking_water",
+                "isAvailable": true,
+                "imageName": "drinking_water",
+                "displayName": "Drinking Water"
+              },
+              {
+                "name": "gym",
+                "isAvailable": false,
+                "imageName": "gym",
+                "displayName": "Gym"
+              },
+              {
+                "name": "reception",
+                "isAvailable": true,
+                "imageName": "reception",
+                "displayName": "Reception"
+              },
+              {
+                "name": "swimming_pool",
+                "isAvailable": false,
+                "imageName": "swimming_pool",
+                "displayName": "Swimming_Pool"
+              },
+              {
+                "name": "bathroom",
+                "isAvailable": true,
+                "imageName": "bathroom",
+                "displayName": "Bathroom"
+              },
+              {
+                "name": "washing_machine",
+                "isAvailable": true,
+                "imageName": "washing_machine",
+                "displayName": "Free Laundry"
+              }
+            ],
+            "location": [77.655116, 12.84917],
+            "amenitiesBaseUrl": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/amenities/",
+            "seo": {
+              "tags": {
+                "longDescription": "",
+                "meta": "Discover premium men's PG accommodations near Electronic City Phase 1 at Zolo Euphoria, our exceptional living space. Experience the perfect balance of convenience and luxury in our conveniently located PG.",
+                "h1": "",
+                "h2": "",
+                "shortDescription": "",
+                "title": "Zolo Euphoria - Best Men's PG Near Electronic City Phase 1"
+              }
+            },
+            "isNew": false,
+            "minRent": 3974,
+            "maxRent": 10370,
+            "distance": null,
+            "isRental": false,
+            "rentalDiscount": {
+              "max_rental_discount": 15,
+              "rental_discount_type": "PERCENTAGE"
+            },
+            "gstPercentage": 0,
+            "gstAmount": 0,
+            "totalAmountIncGst": 3974,
+            "preTaxMinRent": 3974,
+            "isShortStayProperty": true
+          },
+          "images": [
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center/cover_photo/56d6c5e9e4b0a2fe1b0965d8/03.jpg",
+              "alt": "",
+              "title": "",
+              "order": 1,
+              "category": "Cover_Photo"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/587505cd6193f544edae24f2/Euphoria_6.jpg",
+              "alt": "pg in electronic city phase 1 with dining area",
+              "title": "",
+              "order": 1,
+              "category": "amenities"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/587505b36193f544edae24ee/Euphoria_7.jpg",
+              "alt": "pg in electronic city phase 1 with dining area",
+              "title": "",
+              "order": 1,
+              "category": "amenities"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/5cf245fb723598268ddb4a93/DSC_0064.jpg",
+              "alt": "pg in electronic city phase 1 with dining area",
+              "title": "null",
+              "order": 1,
+              "category": "amenities"
+            }
+          ],
+          "isFavorite": false,
+          "scheduleVisit": null,
+          "propertyTags": []
+        },
+        {
+          "basicData": {
+            "id": "620210a204865a0001997eb4",
+            "name": "Zolo Typhoon",
+            "gender": "couple",
+            "zoloCode": "ZOTYP",
+            "addressLine1": "Koramangala, 3rd Cross Rd, near Oracle, Magna Infotech and other IT companies",
+            "addressLine2": "Venkateshwara Layout, S.G. Palya, Bengaluru, Karnataka 560029",
+            "locality": "Koramangala",
+            "localityKey": "koramangala",
+            "cityKey": "bangalore",
+            "city": "Bangalore",
+            "approved": 1,
+            "propertyState": "ONBOARDED",
+            "description": "Discover Zolo Typhoon, your ideal PG in SG Palya, strategically located to provide unparalleled convenience and comfort. Nestled near key office workspaces and access roads, Zolo Typhoon is perfect for students and working professionals alike.\n\nPrime Location Benefits\n- The Forum Mall: Just 1.2 km away, offering an array of shopping, dining, and entertainment options.\n- Oracle India Private Limited: A mere 300 meters away, ensuring a hassle-free commute for Oracle employees.\n- Christ University: Only 750 meters away, making it an excellent choice for students seeking proximity to campus.\n- Accenture: Situated just 1 km away, ideal for Accenture employees looking for a short and easy commute.\n\nWhy Choose Zolo Typhoon?\nAt Zolo Typhoon, we prioritize your comfort and convenience with a range of amenities and services designed to make your stay pleasant and stress-free. Our PG in SG Palya offers:\n- Fully Furnished Rooms: Comfortable and modern furnishings to make you feel at home.\n- High-Speed Wi-Fi: Stay connected with our reliable internet service, perfect for work and entertainment.\n- 24/7 Security: Ensuring your safety with round-the-clock security personnel and surveillance.\n- Housekeeping Services: Regular cleaning and maintenance to keep your living space neat and tidy.\n- Common Areas: Spacious and well-equipped common areas for socializing and relaxation.\n\nUnmatched Connectivity\nZolo Typhoon is well-connected to major roads and public transportation, making it easy to navigate the city. Whether you're commuting to work, heading to class, or exploring the vibrant surroundings, you'll find everything within easy reach.\n\nCommunity Living\nExperience a vibrant and supportive community at Zolo Typhoon. Join our community events and activities to make new friends and create lasting memories.\n\nBook Your Stay Today!\nDon't miss out on the opportunity to live in one of the best PGs in SG Palya. Book your stay at Zolo Typhoon and enjoy a comfortable, convenient, and fulfilling lifestyle.",
+            "localName": "Zolo Typhoon",
+            "propertyCategory": "STANDARD",
+            "averageRating": 0,
+            "amenities": [
+              {
+                "name": "parking",
+                "isAvailable": true,
+                "imageName": "parking",
+                "displayName": "Parking"
+              },
+              {
+                "name": "tv",
+                "isAvailable": true,
+                "imageName": "tv",
+                "displayName": "TV"
+              },
+              {
+                "name": "lunch",
+                "isAvailable": false,
+                "imageName": "lunch",
+                "displayName": "Lunch Box"
+              },
+              {
+                "name": "ac",
+                "isAvailable": false,
+                "imageName": "ac",
+                "displayName": "AC"
+              },
+              {
+                "name": "wifi",
+                "isAvailable": true,
+                "imageName": "wifi",
+                "displayName": "Wifi"
+              },
+              {
+                "name": "fridge",
+                "isAvailable": true,
+                "imageName": "fridge",
+                "displayName": "Refrigerator"
+              },
+              {
+                "name": "power_backup",
+                "isAvailable": true,
+                "imageName": "power_backup",
+                "displayName": "Power Backup"
+              },
+              {
+                "name": "indoor_games",
+                "isAvailable": false,
+                "imageName": "indoor_games",
+                "displayName": "Indoor Games"
+              },
+              {
+                "name": "almirah",
+                "isAvailable": true,
+                "imageName": "almirah",
+                "displayName": "Almirah"
+              },
+              {
+                "name": "bedsheet",
+                "isAvailable": true,
+                "imageName": "bedsheet",
+                "displayName": "Bed Sheet"
+              },
+              {
+                "name": "club_house",
+                "isAvailable": false,
+                "imageName": "club_house",
+                "displayName": "Club House"
+              },
+              {
+                "name": "cctv",
+                "isAvailable": true,
+                "imageName": "cctv",
+                "displayName": "CCTV"
+              },
+              {
+                "name": "housekeeping",
+                "isAvailable": true,
+                "imageName": "housekeeping",
+                "displayName": "House Keeping"
+              },
+              {
+                "name": "security",
+                "isAvailable": false,
+                "imageName": "security",
+                "displayName": "Security"
+              },
+              {
+                "name": "pillow",
+                "isAvailable": true,
+                "imageName": "pillow",
+                "displayName": "Pillow"
+              },
+              {
+                "name": "lift",
+                "isAvailable": true,
+                "imageName": "lift",
+                "displayName": "Lift"
+              },
+              {
+                "name": "drinking_water",
+                "isAvailable": true,
+                "imageName": "drinking_water",
+                "displayName": "Drinking Water"
+              },
+              {
+                "name": "gym",
+                "isAvailable": false,
+                "imageName": "gym",
+                "displayName": "Gym"
+              },
+              {
+                "name": "reception",
+                "isAvailable": false,
+                "imageName": "reception",
+                "displayName": "Reception"
+              },
+              {
+                "name": "swimming_pool",
+                "isAvailable": false,
+                "imageName": "swimming_pool",
+                "displayName": "Swimming Pool"
+              },
+              {
+                "name": "bathroom",
+                "isAvailable": true,
+                "imageName": "bathroom",
+                "displayName": "Bathroom"
+              },
+              {
+                "name": "washing_machine",
+                "isAvailable": true,
+                "imageName": "washing_machine",
+                "displayName": "Free Laundry"
+              }
+            ],
+            "location": [77.6080608, 12.9300269],
+            "amenitiesBaseUrl": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/amenities/",
+            "seo": {
+              "tags": {
+                "longDescription": "",
+                "meta": "Discover the best PG in Koramangala at Zolo Typhoon, your premier coliving space. Enjoy the perfect blend of convenience and comfort with our strategically located PG.",
+                "title": "Zolo Typhoon - Best PG Near Koramangala | Coliving PG"
+              }
+            },
+            "isNew": false,
+            "minRent": 5563,
+            "maxRent": 13090,
+            "distance": null,
+            "isRental": false,
+            "rentalDiscount": {
+              "max_rental_discount": 15,
+              "rental_discount_type": "PERCENTAGE"
+            },
+            "gstPercentage": 0,
+            "gstAmount": 0,
+            "totalAmountIncGst": 5563,
+            "preTaxMinRent": 5563,
+            "isShortStayProperty": true
+          },
+          "images": [
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center/cover_photo/620210a204865a0001997eb4/2__2_.jpg",
+              "alt": "",
+              "title": "",
+              "order": 1,
+              "category": "Cover_Photo"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/66169a6b24b09600011bd6a9/1__3_.jpg",
+              "alt": "pg in koramangala",
+              "title": "null",
+              "order": 1,
+              "category": "entrance"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/66169a7e24b09600011bd6aa/7__2_.jpg",
+              "alt": "single sharing pg in koramangala",
+              "title": "null",
+              "order": 1,
+              "category": "room"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/66169a86634dff0001b7d046/6__2_.jpg",
+              "alt": "two sharing pg in koramangala",
+              "title": "null",
+              "order": 1,
+              "category": "room"
+            }
+          ],
+          "isFavorite": false,
+          "scheduleVisit": null,
+          "propertyTags": []
+        },
+        {
+          "basicData": {
+            "id": "5ddbd5d99540da2195eaa36b",
+            "name": "Zolo Hamilton",
+            "gender": "couple",
+            "zoloCode": "ZOHM",
+            "addressLine1": "Zolo Hamilton, Silver Springs Layout",
+            "addressLine2": "Munnekollal, Bengaluru, Karnataka 560037",
+            "locality": "Kundalahalli",
+            "localityKey": "kundalahalli",
+            "cityKey": "bangalore",
+            "city": "Bangalore",
+            "approved": 1,
+            "propertyState": "ONBOARDED",
+            "description": "Zolo Hamilton - Your Premier PG in Kundalahalli\nWelcome to Zolo Hamilton, the ideal PG in Kundalahalli for young professionals and students. Strategically located near key office spaces and educational institutions, Zolo Hamilton ensures you have everything you need within reach.\n\nPrime Location:\nWiys Tech: Just 1.2 km away, making your daily commute a breeze.\nSR Micro Info System: Only 500 m away, perfect for those who value proximity.\nEnvision Integrated Services: At a convenient 3 km distance.\nArtista College of Design: A mere 1.1 km away, making it a top choice for design students.\n\nTop Features:\nComfortable Living Spaces: Fully furnished rooms designed for maximum comfort.\nHigh-Speed Wi-Fi: Stay connected with high-speed internet, essential for work and entertainment.\nDelicious Meals: Enjoy nutritious and tasty meals prepared fresh daily.\n24/7 Security: Comprehensive security measures to ensure your safety.\nHousekeeping Services: Regular housekeeping to keep your space clean and tidy.\n\nWhy Choose Zolo Hamilton?\nZolo Hamilton stands out as the premier PG in Kundalahalli due to its strategic location, modern amenities, and a community-focused environment. Whether you're working at one of the nearby tech companies or studying at a nearby college, Zolo Hamilton offers the perfect blend of convenience and comfort.\n\nJoin the Zolo family and experience hassle-free living in Kundalahalli. Book your stay at Zolo Hamilton today and discover why we are the preferred choice for PG accommodation in the area.",
+            "localName": "Zolo Hamilton",
+            "propertyCategory": "STANDARD",
+            "averageRating": 0,
+            "amenities": [
+              {
+                "name": "parking",
+                "isAvailable": true,
+                "imageName": "parking",
+                "displayName": "Parking"
+              },
+              {
+                "name": "tv",
+                "isAvailable": true,
+                "imageName": "tv",
+                "displayName": "TV"
+              },
+              {
+                "name": "lunch",
+                "isAvailable": false,
+                "imageName": "lunch",
+                "displayName": "Lunch Box"
+              },
+              {
+                "name": "ac",
+                "isAvailable": false,
+                "imageName": "ac",
+                "displayName": "AC"
+              },
+              {
+                "name": "wifi",
+                "isAvailable": true,
+                "imageName": "wifi",
+                "displayName": "Wifi"
+              },
+              {
+                "name": "fridge",
+                "isAvailable": true,
+                "imageName": "fridge",
+                "displayName": "Refrigerator"
+              },
+              {
+                "name": "power_backup",
+                "isAvailable": true,
+                "imageName": "power_backup",
+                "displayName": "Power Backup"
+              },
+              {
+                "name": "indoor_games",
+                "isAvailable": false,
+                "imageName": "indoor_games",
+                "displayName": "Indoor Games"
+              },
+              {
+                "name": "almirah",
+                "isAvailable": true,
+                "imageName": "almirah",
+                "displayName": "Almirah"
+              },
+              {
+                "name": "bedsheet",
+                "isAvailable": true,
+                "imageName": "bedsheet",
+                "displayName": "Bed Sheet"
+              },
+              {
+                "name": "club_house",
+                "isAvailable": false,
+                "imageName": "club_house",
+                "displayName": "Club House"
+              },
+              {
+                "name": "cctv",
+                "isAvailable": true,
+                "imageName": "cctv",
+                "displayName": "CCTV"
+              },
+              {
+                "name": "housekeeping",
+                "isAvailable": true,
+                "imageName": "housekeeping",
+                "displayName": "House Keeping"
+              },
+              {
+                "name": "security",
+                "isAvailable": true,
+                "imageName": "security",
+                "displayName": "Security"
+              },
+              {
+                "name": "pillow",
+                "isAvailable": true,
+                "imageName": "pillow",
+                "displayName": "Pillow"
+              },
+              {
+                "name": "lift",
+                "isAvailable": true,
+                "imageName": "lift",
+                "displayName": "Lift"
+              },
+              {
+                "name": "drinking_water",
+                "isAvailable": true,
+                "imageName": "drinking_water",
+                "displayName": "Drinking Water"
+              },
+              {
+                "name": "gym",
+                "isAvailable": false,
+                "imageName": "gym",
+                "displayName": "Gym"
+              },
+              {
+                "name": "reception",
+                "isAvailable": true,
+                "imageName": "reception",
+                "displayName": "Reception"
+              },
+              {
+                "name": "swimming_pool",
+                "isAvailable": false,
+                "imageName": "swimming_pool",
+                "displayName": "Swimming Pool"
+              },
+              {
+                "name": "bathroom",
+                "isAvailable": true,
+                "imageName": "bathroom",
+                "displayName": "Bathroom"
+              },
+              {
+                "name": "washing_machine",
+                "isAvailable": true,
+                "imageName": "washing_machine",
+                "displayName": "Free Laundry"
+              }
+            ],
+            "location": [77.715889, 12.949833],
+            "amenitiesBaseUrl": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/amenities/",
+            "seo": {
+              "tags": {
+                "longDescription": "",
+                "meta": "Live comfortably and conveniently at Zolo Hamilton, the premier PG near Kundalahalli",
+                "title": "Zolo Hamilton: Best PG in Kundalahalli | Zolo Co-living"
+              }
+            },
+            "isNew": false,
+            "minRent": 4564,
+            "maxRent": 10465,
+            "distance": null,
+            "isRental": false,
+            "rentalDiscount": {
+              "max_rental_discount": 30,
+              "rental_discount_type": "PERCENTAGE"
+            },
+            "gstPercentage": 0,
+            "gstAmount": 0,
+            "totalAmountIncGst": 4564,
+            "preTaxMinRent": 4564,
+            "isShortStayProperty": true
+          },
+          "images": [
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center/cover_photo/5ddbd5d99540da2195eaa36b/8___2024_07_06T132945.088.jpg",
+              "alt": "",
+              "title": "",
+              "order": 1,
+              "category": "Cover_Photo"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/661641c86b47da00019bce21/8__2_.jpg",
+              "alt": "two sharing pg in kundalahalli",
+              "title": "null",
+              "order": 1,
+              "category": "room"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/661641d78e0c280001df874f/6__2_.jpg",
+              "alt": "single sharing pg in kundalahalli",
+              "title": "null",
+              "order": 1,
+              "category": "room"
+            },
+            {
+              "url": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center_caption_photo/photo/6616421e9ec9d4000191c6b9/4.jpg",
+              "alt": "single sharing pg in kundalahalli",
+              "title": "null",
+              "order": 1,
+              "category": "room"
+            }
+          ],
+          "isFavorite": false,
+          "scheduleVisit": null,
+          "propertyTags": []
+        }
+      ],
+      "nearByProperties": [],
+      "localityKeys": {
+        "arekere": "Arekere",
+        "bangalore": "Bangalore",
+        "bannerghatta": "Bannerghatta",
+        "bellandur": "Bellandur",
+        "btm_1st_stage": "BTM 1st Stage",
+        "btm_layout": "BTM Layout",
+        "cv_raman_nagar": "CV Raman Nagar",
+        "ejipura": "Ejipura",
+        "electronic_city_phase_1": "Electronic CIty Phase 1",
+        "electronic_city_phase_2": "Electronic City Phase 2",
+        "hoodi": "Hoodi",
+        "hsr": "HSR",
+        "hsr_layout": "HSR Layout",
+        "hulimavu": "Hulimavu",
+        "indiranagar": "Indiranagar",
+        "jeevan_bima_nagar": "Jeevan Bima Nagar",
+        "jp_nagar": "JP Nagar",
+        "k_narayanpura": "K Narayanpura",
+        "kadubeesanahalli": "Kadubeesanahalli",
+        "kalyan_nagar": "Kalyan nagar",
+        "kengeri": "Kengeri",
+        "koramangala": "Koramangala",
+        "kumarswamy_layout": "Kumarswamy Layout",
+        "kundalahalli": "Kundalahalli",
+        "madiwala": "Madiwala",
+        "manyata": "Manyata",
+        "marathahalli": "Marathahalli",
+        "maruthi_nagar": "Maruthi Nagar",
+        "mathikere": "Mathikere",
+        "murugeshpalya": "Murugeshpalya",
+        "nagavara": "Nagavara",
+        "peenya": "Peenya",
+        "rachenahalli": "Rachenahalli",
+        "radha_reddy_layout": "Radha Reddy Layout",
+        "rajajinagar": "Rajajinagar",
+        "rajanukunte": "Rajanukunte",
+        "richmond_circle": "Richmond Circle",
+        "rr_nagar": "RR Nagar",
+        "rt_nagar": "RT Nagar",
+        "sanjay_nagar": "Sanjay Nagar",
+        "sarjapur": "Sarjapur",
+        "sarjapura": "Sarjapura",
+        "sg_palya": "SG Palya",
+        "shantinagar": "Shantinagar",
+        "sheshadripuram": "Sheshadripuram",
+        "soladevanahalli": "Soladevanahalli",
+        "tavarekere": "Tavarekere",
+        "thanisandra": "Thanisandra",
+        "veerannapalya": "Veerannapalya",
+        "whitefield": "Whitefield",
+        "yeswanthpur": "Yeswanthpur"
+      },
+      "nextOffset": 16,
+      "nextNearByOffset": 0,
+      "nearByCentersCount": 0,
+      "isLast": false,
+      "nearByIsLast": true,
+      "cityKey": "bangalore"
+    }
+  ]
+}
