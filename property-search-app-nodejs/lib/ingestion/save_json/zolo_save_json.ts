@@ -1,10 +1,13 @@
-import type { ZoloCenterSearchApiType, ZoloPriceEndpointApi } from "../../../types/zolo/zolo_types";
+import type {
+  ZoloCenterSearchApiType,
+  ZoloPriceEndpointApi,
+  ZoloPricingJsonType,
+  ZoloSearchCenterApiJsonType,
+} from "@property-search/shared-types";
 import { DATA_PATHS } from "../../config/json-data-paths";
 import readJson from "../../../utils/read_json";
 import writeJson from "../../../utils/write_json";
-import { ZoloSearchCenterApiJsonType } from "../../../types/output_types/zolo/zolo_search_center_json_type";
 import { getZoloCenterById, getZoloCenterByZoloCode, mutateZoloAccomodation, mutateZoloPricing } from "../../providers/zolo/helpers";
-import { ZoloPricingJsonObject, ZoloPricingJsonType } from "../../../types/output_types/zolo/zolo_pricing_json_type";
 
 export function append_data_to_zolo_json(data: ZoloCenterSearchApiType) {
 

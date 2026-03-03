@@ -1,6 +1,1 @@
-export type ZoloAmenity = {
-    name: string;
-    isAvailable: boolean;
-    imageName: string;
-    displayName: string;
-}
+export type { ZoloAmenity } from "@property-search/shared-types";

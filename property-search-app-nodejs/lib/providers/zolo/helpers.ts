@@ -1,6 +1,12 @@
-import { ZoloPricingJsonObject, ZoloPricingJsonObjectWithZoloCode, ZoloPricingJsonType } from "../../../types/output_types/zolo/zolo_pricing_json_type";
-import { ZoloAccomodationWithUpdatedAt, ZoloSearchCenterApiJsonType } from "../../../types/output_types/zolo/zolo_search_center_json_type";
-import { ZoloAccomodation, ZoloCenterSearchApiType, ZoloPriceEndpointApi, ZoloRoomPricingApiObject } from "../../../types/zolo/zolo_types";
+import {
+  ZoloAccomodation,
+  ZoloAccomodationWithUpdatedAt,
+  ZoloPricingJsonObject,
+  ZoloPricingJsonObjectWithZoloCode,
+  ZoloPricingJsonType,
+  ZoloRoomPricingApiObject,
+  ZoloSearchCenterApiJsonType,
+} from "@property-search/shared-types";
 import readJson from "../../../utils/read_json";
 import { DATA_PATHS } from "../../config/json-data-paths";
 
@@ -76,7 +82,7 @@ export class ZoloPricingClass {
 
     get_room_info_by_zolo_code(zoloCode: string): string[] | null {
         const filtered = getZoloPricingByZoloCode(zoloCode, this.data.data);
-        return filtered?.data.map(item => item.sharingType) ?? null;
+        return filtered?.data.map((item: ZoloPricingJsonObject) => item.sharingType) ?? null;
     }
 
     get_room_info_of_all_centers(): RoomInfo[] | null {

@@ -1,4 +1,4 @@
-import { ZoloSearchCenterApiJsonType } from "../../types/output_types/zolo/zolo_search_center_json_type";
+import { ZoloSearchCenterApiJsonType } from "@property-search/shared-types";
 import readJson from "../../utils/read_json";
 import { pbcopy } from "../../utils/utils";
 import { DATA_PATH, DATA_PATHS } from "../config/json-data-paths";

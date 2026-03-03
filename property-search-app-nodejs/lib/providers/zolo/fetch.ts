@@ -1,7 +1,7 @@
 import axios from "axios";
 import type { CenterPricingConfig, CenterSearchConfig } from "./endpoints";
 import { zolo_urls } from "./endpoints";
-import { ZoloCenterSearchApiType, ZoloPriceEndpointApi, ZoloRoomPricingApiObject } from "../../../types/zolo/zolo_types";
+import { ZoloCenterSearchApiType, ZoloPriceEndpointApi, ZoloRoomPricingApiObject } from "@property-search/shared-types";
 
 
 
