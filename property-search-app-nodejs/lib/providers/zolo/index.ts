@@ -2,7 +2,8 @@
 
 import { fetch_zolo_center_search_data, fetch_zolo_property_pricing_data } from "./fetch";
 import { CenterPricingConfig, CenterSearchConfig } from "./endpoints";
-import { append_data_to_zolo_json } from "../../ingestion/save_json/zolo_save_json";
+import { append_data_to_zolo_json, append_data_to_zolo_property_pricing_json } from "../../ingestion/save_json/zolo_save_json";
+import { load_zolo_data_from_json } from "./helpers";
 
 
 
@@ -36,11 +37,31 @@ export async function run_zolo_center_search() {
 
 
 
+
+
 export async function run_zolo_property_pricing() {
-    const code = "ZOLFR"
-    const date = "1762378808"
-    const config: CenterPricingConfig = { zoloCode: code, dateOfJoining: date }
-    fetch_zolo_property_pricing_data(config)
+    const center_search_data = load_zolo_data_from_json("center_search")
+
+    for (const center of center_search_data.data) {
+        const zolo_code = center.basicData.zoloCode
+        console.log(zolo_code);
+        const config: CenterPricingConfig = { zoloCode: zolo_code }
+
+        const data = await fetch_zolo_property_pricing_data(config, 1000)
+        console.log("Calling api with config: ", config)
+        if (data) {
+            append_data_to_zolo_property_pricing_json(data, zolo_code)
+        }
+    }
+
+    // const code = "ZOLFR"
+    // const date = "1762378808"
+    // const config: CenterPricingConfig = { zoloCode: code, dateOfJoining: date }
+    // const data = await fetch_zolo_property_pricing_data(config)
+    // if (data) {
+    //     console.log(data.result[0].centerId, data.result[0].discountedPrice.discountedPrice, data.result[1]?.centerId)
+
+    // }
 
 }
 

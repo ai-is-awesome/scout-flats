@@ -6,8 +6,6 @@ export type ZoloAmenity = {
 }
 
 
-
-
 export type ZoloCenterSearchApiType = {
     error: number;
     message: string;
@@ -15,7 +13,6 @@ export type ZoloCenterSearchApiType = {
     api_element: string;
     result: { centers: ZoloAccomodation[], localityKeys: LocalityKeys }[];
 }
-
 
 export type LocalityKeys = Record<string, string>
 
@@ -66,7 +63,6 @@ export type SEO = {
     }
 }
 
-
 export type Image = {
     url: string;
     title: string;
@@ -76,16 +72,15 @@ export type Image = {
 }
 
 
-
 export type ZoloPriceEndpointApi = {
     error: number;
     message: string;
     count: number;
-    result: string[]
+    result: ZoloRoomPricingApiObject[]
 }
 
 
-export type ZoloRoomPricingApiResult = {
+export type ZoloRoomPricingApiObject = {
     sharingType: string;
     sharingCapacity: number;
     centerId: string;
@@ -93,6 +88,7 @@ export type ZoloRoomPricingApiResult = {
     minRent: number;
     roomTypes: string | null;
     minSharingTypePrice: number
+    
     discountedPrice: ZoloRoomDiscountedPrice;
     variants: [{
         availableBeds: number;

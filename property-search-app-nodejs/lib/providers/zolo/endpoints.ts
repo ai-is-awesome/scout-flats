@@ -7,7 +7,7 @@ export interface CenterSearchConfig {
 
 
 export interface CenterPricingConfig {
-    dateOfJoining: string | null | undefined;
+    dateOfJoining?: string | null | undefined;
     zoloCode: string
 }
 
@@ -18,7 +18,7 @@ export const zolo_urls = {
 
     get_property_pricing_url: function (_config: CenterPricingConfig) {
         if (!_config.dateOfJoining) {
-            _config.dateOfJoining = "1762378808"
+            _config.dateOfJoining = String(Math.floor(Date.now() / 1000))
         }
         return `https://api.zolostays.com/api/v5/center/${_config.zoloCode}/availability?dateOfJoining=${_config.dateOfJoining}`
     }

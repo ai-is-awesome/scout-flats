@@ -1,0 +1,153 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum PropertySource {
+  ZOLO
+  COLIVE 
+  CUSTOM 
+  // custom = uploadedby someone
+}
+
+enum PropertyType {
+  PG_CHAIN
+  PG_INDEPENDENT
+  HOSTEL
+  COLIVING
+  APARTMENT
+}
+
+enum Gender {
+  MALE
+  FEMALE
+  UNISEX
+}
+
+enum ProprtyStatus {
+  ACTIVE
+  INACTIVE
+  PENDING_REVIEW
+  REJECTED
+}
+
+enum UploadedVia {
+  SCRIPT
+  USER
+}
+
+enum SharingType {
+  PRIVATE_ROOM
+  DOUBLE_SHARING
+  TRIPLE_SHARING
+  TWO_BHK
+  THREE_BHK
+  STUDIO_APARTMENT
+}
+
+
+model Property {
+  id String @id @default(cuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  source PropertySource
+  uploadedVia UploadedVia @default(SCRIPT)
+  propertyUniqueId String?
+  propertyInternalId String?
+  providerRawData Json?
+  name String?
+  description String?
+  genderAllowed Gender?
+  addressLine1 String?
+  addressLine2 String?
+  locality String?
+  localityKey String?
+  cityKey String?
+  city String?
+  propertyState String?
+  // ZOLO STANDARD, SELECT
+  propertyCategory String?
+  averageRating Float?
+  // Location
+  latitude Float?
+  longitude Float?
+  status ProprtyStatus @default(ACTIVE) 
+  // Images
+  images PropertyImage[]
+  roomVariants RoomVariant[]
+  seoTitle String?
+  seoDescription String?
+  seoMeta String?
+  providerJson Json?
+  // For custom users
+  userId String?
+  user User? @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+
+model User {
+  id String @id @default(cuid())
+  properties Property[]
+}
+model PropertyImage {
+  id String @id @default(cuid())
+  property Property @relation(fields: [propertyId], references: [id], onDelete: Cascade)
+  propertyId String
+
+  @@index([propertyId])
+}
+
+
+model RoomVariant {
+  id String @id @default(cuid())
+  updatedAt DateTime @updatedAt
+  sharingType SharingType?
+  propertyId String
+  property Property @relation(fields: [propertyId], references: [id], onDelete: Cascade)
+  roomName String?
+  isActive Boolean @default(true)
+  pricingPlans PricingPlan[]
+  depositMonths Int?
+  noticePeriodInDays Int?
+  basePrice Int
+}
+
+model PricingPlan {
+  id String @id @default(cuid())
+  roomTypeId String
+  roomType RoomVariant @relation(fields :  [roomTypeId], references: [id], onDelete: Cascade)
+  durationMonths Int
+  // Discounts here refer to permanent discounts
+  discountPercentage Float?
+  depositMonths Int?
+  noticePeriodInDays Int?
+  effectiveMonthlyPrice Int?
+  // Refers to price of monthly plans!
+  isBasePlan Boolean 
+  promoOffers PromoOffer[]
+}
+
+model  PromoOffer  {
+  id String @id @default(cuid())
+  pricingPlanId String
+  pricingPlan PricingPlan @relation(fields: [pricingPlanId], references: [id], onDelete: Cascade)
+  promoCode String?
+  discountPercentage Float?
+  applicableMonths Int   
+    startDate DateTime?
+  endDate DateTime?
+}
+
+

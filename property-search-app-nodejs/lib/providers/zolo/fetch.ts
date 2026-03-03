@@ -1,7 +1,7 @@
 import axios from "axios";
 import type { CenterPricingConfig, CenterSearchConfig } from "./endpoints";
 import { zolo_urls } from "./endpoints";
-import { ZoloCenterSearchApiType, ZoloPriceEndpointApi, ZoloRoomPricingApiResult } from "../../../types/zolo/zolo_types";
+import { ZoloCenterSearchApiType, ZoloPriceEndpointApi, ZoloRoomPricingApiObject } from "../../../types/zolo/zolo_types";
 
 
 
@@ -22,10 +22,21 @@ const fetch_zolo_center_search_data = async (config: CenterSearchConfig, sleepTi
 };
 
 
-const fetch_zolo_property_pricing_data = async (config: CenterPricingConfig): Promise<ZoloPriceEndpointApi | null> => {
+const fetch_zolo_property_pricing_data = async (config: CenterPricingConfig, sleepTime: number = 1000): Promise<ZoloPriceEndpointApi | null> => {
     const url = zolo_urls.get_property_pricing_url(config);
-    console.log("Fetching URL: ", url)
-    return null;
+
+    try {
+        const response = await axios.get(url);
+        await new Promise(resolve => setTimeout(resolve, sleepTime));
+        if (response.status !== 200) {
+            return null;
+        }
+
+        return response.data
+    } catch (error) {
+        console.error(error);
+        throw error;
+    }
 }
 
 

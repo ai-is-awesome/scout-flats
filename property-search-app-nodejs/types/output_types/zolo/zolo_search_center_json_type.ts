@@ -7,4 +7,3 @@ export type ZoloSearchCenterApiJsonType = {
 
 
 export type ZoloAccomodationWithUpdatedAt = ZoloAccomodation & { updatedAt: string }
-
