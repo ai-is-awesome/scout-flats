@@ -12,7 +12,6 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
 }
 
 enum PropertySource {
@@ -36,7 +35,7 @@ enum Gender {
   UNISEX
 }
 
-enum ProprtyStatus {
+enum PropertyStatus {
   ACTIVE
   INACTIVE
   PENDING_REVIEW
@@ -66,7 +65,7 @@ model Property {
   uploadedVia UploadedVia @default(SCRIPT)
   propertyUniqueId String?
   propertyInternalId String?
-  providerRawData Json?
+  providerJson Json?
   name String?
   description String?
   genderAllowed Gender?
@@ -83,17 +82,23 @@ model Property {
   // Location
   latitude Float?
   longitude Float?
-  status ProprtyStatus @default(ACTIVE) 
+  status PropertyStatus @default(ACTIVE) 
   // Images
   images PropertyImage[]
   roomVariants RoomVariant[]
   seoTitle String?
   seoDescription String?
   seoMeta String?
-  providerJson Json?
+  
   // For custom users
   userId String?
   user User? @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([localityKey])
+  @@index([source])
+  @@index([genderAllowed])
+  @@unique([source, propertyUniqueId])
+  @@unique([source, propertyInternalId])
 }
 
 
@@ -103,11 +108,14 @@ model User {
 }
 model PropertyImage {
   id String @id @default(cuid())
-  property Property @relation(fields: [propertyId], references: [id], onDelete: Cascade)
   propertyId String
-
+  property Property @relation(fields: [propertyId], references: [id], onDelete: Cascade)
+  imageUrl String
+  imageOrder Int
+  imageLabel String?
   @@index([propertyId])
 }
+
 
 
 model RoomVariant {

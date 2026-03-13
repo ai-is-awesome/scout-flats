@@ -152,4 +152,7 @@ export type ZoloRoomDiscountedPrice = {
     totalAmountIncGst: number;
     preTaxDiscountedPrice: number;
 };
+export type ZoloCombinedCenterSearchAndPricingType = ZoloAccomodation & {
+    detailed_pricing_info: ZoloRoomPricingApiObject[];
+};
 //# sourceMappingURL=zolo_types.d.ts.map

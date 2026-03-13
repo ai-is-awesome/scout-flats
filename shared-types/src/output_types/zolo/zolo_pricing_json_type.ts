@@ -8,3 +8,5 @@ export type ZoloPricingJsonType = {
 export type ZoloPricingJsonObject = ZoloRoomPricingApiObject & { updatedAt: string }
 
 export type ZoloPricingJsonObjectWithZoloCode = { zoloCode: string, data: ZoloPricingJsonObject[] }
+
+

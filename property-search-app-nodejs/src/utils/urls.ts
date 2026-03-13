@@ -11,3 +11,8 @@ export const zolo_urls = {
   },
 };
 
+
+
+export const api_urls = {
+  zolo_push_url: "http://localhost:3000/api/ingest/zolo"
+}

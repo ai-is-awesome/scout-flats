@@ -1,7 +1,7 @@
 import path from "path";
 
 export const PROJECT_ROOT = process.cwd();
-export const DATA_PATH = path.join(PROJECT_ROOT, "data");
+export const DATA_PATH = path.join(PROJECT_ROOT, "src/data");
 
 
 export const DATA_PATHS = {
