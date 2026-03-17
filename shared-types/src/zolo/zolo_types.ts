@@ -64,11 +64,11 @@ export type SEO = {
 };
 
 export type Image = {
-  url: string;
-  title: string;
-  alt: string;
-  order: number;
-  category: "Cover_Photo" | "room";
+  url: string | null;
+  title: string | null;
+  alt: string | null;
+  order: number | null;
+  category: "Cover_Photo" | "room" | null;
 };
 
 export type ZoloPriceEndpointApi = {
@@ -78,7 +78,9 @@ export type ZoloPriceEndpointApi = {
   result: ZoloRoomPricingApiObject[];
 };
 
+// 2006 zolo code is complex, goodexmaple
 export type ZoloRoomPricingApiObject = {
+  // Private, two sharing
   sharingType: string;
   sharingCapacity: number;
   centerId: string;
@@ -89,11 +91,13 @@ export type ZoloRoomPricingApiObject = {
   minSharingTypePrice: number;
 
   discountedPrice: ZoloRoomDiscountedPrice;
+  //
   variants: [
     {
       availableBeds: number;
       availableBedsText: string;
       startingAmount: number;
+      // Room type 1, etc
       roomName: string;
       baseUrl: string;
       fileExtension: string;
@@ -102,6 +106,7 @@ export type ZoloRoomPricingApiObject = {
       gstPercentage: number;
       totalAmountIncGst: number;
       preTaxDiscountedPrice: number;
+      // Usually have one single item in list!
       roomVariantTypeList: [
         {
           roomVariantType: string;

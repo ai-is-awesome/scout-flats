@@ -126,36 +126,39 @@ model RoomVariant {
   property Property @relation(fields: [propertyId], references: [id], onDelete: Cascade)
   roomName String?
   isActive Boolean @default(true)
-  pricingPlans PricingPlan[]
   depositMonths Int?
   noticePeriodInDays Int?
   basePrice Int
+  variantLabel String?
+  variantDetails Json?
+  pricingPlans PricingPlan[]
+  @@index([propertyId])
 }
+
+
 
 model PricingPlan {
   id String @id @default(cuid())
-  roomTypeId String
-  roomType RoomVariant @relation(fields :  [roomTypeId], references: [id], onDelete: Cascade)
+  roomVariantId String
+  roomVariant RoomVariant @relation(fields: [roomVariantId], references: [id], onDelete: Cascade)
   durationMonths Int
-  // Discounts here refer to permanent discounts
   discountPercentage Float?
   depositMonths Int?
   noticePeriodInDays Int?
   effectiveMonthlyPrice Int?
-  // Refers to price of monthly plans!
-  isBasePlan Boolean 
+  isBasePlan Boolean
   promoOffers PromoOffer[]
 }
 
-model  PromoOffer  {
+
+
+model PromoOffer {
   id String @id @default(cuid())
   pricingPlanId String
   pricingPlan PricingPlan @relation(fields: [pricingPlanId], references: [id], onDelete: Cascade)
   promoCode String?
   discountPercentage Float?
-  applicableMonths Int   
-    startDate DateTime?
+  applicableMonths Int
+  startDate DateTime?
   endDate DateTime?
 }
-
-

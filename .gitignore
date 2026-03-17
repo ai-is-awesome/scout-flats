@@ -43,3 +43,6 @@ yarn-error.log*
 next-env.d.ts
 
 /src/generated/prisma
+
+# shared-types build output (do not commit)
+shared-types/dist/

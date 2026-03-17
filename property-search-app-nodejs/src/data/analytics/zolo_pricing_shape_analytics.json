@@ -1,0 +1,3435 @@
+[
+  {
+    "zoloCode": "ZOESTC",
+    "name": "Zolo Estonia C",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZMT",
+    "name": "Zolo Mitra",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOWLSTN",
+    "name": "Zolo Walston",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 4,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOFARD",
+    "name": "Zolo Faraday",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOSTRO",
+    "name": "Zolo Ostro",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOIKIN",
+    "name": "Zolo Aikin",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "2006",
+    "name": "Zolo Euphoria",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOTYP",
+    "name": "Zolo Typhoon",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOHM",
+    "name": "Zolo Hamilton",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOCMZ",
+    "name": "Zolo Cosmoz",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZORE",
+    "name": "Zolo Renaissance",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOLFR",
+    "name": "Zolo Lakefront",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOSKRL",
+    "name": "Zolo Skirling",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 4,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOSDNA",
+    "name": "Zolo Sadhana",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZVDIC",
+    "name": "Zolo Vedic",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZELY",
+    "name": "Zolo Elysium",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZAT",
+    "name": "Zolo Atlantis",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOHSTM",
+    "name": "Zolo Highstreet M",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOATT",
+    "name": "Zolo Amethyst",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOHERE",
+    "name": "Zolo Sphere",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZPEA",
+    "name": "Zolo Knight",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 6,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOBART",
+    "name": "Zolo Barton",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZCN",
+    "name": "Zolo Cinnamon",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOBEC",
+    "name": "Zolo Bella Casa",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOELE",
+    "name": "Zolo Elegance",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOLINA",
+    "name": "Zolo Cortina",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOZEN",
+    "name": "Zolo Zenn",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZNBL",
+    "name": "Zolo Nebula",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZLFBR",
+    "name": "Zolo Fabro",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOCHR",
+    "name": "Zolo Chronicle",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOKONR",
+    "name": "Zolo Kohinoor",
+    "pricingShape": [
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOHSTC",
+    "name": "Zolo Highstreet C",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOHEM",
+    "name": "Zolo Hemingway",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOHK",
+    "name": "Zolo Hawk",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZLDN",
+    "name": "Zolo Davinci",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZLOFT",
+    "name": "Zolo Loft",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOBLA",
+    "name": "Zolo Belair A",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOHSTL",
+    "name": "Zolo Highstreet L",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZAMI",
+    "name": "Zolo Asmi",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOVALNC",
+    "name": "Zolo Valencia",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOHSTH",
+    "name": "Zolo Highstreet H",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOBLB",
+    "name": "Zolo Belair B",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 4,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOARDNA",
+    "name": "Zolo Aradhana",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZLVMRT",
+    "name": "Zolo Vimrath",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOLA",
+    "name": "Zolo Lance",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOLNEL",
+    "name": "Zolo Neel",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOVRX",
+    "name": "Zolo Vruksham",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOHAR",
+    "name": "Zolo Harmony",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOTP",
+    "name": "Zolo Tulpar",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZWAVE",
+    "name": "Zolo Wave",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZODARN",
+    "name": "Zolo Darren",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOLNVO",
+    "name": "Zolo Novo",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZLPL",
+    "name": "Zolo Pele",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOPDS",
+    "name": "Zolo Paradise",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOCLTN",
+    "name": "Zolo Clayton",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZODNCN",
+    "name": "Zolo Duncan",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOPLAT",
+    "name": "Zolo Platinum City",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 4,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOESTA",
+    "name": "Zolo Estonia A",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOIXS",
+    "name": "Zolo Inxs",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOHSTE",
+    "name": "Zolo Highstreet E",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOMVN",
+    "name": "Zolo Maven",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOHSTA",
+    "name": "Zolo Highstreet A",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOZEPP",
+    "name": "Zolo Zeppelin",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOFO",
+    "name": "Zolo Forza",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOAV",
+    "name": "Zolo Avni",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOUNIC",
+    "name": "Zolo Unico",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOPRA",
+    "name": "Zolo Pragma",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "2016",
+    "name": "Zolo Odyssey",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOMRQS",
+    "name": "Zolo Marquis",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZSALFD",
+    "name": "Zolo Salford",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZORP",
+    "name": "Zolo Raptor",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOHSTK",
+    "name": "Zolo Highstreet K",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOSL",
+    "name": "Zolo Selene",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOWDRW",
+    "name": "Zolo Woodrow",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOFUSN",
+    "name": "Zolo Fusion",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOHSTJ",
+    "name": "Zolo Highstreet J",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOTM",
+    "name": "Zolo Templar",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOHSTG",
+    "name": "Zolo Highstreet G",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOWLL",
+    "name": "Zolo Wonderwall",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOSUGO",
+    "name": "Zolo Sugoi",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOCMBL",
+    "name": "Zolo Campbell",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZLMS",
+    "name": "Zolo Mishal",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZESTFD",
+    "name": "Zolo Eastfield",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOCLN",
+    "name": "Zolo Clapton",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOCRSB",
+    "name": "Zolo Diya",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 4,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOHSTRT",
+    "name": "Zolo Highstreet D",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOAVNO",
+    "name": "Zolo Aviano",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOWSTFLD",
+    "name": "Zolo Westfield",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZODNVR",
+    "name": "Zolo Denver",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOHSTF",
+    "name": "Zolo Highstreet F",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZSHUD",
+    "name": "Zolo Hudson",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZODOR",
+    "name": "Zolo Dorian",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOLOLL",
+    "name": "Zolo Leela",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOTUL",
+    "name": "Zolo Aster",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOREL",
+    "name": "Zolo Laurel A",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOCRON",
+    "name": "Zolo Cronos",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZLAZ",
+    "name": "Zolo Amaze",
+    "pricingShape": [
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 4,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZIRS",
+    "name": "Zolo Iris",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZLJV",
+    "name": "Zolo Java",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOCHE",
+    "name": "Zolo Heaven C",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOSGR",
+    "name": "Zolo Sagar",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOMNS",
+    "name": "Zolo Moonshine",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 4,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZESS",
+    "name": "Zolo Essenza",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 4,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOASH",
+    "name": "Zolo Asha",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOTRIO",
+    "name": "Zolo Triloha",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 4,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZORELB",
+    "name": "Zolo Laurel B",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZPP",
+    "name": "Zolo Pepper",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOCYG",
+    "name": "Zolo Cygnus",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZORHY",
+    "name": "Zolo Rhapsody",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOSPLN",
+    "name": "Zolo Splendour",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZMV",
+    "name": "Zolo Maverick",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOESTB",
+    "name": "Zolo Estonia B",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOHZL",
+    "name": "Zolo Hazel",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "2004",
+    "name": "Zolo Park View",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZORMTN",
+    "name": "Zolo Remington",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOHE",
+    "name": "Zolo Heaven",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOHER",
+    "name": "Zolo Hermes",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOAYSH",
+    "name": "Zolo Ayush House",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZODM",
+    "name": "Zolo Diamond",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOMADAL",
+    "name": "Zolo Marydale",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZODH",
+    "name": "Zolo Dream House",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOAN",
+    "name": "Zolo Anise",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOAKSL",
+    "name": "Zolo Akshala",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOIR",
+    "name": "Zolo Icarus",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOWDSD",
+    "name": "Zolo Woodside",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOEP",
+    "name": "Zolo Epic",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "JOJZ",
+    "name": "Zolo Jazz",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZSKY",
+    "name": "Zolo Skylon",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 4,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "2010",
+    "name": "Zolo Hibiscus",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOHSTB",
+    "name": "Zolo Highstreet B",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOLINE",
+    "name": "Zolo Alpine",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZLLB",
+    "name": "Zolo Liberty",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOPHX",
+    "name": "Zolo Phoenix",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZLHT",
+    "name": "Zolo Hoodi Tower",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZLMAC",
+    "name": "Zolo Mac",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOMEL",
+    "name": "Zolo Melody",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOPG",
+    "name": "Zolo Pegasus",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZANOOP",
+    "name": "Zolo Anoop",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOCLST",
+    "name": "Zolo Calista",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOPOL",
+    "name": "Zolo Polaris",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 4,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOJA",
+    "name": "Zolo Jasmin",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOPTM",
+    "name": "Zolo Phantom",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOTJAS",
+    "name": "Zolo Tejas",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 3,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOARN",
+    "name": "Zolo Arena",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZOCLTR",
+    "name": "Zolo Coulter",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 4,
+        "roomVariantTypeListLengths": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 2,
+        "roomVariantTypeListLengths": [
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "zoloCode": "ZGNG",
+    "name": "Zolo Ginger",
+    "pricingShape": [
+      {
+        "sharingType": "Private Room",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Two Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      },
+      {
+        "sharingType": "Three Sharing",
+        "variantCount": 1,
+        "roomVariantTypeListLengths": [
+          0
+        ]
+      }
+    ]
+  }
+]
