@@ -9,6 +9,7 @@ import { prisma } from "@/lib/types/zolo_api_types/db";
 import type {
   ZoloCombinedCenterSearchAndPricingType,
   ZoloRoomPricingApiObject,
+  ZoloRoomVariantTypeList,
 } from "@property-search/shared-types";
 import { buildPropertyImagesCreate } from "@/lib/ingest/zolo/build-property-images";
 import { mapZoloGenderToPrisma } from "@/lib/ingest/zolo/mappers";
@@ -52,8 +53,10 @@ type RoomVariantCreate = {
   pricingPlans: PlanCreate[];
 };
 
+type ZoloPackageRow = ZoloRoomVariantTypeList["packagesList"][number];
+
 function buildPricingPlans(
-  packagesList: ZoloRoomPricingApiObject["variants"][0]["roomVariantTypeList"][0]["packagesList"],
+  packagesList: ZoloPackageRow[],
   topDiscount: ZoloRoomPricingApiObject["discountedPrice"] | undefined
 ): PlanCreate[] {
   return packagesList.map((pkg) => ({
@@ -78,10 +81,15 @@ function buildPricingPlans(
   }));
 }
 
+function getVariantDetails(variant: unknown): object | null {
+  const v = variant as { variantDetails?: object } | undefined;
+  return v?.variantDetails ?? null;
+}
+
 /**
- * Flattens Zolo pricing items into one RoomVariant per (sharing tier x variant type).
- * E.g. "Private Room" with 2 room types → 2 RoomVariant rows, both PRIVATE_ROOM.
- * Custom properties will just have 1 RoomVariant with no variantLabel/variantDetails.
+ * Zolo puts `variants` and `roomVariantTypeList` as siblings on each pricing item.
+ * When lengths match, pair by index and persist variant metadata in `variantDetails`.
+ * Otherwise still emit rows from `roomVariantTypeList` (and/or orphan `variants`) with best-effort pairing.
  */
 function buildRoomVariantsCreate(
   pricingItems: ZoloRoomPricingApiObject[]
@@ -93,40 +101,52 @@ function buildRoomVariantsCreate(
     const basePrice = Math.round(item.minRent ?? 0);
     const topDiscount = item.discountedPrice;
     const variants = (item.variants ?? []) as Array<(typeof item.variants)[0]>;
+    const typeList = item.roomVariantTypeList ?? [];
 
-    for (const variant of variants) {
-      const typeList = (variant.roomVariantTypeList ?? []) as Array<
-        (typeof variant.roomVariantTypeList)[0]
-      >;
-      for (const typeEntry of typeList) {
+    const lengthsMatch =
+      variants.length === typeList.length && typeList.length > 0;
+
+    if (typeList.length > 0) {
+      for (let i = 0; i < typeList.length; i++) {
+        const typeEntry = typeList[i];
+        const variant =
+          i < variants.length
+            ? variants[i]
+            : variants.length === 1
+            ? variants[0]
+            : undefined;
+
+        const variantDetails =
+          lengthsMatch && i < variants.length
+            ? getVariantDetails(variants[i])
+            : variant
+            ? getVariantDetails(variant)
+            : null;
+
         result.push({
           sharingType,
-          roomName: variant.roomName ?? item.sharingType ?? "Room",
+          roomName: variant?.roomName ?? item.sharingType ?? "Room",
           basePrice,
           variantLabel: typeEntry.roomVariantType ?? null,
-          variantDetails:
-            (variant as { variantDetails?: object }).variantDetails ?? null,
+          variantDetails,
           pricingPlans: buildPricingPlans(
-            typeEntry.packagesList ?? [],
+            [...(typeEntry.packagesList ?? [])] as ZoloPackageRow[],
             topDiscount
           ),
         });
       }
-
-      if (typeList.length === 0) {
+    } else if (variants.length > 0) {
+      for (const variant of variants) {
         result.push({
           sharingType,
           roomName: variant.roomName ?? item.sharingType ?? "Room",
           basePrice,
           variantLabel: null,
-          variantDetails:
-            (variant as { variantDetails?: object }).variantDetails ?? null,
+          variantDetails: getVariantDetails(variant),
           pricingPlans: [],
         });
       }
-    }
-
-    if (variants.length === 0) {
+    } else {
       result.push({
         sharingType,
         roomName: item.sharingType ?? "Room",

@@ -78,6 +78,7 @@ export type ZoloPriceEndpointApi = {
   result: ZoloRoomPricingApiObject[];
 };
 
+// Main  type that stores data about pricing
 export type ZoloRoomVariantTypeList = {
   roomVariantType: string;
   isHidden: boolean;
@@ -120,6 +121,10 @@ export type ZoloRoomVariantTypeList = {
 };
 
 // 2006 zolo code is complex, goodexmaple
+
+// Usually have one single item in list!
+// Zolo Faraday is an exception, it has two room variant type lists and maybe one variant? weird as shit?
+// Zolo Walston have more room variants and room variant types. 4!
 export type ZoloRoomPricingApiObject = {
   // Private, two sharing
   sharingType: string;
@@ -148,11 +153,8 @@ export type ZoloRoomPricingApiObject = {
       gstPercentage: number;
       totalAmountIncGst: number;
       preTaxDiscountedPrice: number;
-      // Usually have one single item in list!
-      // Zolo Faraday is an exception, it has two room variant type lists
     }
   ];
-
   roomVariantTypeList: ZoloRoomVariantTypeList[];
 };
 

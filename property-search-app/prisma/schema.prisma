@@ -117,7 +117,6 @@ model PropertyImage {
 }
 
 
-
 model RoomVariant {
   id String @id @default(cuid())
   updatedAt DateTime @updatedAt
@@ -128,12 +127,14 @@ model RoomVariant {
   isActive Boolean @default(true)
   depositMonths Int?
   noticePeriodInDays Int?
+  
   basePrice Int
   variantLabel String?
   variantDetails Json?
   pricingPlans PricingPlan[]
   @@index([propertyId])
 }
+
 
 
 
@@ -149,7 +150,6 @@ model PricingPlan {
   isBasePlan Boolean
   promoOffers PromoOffer[]
 }
-
 
 
 model PromoOffer {
