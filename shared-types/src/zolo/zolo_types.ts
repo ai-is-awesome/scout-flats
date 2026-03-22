@@ -78,6 +78,47 @@ export type ZoloPriceEndpointApi = {
   result: ZoloRoomPricingApiObject[];
 };
 
+export type ZoloRoomVariantTypeList = {
+  roomVariantType: string;
+  isHidden: boolean;
+  centerVariant: null;
+  stayType: string;
+  packagesList: [
+    {
+      name: string;
+      displayName: string;
+      duration: string;
+      durationValue: number;
+      description: string;
+      price: number;
+      extraAdultPrice: number;
+      discountedPrice: number;
+      discountOffered: number;
+      additivePrice: null;
+      additiveOffered: null;
+      isBasePackage: boolean;
+      gstAmount: number;
+      gstPercentage: number;
+      totalAmountIncGst: number;
+      discountedAmountIncGst: number;
+      discountGstAmount: number;
+      additiveAmountIncGst: number;
+      additiveGstAmount: number;
+      preTaxPrice: number;
+      preTaxDiscountedPrice: number;
+      preTaxAdditivePrice: number;
+      couponDetails: string | null;
+      couponDiscount: number | null;
+      showOnline: boolean;
+      lineItemId: string | null;
+      id: number;
+      actualShortStayPriceInGst: number;
+      actualShortStayPrice: number;
+      details: string[];
+    }
+  ];
+};
+
 // 2006 zolo code is complex, goodexmaple
 export type ZoloRoomPricingApiObject = {
   // Private, two sharing
@@ -91,6 +132,7 @@ export type ZoloRoomPricingApiObject = {
   minSharingTypePrice: number;
 
   discountedPrice: ZoloRoomDiscountedPrice;
+
   //
   variants: [
     {
@@ -107,50 +149,11 @@ export type ZoloRoomPricingApiObject = {
       totalAmountIncGst: number;
       preTaxDiscountedPrice: number;
       // Usually have one single item in list!
-      roomVariantTypeList: [
-        {
-          roomVariantType: string;
-          isHidden: boolean;
-          centerVariant: null;
-          stayType: string;
-          packagesList: [
-            {
-              name: string;
-              displayName: string;
-              duration: string;
-              durationValue: number;
-              description: string;
-              price: number;
-              extraAdultPrice: number;
-              discountedPrice: number;
-              discountOffered: number;
-              additivePrice: null;
-              additiveOffered: null;
-              isBasePackage: boolean;
-              gstAmount: number;
-              gstPercentage: number;
-              totalAmountIncGst: number;
-              discountedAmountIncGst: number;
-              discountGstAmount: number;
-              additiveAmountIncGst: number;
-              additiveGstAmount: number;
-              preTaxPrice: number;
-              preTaxDiscountedPrice: number;
-              preTaxAdditivePrice: number;
-              couponDetails: string | null;
-              couponDiscount: number | null;
-              showOnline: boolean;
-              lineItemId: string | null;
-              id: number;
-              actualShortStayPriceInGst: number;
-              actualShortStayPrice: number;
-              details: string[];
-            }
-          ];
-        }
-      ];
+      // Zolo Faraday is an exception, it has two room variant type lists
     }
   ];
+
+  roomVariantTypeList: ZoloRoomVariantTypeList[];
 };
 
 export type ZoloRoomDiscountedPrice = {

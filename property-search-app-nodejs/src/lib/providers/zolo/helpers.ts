@@ -9,7 +9,7 @@ import {
 } from "@property-search/shared-types";
 import readJson from "../../../utils/read_json";
 import { DATA_PATHS } from "../../config/json-data-paths";
-import { combine_zolo_center_search_and_pricing_data } from "../../json_readers/zolo";
+import { combine_zolo_center_search_and_pricing_data } from "@property-search/shared-types";
 import writeJson from "../../../utils/write_json";
 
 export function getZoloCenterById(

@@ -10,7 +10,7 @@ import {
   append_data_to_zolo_property_pricing_json,
 } from "../../ingestion/save_json/zolo_save_json";
 import { load_zolo_data_from_json } from "./helpers";
-import { combine_zolo_center_search_and_pricing_data } from "../../json_readers/zolo";
+import { combine_zolo_center_search_and_pricing_data } from "@property-search/shared-types";
 import { push_json_data_to_zolo_api } from "../../api-client/push_zolo";
 
 export async function run_zolo_center_search() {
@@ -64,6 +64,8 @@ export async function run_zolo_property_pricing() {
 
   // }
 }
+
+
 
 export async function run_push_zolo_json_to_next_api() {
   const center_search_data = load_zolo_data_from_json("center_search");

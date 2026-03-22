@@ -4,7 +4,7 @@ import { fetch_zolo_center_search_data, fetch_zolo_property_pricing_data } from 
 import { CenterPricingConfig, CenterSearchConfig } from "./endpoints";
 import { append_data_to_zolo_json, append_data_to_zolo_property_pricing_json } from "../../ingestion/save_json/zolo_save_json";
 import { load_zolo_data_from_json } from "./helpers";
-import { combine_zolo_center_search_and_pricing_data } from "../../json_readers/zolo";
+import { combine_zolo_center_search_and_pricing_data } from "@property-search/shared-types";
 
 
 

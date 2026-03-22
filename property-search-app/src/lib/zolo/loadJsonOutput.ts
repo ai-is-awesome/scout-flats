@@ -4,7 +4,7 @@ import {
   ZoloCombinedCenterSearchAndPricingType,
 } from "@property-search/shared-types";
 import { ZOLO_JSON_PATHS } from "../config/paths";
-import { readJson } from "../utils";
+import { readJson } from "@property-search/shared-types";
 
 type ZoloJsonFileType = "centerSearch" | "propertyPricing" | "combinedData";
 
