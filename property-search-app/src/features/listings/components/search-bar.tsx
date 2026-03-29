@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Search, MapPin } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -8,10 +8,20 @@ import { Button } from "@/components/ui/button";
 export interface SearchBarProps {
   onSearch: (query: string) => void;
   className?: string;
+  /** Synced when the URL `q` param changes (server navigation). */
+  defaultQuery?: string;
 }
 
-const SearchBar = ({ onSearch, className = "" }: SearchBarProps) => {
-  const [query, setQuery] = useState("");
+const SearchBar = ({
+  onSearch,
+  className = "",
+  defaultQuery = "",
+}: SearchBarProps) => {
+  const [query, setQuery] = useState(defaultQuery);
+
+  useEffect(() => {
+    setQuery(defaultQuery);
+  }, [defaultQuery]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

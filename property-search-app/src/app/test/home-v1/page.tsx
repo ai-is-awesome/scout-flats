@@ -7,7 +7,10 @@ import SearchBar from "@/features/listings/components/search-bar";
 import FilterBar from "@/features/listings/components/filter-bar";
 import PropertyCard from "@/features/listings/components/property-card";
 import MapView from "@/features/listings/components/map-view";
-import { MOCK_PROPERTIES } from "@/features/listings/property-data";
+import {
+  MOCK_PROPERTIES,
+  mockPropertyToListingItem,
+} from "@/features/listings/property-data";
 import heroBg from "../../../../public/hero-bg.jpg";
 
 const Index = () => {
@@ -20,13 +23,18 @@ const Index = () => {
   const [priceRange, setPriceRange] = useState<[number, number]>([0, 30000]);
   const [showFilters, setShowFilters] = useState(true);
 
+  const listingItems = useMemo(
+    () => MOCK_PROPERTIES.map(mockPropertyToListingItem),
+    []
+  );
+
   const filtered = useMemo(() => {
-    return MOCK_PROPERTIES.filter((p) => {
+    return listingItems.filter((p) => {
       const q = searchQuery.toLowerCase();
       const matchesSearch =
         !q ||
         p.area.toLowerCase().includes(q) ||
-        p.pincode.includes(q) ||
+        (p.pincode?.includes(q) ?? false) ||
         p.name.toLowerCase().includes(q) ||
         p.city.toLowerCase().includes(q);
       const matchesProvider = provider === "all" || p.provider === provider;

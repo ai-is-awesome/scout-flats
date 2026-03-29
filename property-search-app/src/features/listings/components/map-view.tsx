@@ -1,7 +1,16 @@
 import { MapPin } from "lucide-react";
-import type { Property } from "@/features/listings/property-data";
+import type { ListingItem } from "@/features/listings/types";
 
-const MapView = ({ properties }: { properties: Property[] }) => {
+function minPrice(p: ListingItem): number {
+  const prices = p.pricing.map((x) => x.price).filter((n) => n > 0);
+  return prices.length ? Math.min(...prices) : 0;
+}
+
+function isZolo(p: ListingItem) {
+  return p.provider === "zolo";
+}
+
+const MapView = ({ properties }: { properties: ListingItem[] }) => {
   return (
     <div className="relative w-full h-[600px] bg-muted rounded-xl border border-border overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-secondary to-muted">
@@ -40,15 +49,13 @@ const MapView = ({ properties }: { properties: Property[] }) => {
               <div className="relative">
                 <div
                   className={`flex items-center gap-1 px-2.5 py-1.5 rounded-full shadow-elevated text-xs font-semibold transition-transform group-hover:scale-110 ${
-                    property.provider === "zolo"
+                    isZolo(property)
                       ? "bg-primary text-primary-foreground"
                       : "bg-accent text-accent-foreground"
                   }`}
                 >
                   <MapPin className="h-3 w-3" />₹
-                  {Math.min(
-                    ...property.pricing.map((p) => p.price)
-                  ).toLocaleString("en-IN")}
+                  {minPrice(property).toLocaleString("en-IN")}
                 </div>
                 <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-30">
                   <div className="bg-card border border-border rounded-lg shadow-elevated p-3 min-w-[180px]">
@@ -59,11 +66,7 @@ const MapView = ({ properties }: { properties: Property[] }) => {
                       {property.area}
                     </p>
                     <p className="text-xs font-medium text-primary mt-1">
-                      From ₹
-                      {Math.min(
-                        ...property.pricing.map((p) => p.price)
-                      ).toLocaleString("en-IN")}
-                      /mo
+                      From ₹{minPrice(property).toLocaleString("en-IN")}/mo
                     </p>
                   </div>
                 </div>

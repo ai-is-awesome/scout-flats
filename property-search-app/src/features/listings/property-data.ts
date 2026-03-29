@@ -1,3 +1,5 @@
+import type { ListingItem } from "./types";
+
 export type PropertyType =
   | "pg"
   | "hostel"
@@ -266,3 +268,49 @@ export const MOCK_PROPERTIES: Property[] = [
     highlights: ["Spacious 2BHK", "Lake View", "Near Tech Parks"],
   },
 ];
+
+function mockTypeLabel(t: PropertyType): string {
+  switch (t) {
+    case "pg":
+      return "PG";
+    case "hostel":
+      return "Hostel";
+    case "coliving":
+      return "Co-living";
+    case "1bhk":
+      return "1 BHK";
+    case "2bhk":
+      return "2 BHK";
+    case "studio":
+      return "Studio";
+    default:
+      return "PG";
+  }
+}
+
+/** Map mock `Property` to `ListingItem` for shared `PropertyCard` / `MapView`. */
+export function mockPropertyToListingItem(p: Property): ListingItem {
+  return {
+    id: p.id,
+    name: p.name,
+    provider: p.provider,
+    gender: p.gender,
+    typeLabel: mockTypeLabel(p.type),
+    area: p.area,
+    city: p.city,
+    pincode: p.pincode,
+    rating: p.rating,
+    reviewCount: p.reviewCount,
+    images: p.images,
+    amenities: p.amenities,
+    pricing: p.pricing.map((pr) => ({
+      occupancy: pr.occupancy,
+      price: pr.price,
+      originalPrice: pr.originalPrice,
+    })),
+    discount: p.discount,
+    foodIncluded: p.foodIncluded,
+    availableFrom: p.availableFrom,
+    highlights: p.highlights,
+  };
+}
