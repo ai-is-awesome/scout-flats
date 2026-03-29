@@ -146,9 +146,8 @@ const runJsonAnalytics = () => {
     const pricingShape = center.detailed_pricing_info.map((item) => {
       const variants = item.variants ?? [];
       const variantCount = variants.length;
-      const roomVariantTypeListLengths = variants.map(
-        (v) => (v.roomVariantTypeList ?? []).length
-      );
+      const roomVariantTypeListLengths = item.roomVariantTypeList?.length ?? 0;
+
       return {
         sharingType: item.sharingType,
         variantCount,

@@ -1,12 +1,14 @@
+"use client";
+
 import { useState, useMemo } from "react";
 import { Map, List, SlidersHorizontal } from "lucide-react";
-import Header from "@/components/Header";
-import SearchBar from "@/components/SearchBar";
-import FilterBar from "@/components/FilterBar";
-import PropertyCard from "@/components/PropertyCard";
-import MapView from "@/components/MapView";
-import { MOCK_PROPERTIES } from "@/data/properties";
-import heroBg from "@/assets/hero-bg.jpg";
+import Header from "./components/header";
+import SearchBar from "@/features/listings/components/search-bar";
+import FilterBar from "@/features/listings/components/filter-bar";
+import PropertyCard from "@/features/listings/components/property-card";
+import MapView from "@/features/listings/components/map-view";
+import { MOCK_PROPERTIES } from "@/features/listings/property-data";
+import heroBg from "../../../../public/hero-bg.jpg";
 
 const Index = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -54,7 +56,7 @@ const Index = () => {
       {/* Hero */}
       <section className="relative h-64 md:h-80 overflow-hidden">
         <img
-          src={heroBg}
+          src={heroBg.src}
           alt="City skyline"
           className="absolute inset-0 w-full h-full object-cover"
         />

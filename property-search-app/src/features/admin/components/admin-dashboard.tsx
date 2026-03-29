@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import DatabaseEntries from "./database-entries/database-entries";
 import { JsonEntries } from "./json-entries/json-entries";
 import { JsonAnalytics } from "./json-analytics";
+import { DatabaseMode } from "./database/database-mode";
 
 export function AdminDashboard() {
   const { adminFetch } = useAdminFetch();
@@ -13,6 +14,7 @@ export function AdminDashboard() {
     "zolo-json-data": JsonEntries,
     "zolo-property-pricing-data": DatabaseEntries,
     "zolo-json-analytics": JsonAnalytics,
+    "database-mode": DatabaseMode,
   };
 
   useEffect(() => {
@@ -28,6 +30,7 @@ export function AdminDashboard() {
     "zolo-json-data",
     "zolo-property-pricing-data",
     "zolo-json-analytics",
+    "database-mode",
   ];
 
   const [mode, setMode] = useState<

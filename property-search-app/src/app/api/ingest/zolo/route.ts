@@ -30,6 +30,12 @@ function mapZoloSharingType(zoloSharingType: string): SharingTypeEnum {
   return ZOLO_SHARING_TO_ENUM[zoloSharingType] ?? SharingType.DOUBLE_SHARING;
 }
 
+/** Prisma default interactive tx timeout is 5s; Zolo ingest does many nested creates per property. */
+const INGEST_TX_OPTIONS = {
+  maxWait: 15_000,
+  timeout: 120_000,
+} as const;
+
 type PlanCreate = {
   durationMonths: number;
   effectiveMonthlyPrice: number;
@@ -102,6 +108,7 @@ function buildRoomVariantsCreate(
     const topDiscount = item.discountedPrice;
     const variants = (item.variants ?? []) as Array<(typeof item.variants)[0]>;
     const typeList = item.roomVariantTypeList ?? [];
+    console.log("Building roomvariants create");
 
     const lengthsMatch =
       variants.length === typeList.length && typeList.length > 0;
@@ -259,7 +266,7 @@ export async function POST(request: Request) {
             }
           }
         }
-      });
+      }, INGEST_TX_OPTIONS);
     } else {
       const trimmed_property =
         zoloTransformer.get_trimmed_property_for_db(property);
@@ -337,7 +344,7 @@ export async function POST(request: Request) {
             }
           }
         }
-      });
+      }, INGEST_TX_OPTIONS);
     }
   }
 
