@@ -8,7 +8,7 @@ const Header = () => (
           <Home className="h-4 w-4 text-primary-foreground" />
         </div>
         <span className="font-heading font-bold text-lg text-foreground">
-          StayFinder
+          ScoutFlats
         </span>
       </div>
       <nav className="flex items-center gap-6 text-sm text-muted-foreground">
