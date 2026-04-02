@@ -67,9 +67,7 @@ function occupancyFilterToSharing(
   }
 }
 
-function listingTypeToSharing(
-  t: string
-): SharingType | null {
+function listingTypeToSharing(t: string): SharingType | null {
   switch (t) {
     case "1bhk":
       return SharingType.TWO_BHK;
@@ -82,9 +80,7 @@ function listingTypeToSharing(
   }
 }
 
-function categoryContains(
-  type: string
-): Prisma.PropertyWhereInput | null {
+function categoryContains(type: string): Prisma.PropertyWhereInput | null {
   switch (type) {
     case "pg":
       return {
@@ -110,9 +106,7 @@ function categoryContains(
 }
 
 function buildWhere(filters: ListingFilters): Prisma.PropertyWhereInput {
-  const and: Prisma.PropertyWhereInput[] = [
-    { status: PropertyStatus.ACTIVE },
-  ];
+  const and: Prisma.PropertyWhereInput[] = [{ status: PropertyStatus.ACTIVE }];
 
   if (filters.provider === "zolo") {
     and.push({ source: PropertySource.ZOLO });
@@ -125,8 +119,8 @@ function buildWhere(filters: ListingFilters): Prisma.PropertyWhereInput {
       filters.gender === "male"
         ? Gender.MALE
         : filters.gender === "female"
-          ? Gender.FEMALE
-          : Gender.UNISEX;
+        ? Gender.FEMALE
+        : Gender.UNISEX;
     and.push({ genderAllowed: g });
   }
 
@@ -158,8 +152,7 @@ function buildWhere(filters: ListingFilters): Prisma.PropertyWhereInput {
     roomAnd.push({ sharingType: sharingFromType });
   }
 
-  const priceNarrowed =
-    filters.priceMin > 0 || filters.priceMax < 30000;
+  const priceNarrowed = filters.priceMin > 0 || filters.priceMax < 30000;
   if (priceNarrowed) {
     roomAnd.push({
       basePrice: { gte: filters.priceMin, lte: filters.priceMax },
@@ -232,8 +225,7 @@ function mapRowToListingItem(row: RawListingRow): ListingItem {
   const variants = row.roomVariants ?? [];
   const pricing = variants.map((rv) => {
     const plan = rv.pricingPlans[0];
-    const price =
-      plan?.effectiveMonthlyPrice ?? rv.basePrice;
+    const price = plan?.effectiveMonthlyPrice ?? rv.basePrice;
     const discountPct = plan?.discountPercentage;
     const originalPrice =
       discountPct != null && discountPct > 0
@@ -286,9 +278,7 @@ function mapRowToListingItem(row: RawListingRow): ListingItem {
     discount,
     foodIncluded: false,
     availableFrom: "See details",
-    highlights: row.localityKey
-      ? [row.localityKey.replace(/_/g, " ")]
-      : [],
+    highlights: row.localityKey ? [row.localityKey.replace(/_/g, " ")] : [],
   };
 }
 

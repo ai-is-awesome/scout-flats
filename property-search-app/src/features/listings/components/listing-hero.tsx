@@ -27,7 +27,7 @@ export function ListingHero({ initialQuery }: ListingHeroProps) {
     <section className="relative h-64 md:h-80 overflow-hidden">
       <img
         src={heroBg.src}
-        alt=""
+        alt="Bangalore city skyline"
         className="absolute inset-0 w-full h-full object-cover"
       />
       <div className="absolute inset-0 bg-foreground/60" />

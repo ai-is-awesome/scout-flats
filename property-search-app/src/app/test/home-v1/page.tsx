@@ -10,6 +10,7 @@ import MapView from "@/features/listings/components/map-view";
 import {
   MOCK_PROPERTIES,
   mockPropertyToListingItem,
+  type Property,
 } from "@/features/listings/property-data";
 import heroBg from "../../../../public/hero-bg.jpg";
 
@@ -23,18 +24,13 @@ const Index = () => {
   const [priceRange, setPriceRange] = useState<[number, number]>([0, 30000]);
   const [showFilters, setShowFilters] = useState(true);
 
-  const listingItems = useMemo(
-    () => MOCK_PROPERTIES.map(mockPropertyToListingItem),
-    []
-  );
-
   const filtered = useMemo(() => {
-    return listingItems.filter((p) => {
+    const matched = MOCK_PROPERTIES.filter((p: Property) => {
       const q = searchQuery.toLowerCase();
       const matchesSearch =
         !q ||
         p.area.toLowerCase().includes(q) ||
-        (p.pincode?.includes(q) ?? false) ||
+        p.pincode.includes(q) ||
         p.name.toLowerCase().includes(q) ||
         p.city.toLowerCase().includes(q);
       const matchesProvider = provider === "all" || p.provider === provider;
@@ -55,6 +51,7 @@ const Index = () => {
         matchesPrice
       );
     });
+    return matched.map(mockPropertyToListingItem);
   }, [searchQuery, provider, gender, type, occupancy, priceRange]);
 
   return (

@@ -48,7 +48,7 @@ const PropertyCard = ({ property }: { property: ListingItem }) => {
         {property.images[0] ? (
           <img
             src={property.images[0]}
-            alt=""
+            alt={property.name}
             className="absolute inset-0 w-full h-full object-cover"
           />
         ) : null}

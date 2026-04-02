@@ -46,3 +46,7 @@ next-env.d.ts
 
 # shared-types build output (do not commit)
 shared-types/dist/
+
+# Local JSON data dumps (scraped API output, analytics; large / env-specific)
+property-search-app/src/data/
+property-search-app-nodejs/src/data/

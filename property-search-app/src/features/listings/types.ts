@@ -34,17 +34,6 @@ export type ListingItem = {
   highlights: string[];
 };
 
-const DEFAULT_FILTERS: ListingFilters = {
-  q: "",
-  provider: "all",
-  gender: "all",
-  type: "all",
-  occupancy: "all",
-  priceMin: 0,
-  priceMax: 30000,
-  view: "list",
-};
-
 function firstParam(
   sp: Record<string, string | string[] | undefined>,
   key: string
@@ -118,5 +107,3 @@ export function filtersToSearchParams(
   if (f.view === "map") out.view = "map";
   return out;
 }
-
-export { DEFAULT_FILTERS };
