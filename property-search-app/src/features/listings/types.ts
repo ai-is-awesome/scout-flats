@@ -1,6 +1,8 @@
 /** URL-driven filter state for the listings page (matches FilterBar value strings). */
 export type ListingFilters = {
   q: string;
+  /** Exact locality filter (URL `locality`); takes precedence over `q` in queries. */
+  locality: string;
   provider: "all" | "zolo" | "colive";
   gender: "all" | "male" | "female" | "unisex";
   type: string;
@@ -53,6 +55,7 @@ export function parseListingFilters(
   const occupancy = firstParam(sp, "occupancy");
   const view = firstParam(sp, "view");
   const q = firstParam(sp, "q") ?? "";
+  const locality = firstParam(sp, "locality") ?? "";
   const priceMinRaw = firstParam(sp, "priceMin");
   const priceMaxRaw = firstParam(sp, "priceMax");
 
@@ -67,6 +70,7 @@ export function parseListingFilters(
 
   return {
     q: q.trim(),
+    locality: locality.trim(),
     provider:
       provider === "zolo" || provider === "colive" ? provider : "all",
     gender:
@@ -98,6 +102,7 @@ export function filtersToSearchParams(
 ): Record<string, string> {
   const out: Record<string, string> = {};
   if (f.q) out.q = f.q;
+  if (f.locality) out.locality = f.locality;
   if (f.provider !== "all") out.provider = f.provider;
   if (f.gender !== "all") out.gender = f.gender;
   if (f.type !== "all") out.type = f.type;

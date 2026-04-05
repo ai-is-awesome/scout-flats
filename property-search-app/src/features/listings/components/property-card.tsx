@@ -53,15 +53,12 @@ const PropertyCard = ({ property }: { property: ListingItem }) => {
           />
         ) : null}
         <div className="absolute inset-0 bg-gradient-to-t from-foreground/40 to-transparent z-10" />
-        <div className="absolute inset-0 flex items-center justify-center text-muted-foreground z-[5]">
-          <div className="text-center">
-            <div className="text-4xl mb-1">🏠</div>
-            <span className="text-xs">{property.name}</span>
-          </div>
-        </div>
+        <div className="absolute inset-0 flex items-center justify-center text-muted-foreground z-[5]"></div>
 
         <Badge
-          className={`absolute top-3 left-3 z-20 text-xs font-semibold ${providerBadgeClass(property.provider)}`}
+          className={`absolute top-3 left-3 z-20 text-xs font-semibold ${providerBadgeClass(
+            property.provider
+          )}`}
         >
           {providerLabel(property.provider)}
         </Badge>

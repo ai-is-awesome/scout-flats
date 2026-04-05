@@ -4,7 +4,7 @@ import PropertyCard from "@/features/listings/components/property-card";
 import MapView from "@/features/listings/components/map-view";
 import { ListingHero } from "@/features/listings/components/listing-hero";
 import { ListingsControls } from "@/features/listings/components/listings-controls";
-import { getListings } from "@/features/listings/get-listings";
+import { getListings, getListingLocalities } from "@/features/listings/get-listings";
 import { parseListingFilters } from "@/features/listings/types";
 
 export const revalidate = 300;
@@ -16,7 +16,10 @@ export default async function Page({
 }) {
   const sp = await searchParams;
   const filters = parseListingFilters(sp);
-  const properties = await getListings(filters);
+  const [properties, localities] = await Promise.all([
+    getListings(filters),
+    getListingLocalities(),
+  ]);
 
   return (
     <div className="min-h-screen bg-background">
@@ -27,10 +30,13 @@ export default async function Page({
           <div className="relative h-64 md:h-80 overflow-hidden bg-muted animate-pulse" />
         }
       >
-        <ListingHero initialQuery={filters.q} />
+        <ListingHero
+          initialLocality={filters.locality}
+          localities={localities}
+        />
       </Suspense>
 
-      <div className="container mx-auto px-4 py-6 space-y-4">
+      <div className="relative z-0 container mx-auto px-4 py-6 space-y-4">
         <ListingsControls
           initialFilters={filters}
           resultCount={properties.length}

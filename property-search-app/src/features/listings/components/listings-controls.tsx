@@ -44,7 +44,11 @@ export function ListingsControls({
         <div className="flex items-center gap-3">
           <h2 className="font-heading font-semibold text-xl text-foreground">
             {resultCount} Properties
-            {initialFilters.q ? (
+            {initialFilters.locality ? (
+              <span className="text-muted-foreground font-normal text-base ml-2">
+                in &quot;{initialFilters.locality}&quot;
+              </span>
+            ) : initialFilters.q ? (
               <span className="text-muted-foreground font-normal text-base ml-2">
                 near &quot;{initialFilters.q}&quot;
               </span>

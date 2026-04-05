@@ -24,6 +24,14 @@ const Index = () => {
   const [priceRange, setPriceRange] = useState<[number, number]>([0, 30000]);
   const [showFilters, setShowFilters] = useState(true);
 
+  const localitySuggestions = useMemo(
+    () =>
+      [...new Set(MOCK_PROPERTIES.map((p) => p.area))].sort((a, b) =>
+        a.localeCompare(b, undefined, { sensitivity: "base" })
+      ),
+    []
+  );
+
   const filtered = useMemo(() => {
     const matched = MOCK_PROPERTIES.filter((p: Property) => {
       const q = searchQuery.toLowerCase();
@@ -74,7 +82,12 @@ const Index = () => {
             Compare prices, discounts & amenities across Zolo and Colive
             properties near you.
           </p>
-          <SearchBar onSearch={setSearchQuery} className="w-full max-w-xl" />
+          <SearchBar
+            suggestions={localitySuggestions}
+            defaultValue={searchQuery}
+            onSearch={setSearchQuery}
+            className="w-full max-w-xl"
+          />
         </div>
       </section>
 

@@ -22,7 +22,8 @@ function mapProvider(s: PropertySource): ListingItem["provider"] {
   return "other";
 }
 
-function sharingTypeToOccupancy(st: SharingType): string {
+function sharingTypeToOccupancy(st: SharingType | null): string {
+  if (st == null) return "—";
   switch (st) {
     case SharingType.PRIVATE_ROOM:
       return "single";
@@ -124,7 +125,12 @@ function buildWhere(filters: ListingFilters): Prisma.PropertyWhereInput {
     and.push({ genderAllowed: g });
   }
 
-  if (filters.q) {
+  const localityTrim = filters.locality.trim();
+  if (localityTrim) {
+    and.push({
+      locality: { equals: localityTrim, mode: "insensitive" },
+    });
+  } else if (filters.q) {
     const q = filters.q.trim();
     and.push({
       OR: [
@@ -287,6 +293,32 @@ async function fetchListingsFromDb(
 ): Promise<ListingItem[]> {
   const rows = await queryListingsRaw(filters);
   return rows.map(mapRowToListingItem);
+}
+
+async function queryLocalitiesRaw(): Promise<string[]> {
+  const rows = await prisma.property.groupBy({
+    by: ["locality"],
+    where: {
+      status: PropertyStatus.ACTIVE,
+      locality: { not: null },
+    },
+  });
+  const names = rows
+    .map((r) => r.locality)
+    .filter((l): l is string => l != null && l.trim().length > 0);
+  return [...new Set(names)].sort((a, b) =>
+    a.localeCompare(b, undefined, { sensitivity: "base" })
+  );
+}
+
+/** Distinct non-empty localities for search autofill (cached). */
+export async function getListingLocalities(): Promise<string[]> {
+  const cached = unstable_cache(
+    async () => queryLocalitiesRaw(),
+    ["listing-localities"],
+    { revalidate: 300 }
+  );
+  return cached();
 }
 
 export async function getListings(
