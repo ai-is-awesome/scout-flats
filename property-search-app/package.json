@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@prisma/adapter-pg": "^7.4.1",
+    "@prisma/extension-accelerate": "^3.0.1",
     "@property-search/shared-types": "file:../shared-types",
     "@vercel/analytics": "^2.0.1",
     "class-variance-authority": "^0.7.1",
@@ -29,7 +30,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^0.1.0",
-    "@prisma/client": "^7.4.2",
+    "@prisma/client": "^7.6.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/pg": "^8.16.0",
@@ -37,7 +38,7 @@
     "@types/react-dom": "^19",
     "eslint": "^10.0.2",
     "eslint-config-next": "^0.2.4",
-    "prisma": "^7.4.2",
+    "prisma": "^7.6.0",
     "tailwindcss": "^4",
     "tsx": "^4.21.0",
     "typescript": "^5"
