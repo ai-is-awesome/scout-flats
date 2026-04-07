@@ -10,6 +10,8 @@ import {
 import type { ListingFilters, ListingItem } from "./types";
 import { listingFiltersCacheKey } from "./types";
 
+const DEFAULT_AMENITIES = ["WiFi", "Power Backup", "CCTV"];
+
 function mapGender(g: Gender | null): ListingItem["gender"] {
   if (g === Gender.MALE) return "male";
   if (g === Gender.FEMALE) return "female";
@@ -198,7 +200,6 @@ async function queryListingsRaw(filters: ListingFilters) {
       longitude: true,
       averageRating: true,
       propertyCategory: true,
-      providerJson: true,
       images: {
         orderBy: { imageOrder: "asc" },
         take: 5,
@@ -256,15 +257,6 @@ function mapRowToListingItem(row: RawListingRow): ListingItem {
     discount = { label: "Offer", percentage: Math.round(maxDisc) };
   }
 
-  const amenities: string[] = [];
-  if (row.providerJson && typeof row.providerJson === "object") {
-    const j = row.providerJson as Record<string, unknown>;
-    const am = j.amenities;
-    if (Array.isArray(am)) {
-      amenities.push(...am.filter((x): x is string => typeof x === "string"));
-    }
-  }
-
   return {
     id: row.id,
     name: row.name ?? "Unnamed property",
@@ -276,7 +268,7 @@ function mapRowToListingItem(row: RawListingRow): ListingItem {
     rating: row.averageRating ?? 0,
     reviewCount: 0,
     images: row.images.map((i) => i.imageUrl),
-    amenities: amenities.length ? amenities : ["WiFi"],
+    amenities: DEFAULT_AMENITIES,
     pricing:
       pricing.length > 0
         ? pricing
