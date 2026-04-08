@@ -4,7 +4,10 @@ import PropertyCard from "@/features/listings/components/property-card";
 import MapView from "@/features/listings/components/map-view";
 import { ListingHero } from "@/features/listings/components/listing-hero";
 import { ListingsControls } from "@/features/listings/components/listings-controls";
-import { getListings, getListingLocalities } from "@/features/listings/get-listings";
+import {
+  getListings,
+  getListingLocalities,
+} from "@/features/listings/get-listings";
 import { parseListingFilters } from "@/features/listings/types";
 
 export const revalidate = 300;
@@ -16,10 +19,16 @@ export default async function Page({
 }) {
   const sp = await searchParams;
   const filters = parseListingFilters(sp);
+  const t0 = performance.now();
   const [properties, localities] = await Promise.all([
     getListings(filters),
     getListingLocalities(),
   ]);
+
+  const t1 = performance.now();
+  console.log(
+    `Time taken to get loccalities and listings : ${t1 - t0} milliseconds`
+  );
 
   return (
     <div className="min-h-screen bg-background">

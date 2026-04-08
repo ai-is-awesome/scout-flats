@@ -65,8 +65,6 @@ export async function run_zolo_property_pricing() {
   // }
 }
 
-
-
 export async function run_push_zolo_json_to_next_api() {
   const center_search_data = load_zolo_data_from_json("center_search");
   const pricing_data = load_zolo_data_from_json("property_pricing");

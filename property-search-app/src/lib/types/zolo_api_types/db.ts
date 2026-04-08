@@ -11,11 +11,6 @@ config({
   path: resolve(process.cwd(), ".env"),
   quiet: true,
 });
-config({
-  path: resolve(process.cwd(), ".env.local"),
-  override: true,
-  quiet: true,
-});
 
 function requireDatabaseUrl(): string {
   const url = process.env.DATABASE_URL;
@@ -30,9 +25,7 @@ function requireDatabaseUrl(): string {
 const databaseUrl = requireDatabaseUrl();
 
 function isAccelerateUrl(url: string): boolean {
-  return (
-    url.startsWith("prisma://") || url.startsWith("prisma+postgres://")
-  );
+  return url.startsWith("prisma://") || url.startsWith("prisma+postgres://");
 }
 
 const globalForPrisma = globalThis as unknown as {
@@ -40,6 +33,7 @@ const globalForPrisma = globalThis as unknown as {
 };
 
 function createPrisma(): AppPrismaClient {
+  console.log("databaseUrl", databaseUrl);
   if (isAccelerateUrl(databaseUrl)) {
     return new PrismaClient({
       accelerateUrl: databaseUrl,
@@ -60,8 +54,7 @@ function createPrisma(): AppPrismaClient {
   return new PrismaClient({ adapter: new PrismaPg(pool) });
 }
 
-export const prisma: AppPrismaClient =
-  globalForPrisma.prisma ?? createPrisma();
+export const prisma: AppPrismaClient = globalForPrisma.prisma ?? createPrisma();
 
 if (process.env.NODE_ENV !== "production") {
   globalForPrisma.prisma = prisma;

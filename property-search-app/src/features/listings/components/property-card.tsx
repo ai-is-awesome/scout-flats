@@ -119,7 +119,7 @@ const PropertyCard = ({ property }: { property: ListingItem }) => {
           <div className="flex gap-2 mt-2 flex-wrap">
             {property.pricing.map((p) => (
               <span
-                key={`${p.occupancy}-${p.price}`}
+                key={`${p.occupancy}-${p.price}-${p.originalPrice}`}
                 className="text-xs px-2 py-0.5 rounded-full bg-card text-muted-foreground border border-border"
               >
                 {p.occupancy}

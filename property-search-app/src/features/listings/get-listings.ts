@@ -11,6 +11,33 @@ import type { ListingFilters, ListingItem } from "./types";
 import { listingFiltersCacheKey } from "./types";
 
 const DEFAULT_AMENITIES = ["WiFi", "Power Backup", "CCTV"];
+const PROFILE_LISTINGS = process.env.LISTINGS_PROFILE === "true";
+
+function nowMs(): number {
+  return performance.now();
+}
+
+function logProfile(step: string, ms: number, meta?: Record<string, unknown>) {
+  if (!PROFILE_LISTINGS) return;
+  if (meta) {
+    console.log(`[listings] ${step}: ${Math.round(ms)}ms`, meta);
+    return;
+  }
+  console.log(`[listings] ${step}: ${Math.round(ms)}ms`);
+}
+
+function activeFilterMeta(filters: ListingFilters): Record<string, unknown> {
+  const meta: Record<string, unknown> = {};
+  if (filters.q) meta.q = filters.q;
+  if (filters.locality) meta.locality = filters.locality;
+  if (filters.provider !== "all") meta.provider = filters.provider;
+  if (filters.gender !== "all") meta.gender = filters.gender;
+  if (filters.type !== "all") meta.type = filters.type;
+  if (filters.occupancy !== "all") meta.occupancy = filters.occupancy;
+  if (filters.priceMin > 0) meta.priceMin = filters.priceMin;
+  if (filters.priceMax < 30000) meta.priceMax = filters.priceMax;
+  return meta;
+}
 
 function mapGender(g: Gender | null): ListingItem["gender"] {
   if (g === Gender.MALE) return "male";
@@ -185,7 +212,9 @@ function buildWhere(filters: ListingFilters): Prisma.PropertyWhereInput {
 
 async function queryListingsRaw(filters: ListingFilters) {
   const where = buildWhere(filters);
-  return prisma.property.findMany({
+  const t0 = nowMs();
+  console.log("Where filter: ", where);
+  const rows = await prisma.property.findMany({
     where,
     select: {
       id: true,
@@ -224,6 +253,13 @@ async function queryListingsRaw(filters: ListingFilters) {
     take: 30,
     orderBy: { updatedAt: "desc" },
   });
+  logProfile("queryListingsRaw.findMany", nowMs() - t0, {
+    rows: rows.length,
+    locality: filters.locality || undefined,
+    hasQuery: Boolean(filters.q),
+    provider: filters.provider,
+  });
+  return rows;
 }
 
 type RawListingRow = Awaited<ReturnType<typeof queryListingsRaw>>[number];
@@ -283,11 +319,19 @@ function mapRowToListingItem(row: RawListingRow): ListingItem {
 async function fetchListingsFromDb(
   filters: ListingFilters
 ): Promise<ListingItem[]> {
+  const t0 = nowMs();
   const rows = await queryListingsRaw(filters);
-  return rows.map(mapRowToListingItem);
+  const tMap = nowMs();
+  const mapped = rows.map(mapRowToListingItem);
+  logProfile("mapRowToListingItem", nowMs() - tMap, { rows: rows.length });
+  logProfile("fetchListingsFromDb.total", nowMs() - t0, {
+    rows: rows.length,
+  });
+  return mapped;
 }
 
 async function queryLocalitiesRaw(): Promise<string[]> {
+  const t0 = nowMs();
   const rows = await prisma.property.groupBy({
     by: ["locality"],
     where: {
@@ -298,9 +342,14 @@ async function queryLocalitiesRaw(): Promise<string[]> {
   const names = rows
     .map((r) => r.locality)
     .filter((l): l is string => l != null && l.trim().length > 0);
-  return [...new Set(names)].sort((a, b) =>
+  const uniqueSorted = [...new Set(names)].sort((a, b) =>
     a.localeCompare(b, undefined, { sensitivity: "base" })
   );
+  logProfile("queryLocalitiesRaw.groupBy", nowMs() - t0, {
+    groups: rows.length,
+    uniqueLocalities: uniqueSorted.length,
+  });
+  return uniqueSorted;
 }
 
 /** Distinct non-empty localities for search autofill (cached). */
@@ -316,11 +365,17 @@ export async function getListingLocalities(): Promise<string[]> {
 export async function getListings(
   filters: ListingFilters
 ): Promise<ListingItem[]> {
+  const t0 = nowMs();
   const dataFilters: ListingFilters = { ...filters, view: "list" };
   const cached = unstable_cache(
     async () => fetchListingsFromDb(dataFilters),
     ["listings", listingFiltersCacheKey(dataFilters)],
     { revalidate: 300 }
   );
-  return cached();
+  const result = await cached();
+  logProfile("getListings.total", nowMs() - t0, {
+    rows: result.length,
+    activeFilters: activeFilterMeta(dataFilters),
+  });
+  return result;
 }

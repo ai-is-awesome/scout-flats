@@ -71,8 +71,7 @@ export function parseListingFilters(
   return {
     q: q.trim(),
     locality: locality.trim(),
-    provider:
-      provider === "zolo" || provider === "colive" ? provider : "all",
+    provider: provider === "zolo" || provider === "colive" ? provider : "all",
     gender:
       gender === "male" || gender === "female" || gender === "unisex"
         ? gender
