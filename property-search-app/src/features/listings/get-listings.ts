@@ -7,6 +7,7 @@ import {
   PropertyStatus,
   SharingType,
 } from "@/generated/prisma/client";
+import { aggregatePricingByOccupancy } from "./aggregate-pricing";
 import type { ListingFilters, ListingItem } from "./types";
 import { listingFiltersCacheKey } from "./types";
 
@@ -307,7 +308,7 @@ function mapRowToListingItem(row: RawListingRow): ListingItem {
     amenities: DEFAULT_AMENITIES,
     pricing:
       pricing.length > 0
-        ? pricing
+        ? aggregatePricingByOccupancy(pricing)
         : [{ occupancy: "—", price: lowest, originalPrice: lowest }],
     discount,
     foodIncluded: false,

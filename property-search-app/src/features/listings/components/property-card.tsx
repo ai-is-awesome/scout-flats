@@ -45,9 +45,11 @@ function providerLabel(provider: ListingItem["provider"]) {
 }
 
 const PropertyCard = ({ property }: { property: ListingItem }) => {
+  console.log(property.pricing);
   const [selectedOccupancy, setSelectedOccupancy] = useState(
     property.pricing[0]?.occupancy
   );
+
   const selectedPricing =
     property.pricing.find((p) => p.occupancy === selectedOccupancy) ||
     property.pricing[0];

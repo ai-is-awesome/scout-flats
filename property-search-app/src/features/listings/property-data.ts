@@ -1,3 +1,4 @@
+import { aggregatePricingByOccupancy } from "./aggregate-pricing";
 import type { ListingItem } from "./types";
 
 export type PropertyType =
@@ -303,11 +304,13 @@ export function mockPropertyToListingItem(p: Property): ListingItem {
     reviewCount: p.reviewCount,
     images: p.images,
     amenities: p.amenities,
-    pricing: p.pricing.map((pr) => ({
-      occupancy: pr.occupancy,
-      price: pr.price,
-      originalPrice: pr.originalPrice,
-    })),
+    pricing: aggregatePricingByOccupancy(
+      p.pricing.map((pr) => ({
+        occupancy: pr.occupancy,
+        price: pr.price,
+        originalPrice: pr.originalPrice,
+      }))
+    ),
     discount: p.discount,
     foodIncluded: p.foodIncluded,
     availableFrom: p.availableFrom,
