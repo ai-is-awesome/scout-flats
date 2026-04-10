@@ -1,17 +1,12 @@
 "use client";
-
 import { useState, useMemo } from "react";
 import { Map, List, SlidersHorizontal } from "lucide-react";
 import Header from "./components/header";
-import SearchBar from "@/features/listings/components/search-bar";
-import FilterBar from "@/features/listings/components/filter-bar";
-import PropertyCard from "@/features/listings/components/property-card";
+import SearchBar from "./components/search-bar";
+import FilterBar from "./components/filter-bar";
+import PropertyCard from "./components/property-card";
 import MapView from "@/features/listings/components/map-view";
-import {
-  MOCK_PROPERTIES,
-  mockPropertyToListingItem,
-  type Property,
-} from "@/features/listings/property-data";
+import { MOCK_PROPERTIES } from "./mock-properties";
 import heroBg from "../../../../public/hero-bg.jpg";
 
 const Index = () => {
@@ -24,16 +19,8 @@ const Index = () => {
   const [priceRange, setPriceRange] = useState<[number, number]>([0, 30000]);
   const [showFilters, setShowFilters] = useState(true);
 
-  const localitySuggestions = useMemo(
-    () =>
-      [...new Set(MOCK_PROPERTIES.map((p) => p.area))].sort((a, b) =>
-        a.localeCompare(b, undefined, { sensitivity: "base" })
-      ),
-    []
-  );
-
   const filtered = useMemo(() => {
-    const matched = MOCK_PROPERTIES.filter((p: Property) => {
+    return MOCK_PROPERTIES.filter((p) => {
       const q = searchQuery.toLowerCase();
       const matchesSearch =
         !q ||
@@ -59,7 +46,6 @@ const Index = () => {
         matchesPrice
       );
     });
-    return matched.map(mockPropertyToListingItem);
   }, [searchQuery, provider, gender, type, occupancy, priceRange]);
 
   return (
@@ -69,7 +55,7 @@ const Index = () => {
       {/* Hero */}
       <section className="relative h-64 md:h-80 overflow-hidden">
         <img
-          src={heroBg.src}
+          src={heroBg}
           alt="City skyline"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -82,12 +68,7 @@ const Index = () => {
             Compare prices, discounts & amenities across Zolo and Colive
             properties near you.
           </p>
-          <SearchBar
-            suggestions={localitySuggestions}
-            defaultValue={searchQuery}
-            onSearch={setSearchQuery}
-            className="w-full max-w-xl"
-          />
+          <SearchBar onSearch={setSearchQuery} className="w-full max-w-xl" />
         </div>
       </section>
 

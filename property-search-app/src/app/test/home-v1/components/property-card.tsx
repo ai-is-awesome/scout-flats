@@ -1,4 +1,3 @@
-"use client";
 import { useState } from "react";
 import {
   Star,
@@ -10,7 +9,7 @@ import {
   Calendar,
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import type { ListingItem } from "@/features/listings/types";
+import type { Property } from "../mock-properties";
 
 const genderIcon: Record<string, string> = {
   male: "♂",
@@ -32,44 +31,34 @@ const occupancyLabel: Record<string, string> = {
   quad: "Quad",
 };
 
-function providerBadgeClass(provider: ListingItem["provider"]) {
-  if (provider === "zolo") return "bg-primary text-primary-foreground";
-  if (provider === "colive") return "bg-accent text-accent-foreground";
-  return "bg-secondary text-secondary-foreground";
-}
-
-function providerLabel(provider: ListingItem["provider"]) {
-  if (provider === "zolo") return "Zolo";
-  if (provider === "colive") return "Colive";
-  return "Partner";
-}
-
-const PropertyCard = ({ property }: { property: ListingItem }) => {
+const PropertyCard = ({ property }: { property: Property }) => {
   const [selectedOccupancy, setSelectedOccupancy] = useState(
     property.pricing[0]?.occupancy
   );
   const selectedPricing =
     property.pricing.find((p) => p.occupancy === selectedOccupancy) ||
     property.pricing[0];
+
   return (
     <div className="group bg-card rounded-xl border border-border shadow-card hover:shadow-card-hover transition-all duration-300 overflow-hidden animate-fade-in-up">
+      {/* Image placeholder */}
       <div className="relative h-48 bg-muted overflow-hidden">
-        {property.images[0] ? (
-          <img
-            src={property.images[0]}
-            alt={property.name}
-            className="absolute inset-0 w-full h-full object-cover"
-          />
-        ) : null}
         <div className="absolute inset-0 bg-gradient-to-t from-foreground/40 to-transparent z-10" />
-        <div className="absolute inset-0 flex items-center justify-center text-muted-foreground z-[5]"></div>
+        <div className="absolute inset-0 flex items-center justify-center text-muted-foreground">
+          <div className="text-center">
+            <div className="text-4xl mb-1">🏠</div>
+            <span className="text-xs">{property.name}</span>
+          </div>
+        </div>
 
         <Badge
-          className={`absolute top-3 left-3 z-20 text-xs font-semibold ${providerBadgeClass(
-            property.provider
-          )}`}
+          className={`absolute top-3 left-3 z-20 text-xs font-semibold ${
+            property.provider === "zolo"
+              ? "bg-primary text-primary-foreground"
+              : "bg-accent text-accent-foreground"
+          }`}
         >
-          {providerLabel(property.provider)}
+          {property.provider === "zolo" ? "Zolo" : "Colive"}
         </Badge>
 
         {property.discount && (
@@ -83,11 +72,18 @@ const PropertyCard = ({ property }: { property: ListingItem }) => {
             {genderIcon[property.gender]} {property.gender}
           </span>
           <span className="px-2 py-0.5 rounded-full bg-card/90 text-card-foreground text-xs font-medium backdrop-blur-sm">
-            {property.typeLabel}
+            {property.type === "pg"
+              ? "PG"
+              : property.type === "coliving"
+              ? "Co-living"
+              : property.type === "hostel"
+              ? "Hostel"
+              : property.type.toUpperCase()}
           </span>
         </div>
       </div>
 
+      {/* Content */}
       <div className="p-4 space-y-3">
         <div>
           <h3 className="font-heading font-semibold text-lg text-card-foreground group-hover:text-primary transition-colors">
@@ -101,6 +97,7 @@ const PropertyCard = ({ property }: { property: ListingItem }) => {
           </div>
         </div>
 
+        {/* Rating */}
         <div className="flex items-center gap-2">
           <div className="flex items-center gap-1 px-2 py-0.5 rounded-md bg-warning/10">
             <Star className="h-3.5 w-3.5 text-warning fill-warning" />
@@ -113,8 +110,9 @@ const PropertyCard = ({ property }: { property: ListingItem }) => {
           </span>
         </div>
 
+        {/* Occupancy tabs + Price */}
         <div className="bg-secondary/50 rounded-lg p-3">
-          <div className="flex gap-1 mb-2 flex-wrap">
+          <div className="flex gap-1 mb-2">
             {property.pricing.map((p) => (
               <button
                 key={p.occupancy}
@@ -137,6 +135,7 @@ const PropertyCard = ({ property }: { property: ListingItem }) => {
           </div>
         </div>
 
+        {/* Amenities */}
         <div className="flex flex-wrap gap-2">
           {property.amenities.slice(0, 4).map((a) => (
             <span
@@ -158,6 +157,7 @@ const PropertyCard = ({ property }: { property: ListingItem }) => {
           )}
         </div>
 
+        {/* Highlights */}
         <div className="flex flex-wrap gap-1.5">
           {property.highlights.slice(0, 3).map((h) => (
             <Badge key={h} variant="secondary" className="text-xs font-normal">
@@ -166,6 +166,7 @@ const PropertyCard = ({ property }: { property: ListingItem }) => {
           ))}
         </div>
 
+        {/* Footer */}
         <div className="flex items-center justify-between pt-2 border-t border-border">
           <div className="flex items-center gap-1 text-xs text-muted-foreground">
             <Calendar className="h-3.5 w-3.5" />
