@@ -3,3 +3,5 @@ export * from "./output_types/zolo/zolo_search_center_json_type";
 export * from "./output_types/zolo/zolo_pricing_json_type";
 export * from "./lib/jsonReaders/zolo";
 export * from "./lib/utils";
+export * from "./stanzaLiving/stanzaLivingApiResponse";
+export * from "./stanzaLiving/stanzaLivingJsonType";

@@ -4,6 +4,7 @@ import {
   copy_zolo_pricing_data_to_clipboard,
   verify_file_integrity,
 } from "./lib/json_readers/zolo";
+import { fetchData } from "./lib/providers/stanza";
 import {
   run_push_zolo_json_to_next_api,
   run_zolo_center_search,
@@ -46,6 +47,10 @@ async function main() {
 
 // first()
 
-run_push_zolo_json_to_next_api();
+// This fucntion below pushes the zolo json to the next api
+// run_push_zolo_json_to_next_api();
 
 // console.log(zoloHelperFunctions.analytics.runJsonAnalytics());
+
+// Stanza Living
+// fetchData();

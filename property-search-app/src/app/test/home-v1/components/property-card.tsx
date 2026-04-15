@@ -127,11 +127,14 @@ const PropertyCard = ({ property }: { property: Property }) => {
               </button>
             ))}
           </div>
-          <div className="flex items-baseline gap-2">
-            <span className="text-2xl font-heading font-bold text-card-foreground">
-              ₹{selectedPricing.price.toLocaleString("en-IN")}
-            </span>
-            <span className="text-xs text-muted-foreground">/month</span>
+          <div className="flex flex-col gap-0.5">
+            <span className="text-xs text-muted-foreground">Starts from</span>
+            <div className="flex items-baseline gap-2">
+              <span className="text-2xl font-heading font-bold text-card-foreground">
+                ₹{selectedPricing.price.toLocaleString("en-IN")}
+              </span>
+              <span className="text-xs text-muted-foreground">/month</span>
+            </div>
           </div>
         </div>
 

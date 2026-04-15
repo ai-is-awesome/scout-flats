@@ -23,4 +23,11 @@ export const DATA_PATHS = {
       "zolo_pricing_shape_analytics.json"
     ),
   },
+  stanzaLiving: {
+    stanzaPropertyListingDataPath: path.join(
+      DATA_PATH,
+      "stanzaLiving",
+      "stanzaPropertyListingData.json"
+    ),
+  },
 };
