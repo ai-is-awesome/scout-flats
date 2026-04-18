@@ -1,6 +1,6 @@
 type LocalityRow = {
   localityKey?: string | null;
-  locality?: string | null;
+  name?: string | null;
 };
 
 type MatchPopularLocalitiesResult = {
@@ -23,7 +23,7 @@ export function matchPopularLocalities(
       const match = rows.find((row) => {
         return (
           normalize(row.localityKey) === areaNorm ||
-          normalize(row.locality) === areaNorm
+          normalize(row.name) === areaNorm
         );
       });
 

@@ -8,7 +8,7 @@ export const GET = async (request: Request) => {
     select: {
       id: true,
       name: true,
-      locality: true,
+      locality: { select: { name: true, localityKey: true } },
 
       images: {
         orderBy: { imageOrder: "asc" },

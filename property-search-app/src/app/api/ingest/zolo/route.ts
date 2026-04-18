@@ -14,6 +14,7 @@ import type {
 import { buildPropertyImagesCreate } from "@/lib/ingest/zolo/build-property-images";
 import { mapZoloGenderToPrisma } from "@/lib/ingest/zolo/mappers";
 import zoloTransformer from "@/lib/ingest/zolo/transform";
+import { ensureLocality } from "@/lib/ingest/ensure-locality";
 
 const ZOLO_SHARING_TO_ENUM: Record<string, SharingTypeEnum> = {
   "1 Sharing": SharingType.PRIVATE_ROOM,
@@ -190,6 +191,14 @@ export async function POST(request: Request) {
       const { basicData, detailed_pricing_info } = property;
       const [longitude, latitude] = basicData.location ?? [0, 0];
 
+      const { cityId, localityId } = await ensureLocality({
+        cityKey: basicData.cityKey,
+        cityName: basicData.city,
+        stateName: basicData.propertyState,
+        localityKey: basicData.localityKey,
+        localityName: basicData.locality,
+      });
+
       await prisma.$transaction(async (tx) => {
         const db = tx as typeof prisma;
         await db.propertyImage.deleteMany({
@@ -206,11 +215,8 @@ export async function POST(request: Request) {
             description: basicData.description ?? undefined,
             addressLine1: basicData.addressLine1 ?? undefined,
             addressLine2: basicData.addressLine2 ?? undefined,
-            locality: basicData.locality ?? undefined,
-            localityKey: basicData.localityKey ?? undefined,
-            cityKey: basicData.cityKey ?? undefined,
-            city: basicData.city ?? undefined,
-            propertyState: basicData.propertyState ?? undefined,
+            cityId: cityId ?? undefined,
+            localityId: localityId ?? undefined,
             propertyCategory: basicData.propertyCategory ?? undefined,
             averageRating: basicData.averageRating ?? undefined,
             latitude: latitude ? Number(latitude) : undefined,
@@ -273,6 +279,14 @@ export async function POST(request: Request) {
       const { basicData, images, detailed_pricing_info } = property;
       const [locLong, locLat] = basicData.location ?? [0, 0];
 
+      const { cityId, localityId } = await ensureLocality({
+        cityKey: basicData.cityKey,
+        cityName: basicData.city,
+        stateName: basicData.propertyState,
+        localityKey: basicData.localityKey,
+        localityName: basicData.locality,
+      });
+
       await prisma.$transaction(async (tx) => {
         const db = tx as typeof prisma;
         const createdProperty = await db.property.create({
@@ -287,11 +301,8 @@ export async function POST(request: Request) {
             genderAllowed: mapZoloGenderToPrisma(basicData.gender),
             addressLine1: basicData.addressLine1 ?? undefined,
             addressLine2: basicData.addressLine2 ?? undefined,
-            locality: basicData.locality ?? undefined,
-            localityKey: basicData.localityKey ?? undefined,
-            cityKey: basicData.cityKey ?? undefined,
-            city: basicData.city ?? undefined,
-            propertyState: basicData.propertyState ?? undefined,
+            cityId: cityId ?? undefined,
+            localityId: localityId ?? undefined,
             propertyCategory: basicData.propertyCategory ?? undefined,
             averageRating: basicData.averageRating ?? undefined,
             latitude: locLat != null ? Number(locLat) : undefined,

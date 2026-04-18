@@ -9,15 +9,14 @@ generator client {
   output   = "../src/generated/prisma"
 }
 
-
 datasource db {
   provider = "postgresql"
 }
 
 enum PropertySource {
   ZOLO
-  COLIVE 
-  CUSTOM 
+  COLIVE
+  CUSTOM
   // custom = uploadedby someone
 }
 
@@ -56,109 +55,128 @@ enum SharingType {
   STUDIO_APARTMENT
 }
 
-
 model Property {
-  id String @id @default(cuid())
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  source PropertySource
-  uploadedVia UploadedVia @default(SCRIPT)
-  propertyUniqueId String?
+  id                 String          @id @default(cuid())
+  createdAt          DateTime        @default(now())
+  updatedAt          DateTime        @updatedAt
+  source             PropertySource
+  uploadedVia        UploadedVia     @default(SCRIPT)
+  propertyUniqueId   String?
   propertyInternalId String?
-  providerJson Json?
-  name String?
-  description String?
-  genderAllowed Gender?
-  addressLine1 String?
-  addressLine2 String?
-  locality String?
-  localityKey String?
-  cityKey String?
-  city String?
-  propertyState String?
+  providerJson       Json?
+  name               String?
+  description        String?
+  genderAllowed      Gender?
+  addressLine1       String?
+  addressLine2       String?
+  // Normalized location — see City and Locality models
+  cityId             String?
+  city               City?           @relation(fields: [cityId], references: [id])
+  localityId         String?
+  locality           Locality?       @relation(fields: [localityId], references: [id])
   // ZOLO STANDARD, SELECT
-  propertyCategory String?
-  averageRating Float?
+  propertyCategory   String?
+  averageRating      Float?
   // Location
-  latitude Float?
-  longitude Float?
-  status PropertyStatus @default(ACTIVE) 
+  latitude           Float?
+  longitude          Float?
+  status             PropertyStatus  @default(ACTIVE)
   // Images
-  images PropertyImage[]
-  roomVariants RoomVariant[]
-  seoTitle String?
-  seoDescription String?
-  seoMeta String?
-  
+  images             PropertyImage[]
+  roomVariants       RoomVariant[]
+  seoTitle           String?
+  seoDescription     String?
+  seoMeta            String?
+
   // For custom users
   userId String?
-  user User? @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user   User?   @relation(fields: [userId], references: [id], onDelete: Cascade)
 
-  @@index([localityKey])
-  @@index([source])
-  @@index([genderAllowed])
   @@unique([source, propertyUniqueId])
   @@unique([source, propertyInternalId])
+  @@index([source])
+  @@index([genderAllowed])
+  @@index([cityId])
+  @@index([localityId])
 }
-
 
 model User {
-  id String @id @default(cuid())
+  id         String     @id @default(cuid())
   properties Property[]
 }
+
 model PropertyImage {
-  id String @id @default(cuid())
+  id         String   @id @default(cuid())
   propertyId String
-  property Property @relation(fields: [propertyId], references: [id], onDelete: Cascade)
-  imageUrl String
+  property   Property @relation(fields: [propertyId], references: [id], onDelete: Cascade)
+  imageUrl   String
   imageOrder Int
   imageLabel String?
+
   @@index([propertyId])
 }
 
+model City {
+  id          String     @id @default(cuid())
+  cityKey     String     @unique
+  name        String
+  stateName   String?
+  countryCode String     @default("IN")
+  localities  Locality[]
+  properties  Property[]
+}
+
+model Locality {
+  id          String     @id @default(cuid())
+  cityId      String
+  city        City       @relation(fields: [cityId], references: [id], onDelete: Cascade)
+  localityKey String
+  name        String
+  properties  Property[]
+
+  @@unique([cityId, localityKey])
+  @@index([cityId])
+}
 
 model RoomVariant {
-  id String @id @default(cuid())
-  updatedAt DateTime @updatedAt
-  sharingType SharingType?
-  propertyId String
-  property Property @relation(fields: [propertyId], references: [id], onDelete: Cascade)
-  roomName String?
-  isActive Boolean @default(true)
-  depositMonths Int?
+  id                 String       @id @default(cuid())
+  updatedAt          DateTime     @updatedAt
+  sharingType        SharingType?
+  propertyId         String
+  property           Property     @relation(fields: [propertyId], references: [id], onDelete: Cascade)
+  roomName           String?
+  isActive           Boolean      @default(true)
+  depositMonths      Int?
   noticePeriodInDays Int?
-  
-  basePrice Int
-  variantLabel String?
+
+  basePrice      Int
+  variantLabel   String?
   variantDetails Json?
-  pricingPlans PricingPlan[]
+  pricingPlans   PricingPlan[]
+
   @@index([propertyId])
 }
 
-
-
-
 model PricingPlan {
-  id String @id @default(cuid())
-  roomVariantId String
-  roomVariant RoomVariant @relation(fields: [roomVariantId], references: [id], onDelete: Cascade)
-  durationMonths Int
-  discountPercentage Float?
-  depositMonths Int?
-  noticePeriodInDays Int?
+  id                    String       @id @default(cuid())
+  roomVariantId         String
+  roomVariant           RoomVariant  @relation(fields: [roomVariantId], references: [id], onDelete: Cascade)
+  durationMonths        Int
+  discountPercentage    Float?
+  depositMonths         Int?
+  noticePeriodInDays    Int?
   effectiveMonthlyPrice Int?
-  isBasePlan Boolean
-  promoOffers PromoOffer[]
+  isBasePlan            Boolean
+  promoOffers           PromoOffer[]
 }
 
-
 model PromoOffer {
-  id String @id @default(cuid())
-  pricingPlanId String
-  pricingPlan PricingPlan @relation(fields: [pricingPlanId], references: [id], onDelete: Cascade)
-  promoCode String?
+  id                 String      @id @default(cuid())
+  pricingPlanId      String
+  pricingPlan        PricingPlan @relation(fields: [pricingPlanId], references: [id], onDelete: Cascade)
+  promoCode          String?
   discountPercentage Float?
-  applicableMonths Int
-  startDate DateTime?
-  endDate DateTime?
+  applicableMonths   Int
+  startDate          DateTime?
+  endDate            DateTime?
 }

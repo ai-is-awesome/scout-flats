@@ -41,28 +41,21 @@ export const DatabaseMode = () => {
     console.log("topAreas not found in data", missingTopAreas);
   }
 
-  console.log(
-    "locality data",
-    (data as any[])
-      ?.map((item) => {
-        return {
-          localityKey: item.localityKey,
-          locality: item.locality,
-          city: item.city,
-          id: item.id,
-        };
-      })
-      .sort((a, b) => a.localityKey.localeCompare(b.localityKey))
-  );
+  const tableRows = (data as any[])?.map((item) => ({
+    id: item.id,
+    localityKey: item.localityKey,
+    name: item.name,
+    city: item.city?.name ?? "",
+  }));
 
   const columns = [
     { id: "localityKey", header: "localityKey" },
-    { id: "locality", header: "locality" },
+    { id: "name", header: "name" },
     { id: "city", header: "city" },
   ];
 
   const ComponentToRender = {
-    localities: <Table columns={columns} data={normalizedData} />,
+    localities: <Table columns={columns} data={tableRows ?? []} />,
   };
 
   if (loading) return <div>Loading...</div>;

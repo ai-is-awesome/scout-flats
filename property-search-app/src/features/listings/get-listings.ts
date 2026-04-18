@@ -158,17 +158,25 @@ function buildWhere(filters: ListingFilters): Prisma.PropertyWhereInput {
   const localityTrim = filters.locality.trim();
   if (localityTrim) {
     and.push({
-      locality: { equals: localityTrim, mode: "insensitive" },
+      locality: { is: { name: { equals: localityTrim, mode: "insensitive" } } },
     });
   } else if (filters.q) {
     const q = filters.q.trim();
     and.push({
       OR: [
         { name: { contains: q, mode: "insensitive" } },
-        { locality: { contains: q, mode: "insensitive" } },
-        { city: { contains: q, mode: "insensitive" } },
-        { localityKey: { contains: q, mode: "insensitive" } },
         { addressLine1: { contains: q, mode: "insensitive" } },
+        {
+          locality: {
+            is: {
+              OR: [
+                { name: { contains: q, mode: "insensitive" } },
+                { localityKey: { contains: q, mode: "insensitive" } },
+              ],
+            },
+          },
+        },
+        { city: { is: { name: { contains: q, mode: "insensitive" } } } },
       ],
     });
   }
@@ -222,9 +230,8 @@ async function queryListingsRaw(filters: ListingFilters) {
       name: true,
       source: true,
       genderAllowed: true,
-      locality: true,
-      localityKey: true,
-      city: true,
+      locality: { select: { name: true, localityKey: true } },
+      city: { select: { name: true } },
       addressLine1: true,
       latitude: true,
       longitude: true,
@@ -300,8 +307,8 @@ function mapRowToListingItem(row: RawListingRow): ListingItem {
     provider: mapProvider(row.source),
     gender: mapGender(row.genderAllowed),
     typeLabel: typeLabelFromCategory(row.propertyCategory),
-    area: row.locality ?? "Bangalore",
-    city: row.city ?? "Bangalore",
+    area: row.locality?.name ?? "Bangalore",
+    city: row.city?.name ?? "Bangalore",
     rating: row.averageRating ?? 0,
     reviewCount: 0,
     images: row.images.map((i) => i.imageUrl),
@@ -313,7 +320,9 @@ function mapRowToListingItem(row: RawListingRow): ListingItem {
     discount,
     foodIncluded: false,
     availableFrom: "See details",
-    highlights: row.localityKey ? [row.localityKey.replace(/_/g, " ")] : [],
+    highlights: row.locality?.localityKey
+      ? [row.locality.localityKey.replace(/_/g, " ")]
+      : [],
   };
 }
 
@@ -333,21 +342,17 @@ async function fetchListingsFromDb(
 
 async function queryLocalitiesRaw(): Promise<string[]> {
   const t0 = nowMs();
-  const rows = await prisma.property.groupBy({
-    by: ["locality"],
+  const rows = await prisma.locality.findMany({
     where: {
-      status: PropertyStatus.ACTIVE,
-      locality: { not: null },
+      properties: { some: { status: PropertyStatus.ACTIVE } },
     },
+    select: { name: true },
   });
-  const names = rows
-    .map((r) => r.locality)
-    .filter((l): l is string => l != null && l.trim().length > 0);
-  const uniqueSorted = [...new Set(names)].sort((a, b) =>
-    a.localeCompare(b, undefined, { sensitivity: "base" })
-  );
-  logProfile("queryLocalitiesRaw.groupBy", nowMs() - t0, {
-    groups: rows.length,
+  const uniqueSorted = rows
+    .map((r) => r.name)
+    .filter((n) => n.trim().length > 0)
+    .sort((a, b) => a.localeCompare(b, undefined, { sensitivity: "base" }));
+  logProfile("queryLocalitiesRaw.findMany", nowMs() - t0, {
     uniqueLocalities: uniqueSorted.length,
   });
   return uniqueSorted;
