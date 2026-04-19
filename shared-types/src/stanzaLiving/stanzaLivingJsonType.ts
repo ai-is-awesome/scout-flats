@@ -1,5 +1,9 @@
-import { StanzaLivingPropertiesSearchApiResponse } from "./stanzaLivingApiResponse";
+import {
+  StanzaLivingPropertiesSearchApiResponse,
+  StanzaLivingPropertySearchType,
+} from "./stanzaLivingApiResponse";
 
 export type StanzaLivingJsonType = {
-  data: StanzaLivingPropertiesSearchApiResponse[];
+  data: StanzaLivingPropertySearchType[];
+  lastUpdatedAt: string;
 };

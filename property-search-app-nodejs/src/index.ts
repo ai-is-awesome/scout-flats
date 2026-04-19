@@ -11,6 +11,7 @@ import {
   load_zolo_data_from_json,
   runJsonAnalytics,
 } from "./storage/zolo";
+import { StanzaJsonData } from "./storage/stanza";
 
 // ── Zolo pipeline ─────────────────────────────────────────────────────────────
 // run_zolo_center_search();
@@ -18,7 +19,11 @@ import {
 // run_push_zolo_to_next();
 
 // ── Stanza pipeline ───────────────────────────────────────────────────────────
+// console.log("Running Stanza pipeline...");
 // run_stanza_pipeline();
+
+const ins = new StanzaJsonData();
+console.log(ins.stanza.uniqueLocalities);
 
 // ── Utilities ─────────────────────────────────────────────────────────────────
 // verify_file_integrity();

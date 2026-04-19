@@ -5,7 +5,7 @@ export type StanzaLivingPropertiesSearchApiResponse = {
   data: null;
   extraInfo: null;
   residenceResponseShortDTOs: StanzaLivingPropertySearchType[];
-}[];
+};
 
 export type StanzaLivingAddressResponseApiType = {
   addressId: number;
