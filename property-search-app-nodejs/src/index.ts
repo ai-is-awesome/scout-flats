@@ -3,7 +3,10 @@ import {
   run_zolo_property_pricing,
   run_push_zolo_to_next,
 } from "./pipelines/zolo";
-import { run_stanza_pipeline } from "./pipelines/stanza";
+import {
+  run_stanza_pipeline,
+  run_push_stanza_to_next,
+} from "./pipelines/stanza";
 import {
   verify_file_integrity,
   copy_zolo_pricing_data_to_clipboard,
@@ -19,11 +22,12 @@ import { StanzaJsonData } from "./storage/stanza";
 // run_push_zolo_to_next();
 
 // ── Stanza pipeline ───────────────────────────────────────────────────────────
-// console.log("Running Stanza pipeline...");
 // run_stanza_pipeline();
+console.log("hitting");
+run_push_stanza_to_next();
 
-const ins = new StanzaJsonData();
-console.log(ins.stanza.uniqueLocalities);
+// const ins = new StanzaJsonData();
+// console.log(ins.stanza.uniqueLocalities);
 
 // ── Utilities ─────────────────────────────────────────────────────────────────
 // verify_file_integrity();

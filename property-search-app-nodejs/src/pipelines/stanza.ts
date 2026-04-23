@@ -1,7 +1,11 @@
 import { StanzaLivingPropertiesSearchApiResponse } from "@property-search/shared-types";
 import { fetchStanzaLivingData } from "../providers/stanza/api";
 import { StanzaPropertySearchApiConfig } from "../providers/stanza/endpoints";
-import { appendStanzaPropertyListingDataToJsonFile } from "../storage/stanza";
+import {
+  appendStanzaPropertyListingDataToJsonFile,
+  readStanzaPropertyListingData,
+} from "../storage/stanza";
+import { push_stanza_data_to_next } from "../push/next-api";
 
 export async function run_stanza_pipeline() {
   let totalPages = -1;
@@ -35,4 +39,11 @@ export async function run_stanza_pipeline() {
     }
     currentPageNumber += 1;
   }
+}
+
+export async function run_push_stanza_to_next() {
+  console.log("hitting");
+  const jsonData = readStanzaPropertyListingData();
+  const response = await push_stanza_data_to_next(jsonData.data);
+  console.log(response);
 }

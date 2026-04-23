@@ -31,10 +31,10 @@ function mapZoloSharingType(zoloSharingType: string): SharingTypeEnum {
   return ZOLO_SHARING_TO_ENUM[zoloSharingType] ?? SharingType.DOUBLE_SHARING;
 }
 
-/** Prisma default interactive tx timeout is 5s; Zolo ingest does many nested creates per property. */
+// Accelerate caps interactive tx timeout at 15s on the current plan.
 const INGEST_TX_OPTIONS = {
-  maxWait: 15_000,
-  timeout: 120_000,
+  maxWait: 10_000,
+  timeout: 15_000,
 } as const;
 
 type PlanCreate = {

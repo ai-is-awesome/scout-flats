@@ -15,6 +15,7 @@ datasource db {
 
 enum PropertySource {
   ZOLO
+  STANZA
   COLIVE
   CUSTOM
   // custom = uploadedby someone
