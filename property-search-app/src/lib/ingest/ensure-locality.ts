@@ -13,6 +13,16 @@ type EnsureLocalityResult = {
   localityId: string | null;
 };
 
+// Providers send different names for the same city (Zolo: "bangalore", Stanza: "bengaluru").
+// Canonicalize at ingest so we don't split a city across two rows again.
+const CITY_KEY_ALIASES: Record<string, string> = {
+  bangalore: "bengaluru",
+};
+
+function canonicalCityKey(key: string): string {
+  return CITY_KEY_ALIASES[key] ?? key;
+}
+
 /**
  * Upserts City + Locality rows from raw provider strings and returns their ids.
  * Auto-creates unknown localities — consistent with the dev-stage "capture everything" approach.
@@ -25,11 +35,13 @@ export async function ensureLocality(
     return { cityId: null, localityId: null };
   }
 
+  const cityKey = canonicalCityKey(input.cityKey);
+
   const city = await prisma.city.upsert({
-    where: { cityKey: input.cityKey },
+    where: { cityKey },
     create: {
-      cityKey: input.cityKey,
-      name: input.cityName ?? input.cityKey,
+      cityKey,
+      name: input.cityName ?? cityKey,
       stateName: input.stateName ?? undefined,
     },
     update: {},
