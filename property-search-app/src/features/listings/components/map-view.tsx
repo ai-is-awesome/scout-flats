@@ -6,9 +6,12 @@ function minPrice(p: ListingItem): number {
   return prices.length ? Math.min(...prices) : 0;
 }
 
-function isZolo(p: ListingItem) {
-  return p.provider === "zolo";
-}
+const PIN_CLASS: Record<ListingItem["provider"], string> = {
+  zolo: "bg-primary text-primary-foreground",
+  stanza: "bg-emerald-600 text-white",
+  colive: "bg-accent text-accent-foreground",
+  other: "bg-muted text-muted-foreground",
+};
 
 const MapView = ({ properties }: { properties: ListingItem[] }) => {
   return (
@@ -49,9 +52,7 @@ const MapView = ({ properties }: { properties: ListingItem[] }) => {
               <div className="relative">
                 <div
                   className={`flex items-center gap-1 px-2.5 py-1.5 rounded-full shadow-elevated text-xs font-semibold transition-transform group-hover:scale-110 ${
-                    isZolo(property)
-                      ? "bg-primary text-primary-foreground"
-                      : "bg-accent text-accent-foreground"
+                    PIN_CLASS[property.provider]
                   }`}
                 >
                   <MapPin className="h-3 w-3" />₹

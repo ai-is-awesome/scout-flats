@@ -87,7 +87,7 @@ const FilterBar = ({
     <div className="flex flex-col gap-4">
       <div className="flex flex-wrap items-center gap-6">
         <FilterGroup label="Provider">
-          {["all", "zolo", "colive"].map((p) => (
+          {["all", "zolo", "colive", "stanza"].map((p) => (
             <FilterChip
               key={p}
               label={

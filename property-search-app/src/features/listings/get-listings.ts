@@ -49,6 +49,7 @@ function mapGender(g: Gender | null): ListingItem["gender"] {
 function mapProvider(s: PropertySource): ListingItem["provider"] {
   if (s === PropertySource.ZOLO) return "zolo";
   if (s === PropertySource.COLIVE) return "colive";
+  if (s === PropertySource.STANZA) return "stanza";
   return "other";
 }
 
@@ -143,6 +144,8 @@ function buildWhere(filters: ListingFilters): Prisma.PropertyWhereInput {
     and.push({ source: PropertySource.ZOLO });
   } else if (filters.provider === "colive") {
     and.push({ source: PropertySource.COLIVE });
+  } else if (filters.provider === "stanza") {
+    and.push({ source: PropertySource.STANZA });
   }
 
   if (filters.gender !== "all") {

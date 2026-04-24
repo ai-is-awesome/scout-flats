@@ -35,12 +35,14 @@ const occupancyLabel: Record<string, string> = {
 function providerBadgeClass(provider: ListingItem["provider"]) {
   if (provider === "zolo") return "bg-primary text-primary-foreground";
   if (provider === "colive") return "bg-accent text-accent-foreground";
+  if (provider === "stanza") return "bg-emerald-600 text-white";
   return "bg-secondary text-secondary-foreground";
 }
 
 function providerLabel(provider: ListingItem["provider"]) {
   if (provider === "zolo") return "Zolo";
   if (provider === "colive") return "Colive";
+  if (provider === "stanza") return "Stanza";
   return "Partner";
 }
 

@@ -3,7 +3,7 @@ export type ListingFilters = {
   q: string;
   /** Exact locality filter (URL `locality`); takes precedence over `q` in queries. */
   locality: string;
-  provider: "all" | "zolo" | "colive";
+  provider: "all" | "zolo" | "colive" | "stanza";
   gender: "all" | "male" | "female" | "unisex";
   type: string;
   occupancy: "all" | "single" | "double" | "triple" | "quad";
@@ -17,7 +17,7 @@ export type ListingFilters = {
 export type ListingItem = {
   id: string;
   name: string;
-  provider: "zolo" | "colive" | "other";
+  provider: "zolo" | "colive" | "stanza" | "other";
   gender: "male" | "female" | "unisex";
   /** Short label for the type badge (e.g. PG, Co-living). */
   typeLabel: string;
@@ -71,7 +71,12 @@ export function parseListingFilters(
   return {
     q: q.trim(),
     locality: locality.trim(),
-    provider: provider === "zolo" || provider === "colive" ? provider : "all",
+    provider:
+      provider === "zolo" ||
+      provider === "colive" ||
+      provider === "stanza"
+        ? provider
+        : "all",
     gender:
       gender === "male" || gender === "female" || gender === "unisex"
         ? gender
