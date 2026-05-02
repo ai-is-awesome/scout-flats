@@ -1,5 +1,5 @@
 import { chromium } from "patchright";
-import { getPosts, humanScroll } from "./lib/facebookScraper";
+import { expandSeeMore, getPosts, humanScroll } from "./lib/facebookScraper";
 
 const TARGET_GROUP_URL = "https://www.facebook.com/groups/838402552906457/";
 const SCROLL_ROUNDS = 5;
@@ -20,6 +20,7 @@ async function main() {
     console.log(`Found ${posts.length} posts in viewport`);
 
     for (const post of posts) {
+      await expandSeeMore(post);
       const body = await post
         .locator('[data-ad-rendering-role="story_message"]')
         .first()
@@ -34,10 +35,8 @@ async function main() {
   }
 
   console.log(`\nTotal unique posts seen: ${seen.size}`);
-  await ctx.close();
 }
 
 main().catch((e) => {
   console.error(e);
-  process.exit(1);
 });

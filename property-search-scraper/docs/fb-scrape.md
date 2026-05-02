@@ -17,3 +17,17 @@ datePosted
 textDetails
 imagesLink (or images in folder)
 videoLink (or video in folder)
+
+### How to locate posts by aria-posinset value
+
+<div aria-posinset="1" class = "x1a2a7pz">
+This represents a POST!
+Presence of posinet can tell you  at which post you're  at right now!
+
+But unfortunately the dom also represents posts out of the view so it's important to develop a method of detecting empty posts and skipping it!
+
+### How to locate show more
+
+Inside this, check if role = button and text content is see more!
+
+if it is, click on that button

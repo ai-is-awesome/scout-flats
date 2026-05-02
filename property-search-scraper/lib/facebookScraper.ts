@@ -6,31 +6,49 @@ const IDLE_PROBABILITY = 0.03;
 const IDLE_MS = { min: 15_000, max: 30_000 };
 
 /**
- * Returns top-level, content-bearing post Locators on a feed page.
- * Filters out:
- *   - nested articles (a post sharing another post creates inner [role="article"])
- *   - non-content cards (suggestions, "people you may know", etc.) which lack story_message
+ * Returns hydrated, content-bearing post Locators on a feed page.
+ * Anchored on [aria-posinset] (FB's per-post position attribute).
+ * Filters out unhydrated sentinels — posts that exist in the DOM but
+ * haven't had their content rendered yet (FB virtualizes the feed).
  */
 export async function getPosts(page: Page): Promise<Locator[]> {
-  await page.waitForSelector('[role="article"]', { timeout: 15_000 });
+  await page.waitForSelector("[aria-posinset]", { timeout: 15_000 });
 
-  const all = await page.locator('[role="article"]').all();
+  const all = await page.locator("[aria-posinset]").all();
 
   const result: Locator[] = [];
   for (const post of all) {
-    const ancestor = await post
-      .locator('xpath=ancestor::*[@role="article"][1]')
-      .count();
-    if (ancestor > 0) continue;
+    // Hydration check 1: must have a story_message child with non-empty text
+    const body = post.locator('[data-ad-rendering-role="story_message"]');
+    if ((await body.count()) === 0) continue;
+    const text = await body.first().textContent();
+    if (!text || text.trim().length === 0) continue;
 
-    const hasBody = await post
-      .locator('[data-ad-rendering-role="story_message"]')
-      .count();
-    if (hasBody === 0) continue;
+    // Hydration check 2: must have real visual height (zero-height = placeholder)
+    const box = await post.boundingBox();
+    if (!box || box.height < 50) continue;
 
     result.push(post);
   }
   return result;
+}
+
+/**
+ * Clicks the "See more" expansion button inside a post if present, so the
+ * full body text becomes available before extraction. Scoped to the post
+ * to avoid hitting comment "View more replies" buttons. The strict
+ * /^See more$/i regex avoids matching "See translation" or similar.
+ */
+export async function expandSeeMore(post: Locator): Promise<void> {
+  const seeMore = post
+    .locator('div[role="button"]')
+    .filter({ hasText: /^See more$/i })
+    .first();
+
+  if (await seeMore.isVisible().catch(() => false)) {
+    await seeMore.click();
+    await post.page().waitForTimeout(300);
+  }
 }
 
 /**
