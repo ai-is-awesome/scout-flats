@@ -11,12 +11,12 @@ This is when you click on the carousel and carousel opens in full screen
 
 We need details like
 
-groupName
-authorName
-datePosted
-textDetails
-imagesLink (or images in folder)
-videoLink (or video in folder)
+> groupName
+> authorName
+> datePosted
+> textDetails
+> imagesLink (or images in folder)
+> videoLink (or video in folder)
 
 ### How to locate posts by aria-posinset value
 
@@ -24,10 +24,25 @@ videoLink (or video in folder)
 This represents a POST!
 Presence of posinet can tell you  at which post you're  at right now!
 
-But unfortunately the dom also represents posts out of the view so it's important to develop a method of detecting empty posts and skipping it!
+But unfortunately the dom also represents posts out of the view i.e. non virtualizd content so it's important to develop a method of detecting empty posts and skipping it for the time being! We'll get em later!
+
+### How to find profile name
+
+Profile names can be found in a div with attribute
+data-ad-rendering-role whose value should be equal to "profile_name"
+so inside posinet, find div[data-ad-rendering-role="profile_name"]
+
+There the image willbe > svg with aria-label
+within svg there is a g tag. so svg[aria-label] > g > img with src leading to image
 
 ### How to locate show more
 
 Inside this, check if role = button and text content is see more!
 
 if it is, click on that button
+
+### Find group name
+
+document.querySelectorAll("h1").forEach(selector => console.log(selector.textContent))
+
+The second one is group name
