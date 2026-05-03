@@ -1,5 +1,6 @@
 import { chromium } from "patchright";
-import { getPosts, humanScroll, humanWander } from "./lib/facebookScraper";
+import { getPosts } from "./lib/facebook/facebookScraper";
+import { humanScroll, humanWander } from "./lib/scraper/cursor";
 
 const TARGET_GROUP_URL = "https://www.facebook.com/groups/838402552906457/";
 const SCROLL_ROUNDS = 5;
@@ -41,7 +42,6 @@ async function main() {
 
       console.log(JSON.stringify(details, null, 2));
     }
-
     await humanWander(page);
     await humanScroll(page);
   }
