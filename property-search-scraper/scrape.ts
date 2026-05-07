@@ -1,6 +1,7 @@
 import { chromium } from "patchright";
 import { getPosts } from "./lib/facebook/facebookScraper";
 import { humanScroll, humanWander } from "./lib/scraper/cursor";
+import { extractGroupId } from "./lib/facebook/facebokUtils";
 
 const TARGET_GROUP_URL = "https://www.facebook.com/groups/838402552906457/";
 const SCROLL_ROUNDS = 5;
@@ -40,7 +41,16 @@ async function main() {
       }
       seen.add(details.postId);
 
-      console.log(JSON.stringify(details, null, 2));
+      console.log(
+        JSON.stringify(
+          {
+            ...details,
+            postTextContent: details.postTextContent.slice(0, 100),
+          },
+          null,
+          2
+        )
+      );
     }
     await humanWander(page);
     await humanScroll(page);

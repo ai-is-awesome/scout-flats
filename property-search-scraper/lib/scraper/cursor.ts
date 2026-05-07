@@ -1,5 +1,12 @@
 import type { Page, Locator } from "patchright";
 import { createCursor, type Cursor } from "ghost-cursor-playwright";
+import { randomFloat, randomInt } from "../utils";
+
+const SCROLL_FRACTION = { min: 0.5, max: 0.9 };
+const SETTLE_MS = { min: 4000, max: 10000 };
+const IDLE_PROBABILITY = 0.03;
+const IDLE_MS = { min: 15_000, max: 30_000 };
+const CLICK_PRE_DELAY_MS: [number, number] = [80, 200];
 
 // One cursor per Page, lazily created. Cursor tracks previous position so
 // movements feel continuous across calls instead of teleporting.
@@ -36,6 +43,7 @@ export async function humanClick(target: Locator): Promise<void> {
   const cursor = await getCursor(page);
 
   const box = await target.boundingBox();
+  // console.log("Box : ", box);
   if (!box) {
     throw new Error("humanClick: target has no bounding box (not visible?)");
   }
@@ -54,11 +62,6 @@ export async function humanClick(target: Locator): Promise<void> {
 
 // Need to fix hardcoded params
 
-const SCROLL_FRACTION = { min: 0.5, max: 0.9 };
-const SETTLE_MS = { min: 4000, max: 10000 };
-const IDLE_PROBABILITY = 0.03;
-const IDLE_MS = { min: 15_000, max: 30_000 };
-const CLICK_PRE_DELAY_MS: [number, number] = [80, 200];
 export async function humanScroll(page: Page): Promise<void> {
   const fraction = randomFloat(SCROLL_FRACTION.min, SCROLL_FRACTION.max);
   await page.evaluate((f) => {
@@ -67,10 +70,10 @@ export async function humanScroll(page: Page): Promise<void> {
 
   const randomWait = randomInt(SETTLE_MS.min, SETTLE_MS.max);
   await page.waitForTimeout(randomWait);
-  console.log("Scrolled,  waiting for ", randomWait);
+  // console.log("Scrolled,  waiting for ", randomWait);
 
   if (Math.random() < IDLE_PROBABILITY) {
-    console.log("[humanScroll] idle pause…");
+    // console.log("[humanScroll] idle pause…");
     await page.waitForTimeout(randomInt(IDLE_MS.min, IDLE_MS.max));
   }
 }

@@ -13,6 +13,7 @@ export type PostScrapeType = {
   postTextContent: string;
   reactionCount?: number;
   commentCount?: number;
+  permaLinkConstructed?: string;
   mediaUrls: {
     type: "image" | "video";
     url: string;

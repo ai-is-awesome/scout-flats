@@ -2,7 +2,13 @@ import type { Page, Locator } from "patchright";
 import { createCursor, type Cursor } from "ghost-cursor-playwright";
 import type { PostDetailsWithoutMedia } from "../types/facebookTypes";
 import { humanClick } from "../scraper/cursor";
-import { extractAuthorId, extractGroupId, extractPostId } from "./facebokUtils";
+import {
+  constructFBProfileUrl,
+  extractAuthorId,
+  extractGroupId,
+  extractPostId,
+} from "./facebokUtils";
+import { randomizeTime } from "../scraper/utils";
 
 /**
  * Finds hydrated posts on the feed, expands "See more" where present, and
@@ -15,6 +21,13 @@ export async function getPosts(
   page: Page,
   groupName: string
 ): Promise<PostDetailsWithoutMedia[]> {
+  const groupId = extractGroupId(page.url());
+  console.log("Group ID : ", groupId);
+  if (!groupId) {
+    console.warn("Could not extract group ID from URL");
+    process.exit(1);
+  }
+
   await page.waitForSelector("[aria-posinset]", { timeout: 15_000 });
 
   const all = await page.locator("[aria-posinset]").all();
@@ -23,6 +36,7 @@ export async function getPosts(
   const result: PostDetailsWithoutMedia[] = [];
   for (const post of all) {
     // Hydration check 1: must have a story_message child with non-empty text
+    console.log("Aria Posinset", post.getAttribute("aria-posinset"));
     const body = post.locator('[data-ad-rendering-role="story_message"]');
     if ((await body.count()) === 0) continue;
     const text = await body.first().textContent();
@@ -34,7 +48,7 @@ export async function getPosts(
 
     try {
       await expandSeeMore(post);
-      const details = await getHTMLPostDetails(post, groupName);
+      const details = await getHTMLPostDetails(post, groupName, groupId);
 
       result.push(details);
     } catch (e) {
@@ -53,7 +67,8 @@ export async function getPosts(
  */
 export async function getHTMLPostDetails(
   post: Locator,
-  groupName: string
+  groupName: string,
+  groupId: string | undefined = undefined
 ): Promise<PostDetailsWithoutMedia> {
   // 1. Author block — anchor with data-ad-rendering-role="profile_name"
   const authorAnchor = post
@@ -63,9 +78,9 @@ export async function getHTMLPostDetails(
   const authorName = (await authorAnchor.innerText()).trim();
 
   const authorProfileHref = (await authorAnchor.getAttribute("href")) ?? "";
-  const authorProfileUrl =
-    "https://www.facebook.com" + authorProfileHref.split("?")[0];
+
   const authorId = extractAuthorId(authorProfileHref);
+  const authorProfileUrl = constructFBProfileUrl(authorId);
 
   // Profile pic — <image xlink:href> inside the avatar SVG.
   // Playwright's getAttribute handles namespaced attrs by local name.
@@ -101,7 +116,11 @@ export async function getHTMLPostDetails(
   }
 
   const postId = extractPostId(permalink);
-  const groupId = extractGroupId(permalink);
+
+  const permaLinkConstructed =
+    postId && groupId
+      ? `https://www.facebook.com/groups/${groupId}/posts/${postId}/`
+      : "";
 
   // 3. Date posted — innerText to bypass FB's CSS-reorder scrambling.
   //    The timestamp anchor lives near the permalink; if tsLink missed,
@@ -144,6 +163,7 @@ export async function getHTMLPostDetails(
       //   authorImgUrl,
     },
     permalink,
+    permaLinkConstructed,
     datePosted,
     scrapedAt: new Date().toISOString(),
     postTextContent,
@@ -171,6 +191,12 @@ export async function expandSeeMore(post: Locator): Promise<void> {
     .first();
 
   if (await seeMore.isVisible().catch(() => false)) {
+    console.log("See more :", await seeMore.innerText());
+    // Bring the button on-screen first — ghost-cursor can't click at
+    // negative Y / outside the viewport. FB virtualization keeps posts
+    // in the DOM after they scroll off, so this is common.
+    await seeMore.scrollIntoViewIfNeeded();
+    await post.page().waitForTimeout(randomizeTime("small")); // let the scroll settle
     await humanClick(seeMore);
     await post.page().waitForTimeout(300);
   }
