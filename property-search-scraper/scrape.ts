@@ -2,9 +2,12 @@ import { chromium } from "patchright";
 import { getPosts } from "./lib/facebook/facebookScraper";
 import { humanScroll, humanWander } from "./lib/scraper/cursor";
 import { extractGroupId } from "./lib/facebook/facebokUtils";
+import { savePostData } from "./lib/ioOperations/ioOperations";
 
 const TARGET_GROUP_URL = "https://www.facebook.com/groups/838402552906457/";
 const SCROLL_ROUNDS = 1;
+
+function updateMetadataFile() {}
 
 async function main() {
   const ctx = await chromium.launchPersistentContext("./fb-session", {
@@ -36,10 +39,15 @@ async function main() {
     console.log(`Found ${posts.length} hydrated posts`);
 
     for (const details of posts) {
+      if (!details.postId || !details.groupId) {
+        console.log("Skipping as unable to find post id or group id");
+        continue;
+      }
       if (seen.has(details.postId)) {
         console.log("Post is already seen, skipping");
         continue;
       }
+
       seen.add(details.postId);
 
       console.log(
@@ -52,6 +60,8 @@ async function main() {
           2
         )
       );
+
+      await savePostData(details.postId, details);
     }
     await humanWander(page);
     await humanScroll(page);

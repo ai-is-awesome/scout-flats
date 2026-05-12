@@ -1,6 +1,9 @@
 import type { Page, Locator } from "patchright";
 import { createCursor, type Cursor } from "ghost-cursor-playwright";
-import type { PostDetailsWithoutMedia } from "../types/facebookTypes";
+import type {
+  PostDetailsWithoutMedia,
+  PostScrapeType,
+} from "../types/facebookTypes";
 import { humanClick } from "../scraper/cursor";
 import {
   constructFBProfileUrl,
@@ -20,7 +23,7 @@ import { randomizeTime } from "../scraper/utils";
 export async function getPosts(
   page: Page,
   groupName: string
-): Promise<PostDetailsWithoutMedia[]> {
+): Promise<PostScrapeType[]> {
   const groupId = extractGroupId(page.url());
   console.log("Group ID : ", groupId);
   if (!groupId) {
@@ -33,7 +36,7 @@ export async function getPosts(
   const all = await page.locator("[aria-posinset]").all();
   console.log("Found posts with aria-posinset:", all.length);
 
-  const result: PostDetailsWithoutMedia[] = [];
+  const result: PostScrapeType[] = [];
   for (const post of all) {
     // Hydration check 1: must have a story_message child with non-empty text
     console.log("Aria Posinset", await post.getAttribute("aria-posinset"));
@@ -49,13 +52,61 @@ export async function getPosts(
     try {
       await expandSeeMore(post);
       const details = await getHTMLPostDetails(post, groupName, groupId);
+      const mediaUrls = await collectPostMedia(post);
 
-      result.push(details);
+      result.push({ ...details, mediaUrls });
     } catch (e) {
       console.error("getPosts: extraction failed for one post:", e);
     }
   }
   return result;
+}
+
+/**
+ * Opens the first media tile of a post, walks the lightbox to enumerate
+ * all media, then navigates back to the feed. Returns [] when the post
+ * has no media or the lightbox never opens. Mirrors the navigate-and-back
+ * pattern in getPermalinkViaCommentClick so the outer getPosts loop can
+ * continue with subsequent post locators.
+ */
+async function collectPostMedia(
+  post: Locator
+): Promise<PostScrapeType["mediaUrls"]> {
+  const page = post.page();
+  const firstMedia = await getFirstMediaLocator(post);
+  if ((await firstMedia.count()) === 0) return [];
+
+  const beforeUrl = page.url();
+
+  try {
+    await firstMedia.scrollIntoViewIfNeeded();
+    await page.waitForTimeout(randomizeTime("small"));
+    await humanClick(firstMedia);
+    await page.waitForURL((url) => url.toString() !== beforeUrl, {
+      timeout: 5_000,
+    });
+  } catch (e) {
+    console.warn("collectPostMedia: failed to open lightbox", e);
+    return [];
+  }
+
+  let media: Media[] = [];
+  try {
+    // Click on the image
+
+    media = await extractMediaUrlsFromLightbox(page);
+  } catch (e) {
+    console.warn("collectPostMedia: lightbox extraction failed", e);
+  }
+
+  if (page.url() !== beforeUrl) {
+    await page.goBack();
+    await page
+      .waitForSelector("[aria-posinset]", { timeout: 10_000 })
+      .catch(() => {});
+  }
+
+  return media.map((m, i) => ({ ...m, order: i }));
 }
 
 /**
@@ -106,7 +157,6 @@ export async function getHTMLPostDetails(
     const rawHref = (await tsLink.getAttribute("href")) ?? "";
     permalink = absolutize(rawHref);
   }
-
   // Secondary: derive from a photo anchor's pcb.<id> (only present when
   // the post has attached photos/videos).
   if (!permalink) {

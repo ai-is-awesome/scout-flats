@@ -13,3 +13,7 @@ export function randomizeTime(
       return randomInt(45_000, 90_000); // ~1 minute window
   }
 }
+
+export function waitForRandomTime(
+  param: "small" | "medium" | "minute" | number
+) {}

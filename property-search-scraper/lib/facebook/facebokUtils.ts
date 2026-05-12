@@ -1,3 +1,5 @@
+import { Page } from "patchright";
+
 export const constructFBProfileUrl = (authorId: string) =>
   `https://www.facebook.com/profile.php?id=${authorId}`;
 
@@ -47,4 +49,14 @@ export function extractPhones(text: string): string[] {
 
   const matches = normalized.match(PHONE_REGEX) ?? [];
   return [...new Set(matches.map(toE164))];
+}
+
+// If  it's on feed page or not!
+export function isPostsListVisible(page: Page) {}
+
+export function isLightboxPage(page: Page) {
+  if (page.locator("[aria-label='Photo viewer']").first()) {
+    return true;
+  }
+  return false;
 }
