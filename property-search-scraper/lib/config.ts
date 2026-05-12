@@ -13,5 +13,11 @@ export const FILE_PATHS = {
       "data",
       "facebookScrapingMetaData.json"
     ),
+    scrapedDataDir: path.join(
+      projectRoot,
+      "data",
+      "facebookScrapedData",
+      "posts"
+    ),
   },
 };
