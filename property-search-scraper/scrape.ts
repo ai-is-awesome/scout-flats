@@ -4,13 +4,14 @@ import { humanScroll, humanWander } from "./lib/scraper/cursor";
 import { extractGroupId } from "./lib/facebook/facebokUtils";
 
 const TARGET_GROUP_URL = "https://www.facebook.com/groups/838402552906457/";
-const SCROLL_ROUNDS = 5;
+const SCROLL_ROUNDS = 1;
 
 async function main() {
   const ctx = await chromium.launchPersistentContext("./fb-session", {
     channel: "chrome",
     headless: false,
     viewport: null,
+    args: ["--remote-debugging-port=9222"],
   });
   const page = ctx.pages()[0] ?? (await ctx.newPage());
   await page.goto(TARGET_GROUP_URL);
@@ -57,8 +58,28 @@ async function main() {
   }
 
   console.log(`\nTotal unique posts seen: ${seen.size}`);
+
+  console.log(
+    "\nScrape finished. Browser kept open on http://localhost:9222.\n" +
+      "Attach a REPL with `npx tsx repl.ts`. Ctrl+C to quit."
+  );
+  // Suppress unused warning + keep ctx referenced so it isn't GC'd.
+  void ctx;
+  await new Promise<never>(() => {});
 }
 
 main().catch((e) => {
   console.error(e);
 });
+
+// >Flow is something like this, scrape a post > check if post id exists
+
+// >ask ai if its real estate or not, ask about male /
+// female requirement if mentioned, extract amenities, extract price and per month or not,
+// ask if deposit is present or  not, ,
+
+// if rea estate selling post, find the google maps link and phone numbmer if it exsits
+// Save progress like steps completed  : [extractedBasicText, extractedMediaLinks, extractedPhoneNumber, extractedLocation, ]
+// Run the yt-dlp and image downloaders later
+// All  this goes in the meta data, once the pipeline is created,
+//  put the data in the db!!!! that's it, credits and other things coming this week most likely
