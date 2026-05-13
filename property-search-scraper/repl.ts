@@ -3,6 +3,7 @@ import {
   getMediaLinksFromPosinset,
   getPostByPosinset,
 } from "./lib/debugScripts/getPostByPosinset";
+import { testMediaLinksFromPosinset } from "./lib/debugScripts/testMediaLinkExtraction/testMediaLinksFromPosinset";
 
 /**
  * Selector-iteration scratchpad. Connects to the already-running Patchright
@@ -114,7 +115,7 @@ async function main() {
   console.log(`Attached to: ${page.url()}\n`);
 
   try {
-    await getMediaLinksFromPosinset(page, 18);
+    await testMediaLinksFromPosinset(page, 3);
   } catch (e) {
     console.error("Experiment error:", e);
   } finally {

@@ -5,7 +5,7 @@ import { extractGroupId } from "./lib/facebook/facebokUtils";
 import { savePostData } from "./lib/ioOperations/ioOperations";
 
 const TARGET_GROUP_URL = "https://www.facebook.com/groups/838402552906457/";
-const SCROLL_ROUNDS = 1;
+const SCROLL_ROUNDS = 0;
 
 function updateMetadataFile() {}
 

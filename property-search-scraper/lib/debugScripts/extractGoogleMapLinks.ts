@@ -1,4 +1,5 @@
-const tests = [`Female Flatmate Needed (Vegetarian)
+const tests = [
+  `Female Flatmate Needed (Vegetarian)
 Looking for a female replacement in a 3BHK fully furnished apartment. 
 Location: Meru Aadhi apartment, silver spring layout, Kundanahalli gate
 https://maps.app.goo.gl/ujQjJxSM6dcjWU5z5?g_st=ic
@@ -23,4 +24,5 @@ Cook optional
 Electricity - Gruha Jyoti Scheme enabled, 100 units free every month
 Wi-Fi, electricity, gas(split among 3 depending on the usage)
 DM for more details!! See less
-`;]
+`,
+];

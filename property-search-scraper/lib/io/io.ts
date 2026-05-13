@@ -2,7 +2,7 @@ interface FileHandler<T> {
   readJson(filePath: string): Promise<T | null>;
 }
 
-export class JsonFileHandler implements FileHandler<any> {
+export class JsonFileHandler {
   constructor(filePath: string) {}
 
   static async readJson<T>(filePath: string): Promise<T | null> {

@@ -19,5 +19,10 @@ export const FILE_PATHS = {
       "facebookScrapedData",
       "posts"
     ),
+    sessionPath: "./fb-session",
   },
+};
+
+export const BINARIES = {
+  ytDlp: "D:\\myStuff\\youtube-dlp\\yt-dlp.exe",
 };
