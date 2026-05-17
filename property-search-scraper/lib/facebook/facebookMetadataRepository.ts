@@ -123,9 +123,6 @@ export class FacebookMetadataRepository {
 
 function isMissingFileError(e: unknown): boolean {
   return (
-    typeof e === "object" &&
-    e !== null &&
-    "code" in e &&
-    e.code === "ENOENT"
+    typeof e === "object" && e !== null && "code" in e && e.code === "ENOENT"
   );
 }

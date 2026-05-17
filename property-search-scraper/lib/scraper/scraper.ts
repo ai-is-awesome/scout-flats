@@ -6,12 +6,7 @@ import {
 import type { BrowserContext, Page } from "patchright";
 import { getPosts } from "../facebook/facebookScraper";
 import { humanScroll, humanWander } from "./cursor";
-import {
-  getPostStoragePaths,
-  savePostData,
-} from "../ioOperations/ioOperations";
-import { FacebookMetadataRepository } from "../facebook/facebookMetadataRepository";
-import { FacebookMetadataFileKeys } from "../types/facebookMetadataFileType";
+import { FacebookPostProcessor } from "../facebook/facebookPostProcessor";
 
 const DEFAULT_SCROLL_ROUNDS = 5;
 
@@ -45,9 +40,11 @@ export const defaultConfig: Config = {
 export class FacebookScrapingPipeline {
   config: Config;
   browserContext: BrowserContext | null = null;
-  metadataRepository = new FacebookMetadataRepository();
 
-  constructor(config: Config) {
+  constructor(
+    config: Config,
+    private readonly postProcessor = new FacebookPostProcessor()
+  ) {
     this.config = config;
   }
 
@@ -152,30 +149,9 @@ export class FacebookScrapingPipeline {
         )
       );
       try {
-        const paths = getPostStoragePaths(details.postId);
-        await this.metadataRepository.upsertPostAttempt({
-          postId: details.postId,
-          localPath: paths.postDir,
-          scrapedAt: Date.now(),
-          postedAt: null,
-          sourceGroupId: details.groupId,
-          postUrl: details.permaLinkConstructed || details.permalink,
-        });
-        await this.metadataRepository.markStepCompleted(
-          details.postId,
-          FacebookMetadataFileKeys.textContentScraped
-        );
-        await this.metadataRepository.markStepCompleted(
-          details.postId,
-          FacebookMetadataFileKeys.mediaLinksScraped
-        );
-        await savePostData(details.postId, details);
+        await this.postProcessor.process(details);
       } catch (e) {
         console.log("Error: ", e);
-        await this.metadataRepository.markStepFailed(details.postId, {
-          step: FacebookMetadataFileKeys.textContentScraped,
-          error: e instanceof Error ? e.message : String(e),
-        });
       }
     }
   }
