@@ -1,8 +1,8 @@
-type FacebookMetadataFileType = {
+export type FacebookMetadataFileType = {
   facebookPostsAttemptedScrape: PostScraped[];
 };
 
-type PostScraped = {
+export type PostScraped = {
   postId: string;
   localPath: string;
   scrapedAt: number;
@@ -10,20 +10,21 @@ type PostScraped = {
   stepsCompleted: FacebookMetadataFileKeys[];
   isRealEstateRelated: boolean | null;
   sourceGroupId: string;
-  errors: string[];
+  errors: FacebookPostScrapeError[];
   postUrl?: string;
 };
 
-type FacebookPostScrapeError = {
+export type FacebookPostScrapeError = {
   step: FacebookMetadataFileKeys;
   error: string;
 };
 
-enum FacebookMetadataFileKeys {
+export enum FacebookMetadataFileKeys {
   textContentScraped = "textContentScraped",
   mediaLinksScraped = "mediaLinksScraped",
   downloadableVideoLinksScraped = "downloadableVideoLinksScraped",
   aiTagsGenerated = "aiTagsGenerated",
-  mediaDownloaded = "mediaDownloaded",
+  imagesDownloaded = "imagesDownloaded",
+  videosDownloaded = "videosDownloaded",
   pushedToDb = "pushedToDb",
 }
