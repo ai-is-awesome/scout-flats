@@ -1,13 +1,12 @@
 import "dotenv/config";
 
-interface IGeminiClient {
-  requestJson<T = any>(prompt: string): Promise<T>;
+export interface IGeminiClient {
+  requestJson<T = unknown>(prompt: string): Promise<T>;
 }
 
-const GEMINI_JSON_INSTRUCTIONS = `Please return the resopnse in JSON  format. 
-Please only use message field in response in case you need to write a message json's "message" key.
-I do not need any information from you other than
-the json`;
+const GEMINI_JSON_INSTRUCTIONS = `Please return the response in JSON format.
+If you need to include a human-readable message, only use a "message" key.
+Do not return any text outside the JSON.`;
 
 export class GeminiClient implements IGeminiClient {
   private static instance: GeminiClient;
@@ -24,10 +23,11 @@ export class GeminiClient implements IGeminiClient {
       );
     }
   }
-  requestJson<T>(prompt: string): Promise<T> {
-    return new Promise((res, rej) => {
-      return res({} as T);
-    });
+  async requestJson<T>(prompt: string): Promise<T> {
+    const response = await this.generateResponse(
+      `${GEMINI_JSON_INSTRUCTIONS}\n\n${prompt}`
+    );
+    return parseJsonResponse<T>(response);
   }
 
   async generateResponse(prompt: string) {
@@ -64,4 +64,37 @@ export class GeminiClient implements IGeminiClient {
   setApiKey(apiKey: string) {
     this.apiKey = apiKey;
   }
+}
+
+function parseJsonResponse<T>(response: string): T {
+  const jsonText = extractJsonText(response);
+  try {
+    return JSON.parse(jsonText) as T;
+  } catch (e) {
+    throw new Error(
+      `Failed to parse Gemini JSON response: ${
+        e instanceof Error ? e.message : String(e)
+      }`
+    );
+  }
+}
+
+function extractJsonText(response: string): string {
+  const trimmed = response.trim();
+  const fencedJson = trimmed.match(/```(?:json)?\s*([\s\S]*?)\s*```/i);
+  if (fencedJson?.[1]) return fencedJson[1].trim();
+
+  const objectStart = trimmed.indexOf("{");
+  const objectEnd = trimmed.lastIndexOf("}");
+  if (objectStart !== -1 && objectEnd > objectStart) {
+    return trimmed.slice(objectStart, objectEnd + 1);
+  }
+
+  const arrayStart = trimmed.indexOf("[");
+  const arrayEnd = trimmed.lastIndexOf("]");
+  if (arrayStart !== -1 && arrayEnd > arrayStart) {
+    return trimmed.slice(arrayStart, arrayEnd + 1);
+  }
+
+  return trimmed;
 }
